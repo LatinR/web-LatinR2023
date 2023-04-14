@@ -4,8 +4,8 @@ toc: false
 ---
 
 ::: grid
-::: {#banner .g-col-12}
 ::: {.content-visible when-profile="es"}
+::: {#banner .g-col-12}
 # LatinR 2023
 
 ## Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo
