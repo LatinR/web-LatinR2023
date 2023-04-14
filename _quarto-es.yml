@@ -6,8 +6,12 @@ project:
 website:
   navbar:
     left:
+      - href: ./pt/index.html
+        text: "PT"
+      - href: ./en/index.html
+        text: EN  
+      - href: /index.html
+        text: "**ES**"    
+    right:
       - text: "Principal"
-        href: index.qmd
-    # right: 
-    #   - href: en/.
-    #     text: Português
+        href: /index.qmd
