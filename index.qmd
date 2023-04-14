@@ -3,8 +3,8 @@ title: ""
 toc: false
 ---
 
-::: grid
 ::: {.content-visible when-profile="es"}
+::: grid
 ::: {#banner .g-col-12}
 # LatinR 2023
 
@@ -15,8 +15,8 @@ toc: false
 :::
 :::
 
-::: grid
 ::: {.content-visible when-profile="en"}
+::: grid
 ::: {#banner .g-col-12}
 # LatinR 2023
 
@@ -27,8 +27,8 @@ toc: false
 :::
 :::
 
-::: grid
 ::: {.content-visible when-profile="pt"}
+::: grid
 ::: {#banner .g-col-12}
 # LatinR 2023
 

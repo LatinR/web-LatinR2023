@@ -70,8 +70,18 @@
   line-height: 1.5;
 }
 
+
 #quarto-content > .grid {
   padding-top: 10px !important;
+
+}
+
+.text_block{
+  padding-left: 30px !important;
+}
+
+.about_banner, .title{
+  padding-left: 30px !important;
 }
 
 footer.footer .nav-footer, #quarto-header nav {
