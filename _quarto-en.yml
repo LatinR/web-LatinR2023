@@ -1,0 +1,13 @@
+lang: en
+
+project:
+  output-dir: docs/en
+
+website:
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+    # right: 
+    #   - href: en/.
+    #     text: Português

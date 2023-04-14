@@ -1,13 +1,15 @@
 project:
   type: website
+  preview: 
+    port: 4200  
 
 website:
-  title: "latinrweb-v2"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+  title: "LatinR 2023"
+      
+profile:
+  default: es
+  group: 
+    - [en, es, pt]      
 
 format:
   html:
