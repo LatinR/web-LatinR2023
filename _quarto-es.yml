@@ -12,6 +12,5 @@ website:
         text: EN  
       - href: /index.html
         text: "**ES**"    
-    right:
       - text: "Principal"
         href: /index.qmd

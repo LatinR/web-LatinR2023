@@ -5,6 +5,25 @@ project:
 
 website:
   title: "LatinR 2023"
+  sidebar: false
+  navbar:
+    background: light # or your hex color
+    pinned: false
+#    logo: "images/logos.svg"
+  page-footer: 
+#    left: "Proudly supported by R Consortium"
+    center: "Copyright © 2023, LatinR Team" 
+    right: 
+      - icon: envelope
+        href: mailto:latinr.conf@gmail.com   
+      - icon: twitter 
+        href: https://twitter.com/LatinR_Conf        
+      - icon: linkedin
+        href: https://www.linkedin.com/company/latinrconf/
+      - icon: slack
+        href: https://latin-r.slack.com/join/shared_invite/enQtNDA3MjM3MTQwOTM1LTg3ZWMyNWU3MGI2MGM5YzU0MGU4NWE5NjYwMjBhMGZmYTQzYTA0ODZlOTE1NDc0YzIwM2NhYTJiNDQyZjMzZjc
+
+
       
 profile:
   default: es
@@ -15,7 +34,8 @@ format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
+    page-layout: custom
 
 editor: visual
 
