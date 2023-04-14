@@ -26,7 +26,7 @@
 .text_block {
   padding: 20px;
   font-size: 0.95rem;
-  background: #50a7ff12;
+  background: #fcfcfc;
   margin-left: 20px;
   border-radius: 10px;
 }
@@ -53,20 +53,20 @@
 }
 
 #banner {
-  background: #2165b6; 
+  background: #3c3888; 
   color: white; 
   padding: 40px; 
   min-height: 550px;
-  background: linear-gradient(rgba(33, 101, 182, 1), rgba(0, 0, 0, 0.5)),url('./images/banner-img.jpg') !important;  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(rgba(33, 101, 182, 1), rgba(0, 0, 0, 0.5)), url('./images/banner-img.jpg') !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(#3c3888, rgba(0, 0, 0, 0.5)),url('./images/banner-img.jpg') !important;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#3c3888, rgba(0, 0, 0, 0.5)), url('./images/banner-img.jpg') !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat !important;
     background-size: cover !important;
 }
 
 #banner h3 {
   font-size: 2.5rem !important;
-  border-top: 3px solid #6cacf2;
-  border-bottom: 3px solid #6cacf2;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
   line-height: 1.5;
 }
 
@@ -82,11 +82,18 @@
 
 .about_banner, .title{
   padding-left: 30px !important;
+  background-color: #3c3888 !important;
+  color: #fff !important;
+}
+
+.about_banner, h1{
+  font-size: 66px;
+  font-weight: 100;
 }
 
 footer.footer .nav-footer, #quarto-header nav {
 	min-height: 50px;
-	background: #50a7ff12;
+	background: #fcfcfc;
 }
 
 #countdown li {
@@ -188,4 +195,16 @@ footer.footer .nav-footer, #quarto-header nav {
   .sponsorsFooter ul li {
     margin: 15px 5px 0px;
   }
+}
+
+.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active {
+  color: #3c3886;
+}
+
+a {
+  color: #3c3888;
+}
+
+.navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
+  color: #3b3882;
 }

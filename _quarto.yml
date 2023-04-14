@@ -7,7 +7,6 @@ website:
   title: "LatinR 2023"
   sidebar: false
   navbar:
-    background: light # or your hex color
     pinned: false
 #    logo: "images/logos.svg"
   page-footer: 
