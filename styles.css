@@ -198,7 +198,7 @@ footer.footer .nav-footer, #quarto-header nav {
   }
 }
 
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active {
+.nav-link.active {
   color: #3c3886;
 }
 
@@ -210,6 +210,6 @@ a {
   color: #3b3882;
 }
 
-.navbar-dark .navbar-nav .nav-link  .navbar-brand {
-  color: #454545;
+.navbar-dark .navbar-nav .nav-link  .navbar-brand .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #454545 !important;
 }

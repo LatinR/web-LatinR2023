@@ -14,4 +14,4 @@ website:
         text: "**ES**"    
       - text: "Principal"
         href: /index.qmd
-      - href: ediciones-anteriores.qmd  
+      - href: ediciones-anteriores.html

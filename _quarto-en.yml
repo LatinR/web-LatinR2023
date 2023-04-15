@@ -14,4 +14,4 @@ website:
         text: "ES"    
     right:
       - text: "Home"
-        href: /index.qmd
+        href: /index.html
