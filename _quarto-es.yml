@@ -13,5 +13,8 @@ website:
       - href: /index.html
         text: "**ES**"    
       - text: "Principal"
-        href: /index.qmd
-      - href: ediciones-anteriores.html
+        href: /index.html
+      - text: Sobre LatinR
+        menu:        
+          - href: sobre/apoyo/index.qmd          
+          - href: sobre/ediciones-anteriores.qmd  

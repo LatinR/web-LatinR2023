@@ -10,7 +10,7 @@ toc: false
 
 ## Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo
 
-###  18 al 20 de octubre de 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+### 18 al 20 de octubre de 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
 :::
 :::
 :::
@@ -22,7 +22,7 @@ toc: false
 
 ## Latinamerican Conference About the Use of R in R&D
 
-###  October 18-20, 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+### October 18-20, 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
 :::
 :::
 :::
@@ -34,8 +34,7 @@ toc: false
 
 ## Conferência Latino-Americana sobre o Uso de R em Pesquisa e Desenvolvimento
 
-###  18 a 20 de outubro de 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+### 18 a 20 de outubro de 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
 :::
 :::
 :::
-
