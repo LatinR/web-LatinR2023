@@ -197,19 +197,3 @@ footer.footer .nav-footer, #quarto-header nav {
     margin: 15px 5px 0px;
   }
 }
-
-.nav-link.active {
-  color: #3c3886 !important;
-}
-
-a {
-  color: #3c3888 !important;
-}
-
-.navbar-brand:hover, .navbar-brand:focus {
-  color: #3b3882 !important;
-}
-
-.navbar-dark .navbar-nav .nav-link  .navbar-brand .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
-  color: #454545 !important;
-}
