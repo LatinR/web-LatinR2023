@@ -219,3 +219,7 @@ a {
 .navbar-dark .navbar-nav .nav-link  .navbar-brand .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: #454545 !important;
 }
+
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon  .navbar-dark .navbar-toggler {
+  color: #161616 !important;
+}
