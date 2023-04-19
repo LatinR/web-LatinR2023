@@ -27,12 +27,11 @@ website:
 profile:
   default: es
   group: 
-    - [en, es, pt]      
+    - [en, es, pt]
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: styles.scss
     toc: false
     page-layout: custom
 

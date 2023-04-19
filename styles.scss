@@ -1,0 +1,53 @@
+/*-- scss:defaults --*/
+
+// importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway&display=swap');
+
+
+$font-family-sans-serif: 'Open Sans', Tahoma, sans-serif !default;
+
+$primary: #4c3ceb !default;
+
+$body-font-size: 1.5rem !default;
+
+/*-- scss:rules --*/
+
+h1, h2, h3, h4, h5 {
+    font-family: "Raleway", "Tahoma", sans-serif !important;
+}
+
+
+/* Banner */
+#banner h1 {
+  font-size: 4rem !important;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+#banner h2 {
+  font-size: 2rem !important;
+  font-weight: 100;
+  border: none;
+}
+
+#banner {
+  background: $primary; 
+  color: white; 
+  padding-left: 40px; 
+  padding-right: 40px; 
+  min-height: 500px;
+  background: linear-gradient($primary, #73737355),url('./images/banner-img.jpg') !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient($primary, #73737355), url('./images/banner-img.jpg') !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+#banner h3 {
+  font-size: 1.5rem !important;
+  border-bottom: 3px solid #fff;
+  line-height: 1.5;
+}
+
+#quarto-content > * {
+  padding-top: 0px;
+}
