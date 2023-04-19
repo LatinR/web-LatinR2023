@@ -8,7 +8,11 @@ website:
   sidebar: false
   navbar:
     pinned: false
-#    logo: "images/logos.svg"
+    logo: "images/logo.png"
+    logo-alt: "Latin-R logo"
+    title: false
+    background: "#ffffff"
+    foreground: "#737373"
   page-footer: 
 #    left: "Proudly supported by R Consortium"
     center: "Copyright © 2023, LatinR Team" 
