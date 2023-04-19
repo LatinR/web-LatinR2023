@@ -53,8 +53,13 @@ h1, h2, h3, h4, h5 {
 
 /* text block */
 
-.text_block{
-  padding-left: 30px !important;
+.text_block {
+  padding-left: 5em !important;
+  padding-right: 5em !important;
+}
+
+.text_block > h2,  .text_block > h3 {
+  text-align: center;
 }
 
 /* about banner */

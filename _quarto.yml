@@ -29,7 +29,7 @@ website:
         aria-label: "Linkedin"
       - icon: slack
         href: https://latin-r.slack.com/join/shared_invite/enQtNDA3MjM3MTQwOTM1LTg3ZWMyNWU3MGI2MGM5YzU0MGU4NWE5NjYwMjBhMGZmYTQzYTA0ODZlOTE1NDc0YzIwM2NhYTJiNDQyZjMzZjc
-        aria-label: "Join the slack channel"
+        aria-label: "Slack"
 
       
 profile:

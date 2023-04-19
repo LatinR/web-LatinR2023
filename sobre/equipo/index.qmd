@@ -1,0 +1,31 @@
+---
+pagetitle: "Equipo"
+---
+
+::: grid
+::: {.g-col-12 .title}
+# Equipo organizador
+:::
+
+::: {.g-col-12 .text_block}
+
+## Quiénes somos
+
+El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores de Grupos de Usuarios de R (RUG) que el Comité de Conferencias de la R Foundation estaba interesado en la aparición de eventos sobre R con un enfoque académico en regiones que no se encuentran actualmente cubiertas por useR!. En menos de una semana ya teníamos organizada nuestra primera videoconferencia para pensar cómo enfrentar el desafío. Esta rápida respuesta no fue solo suerte, sino la consecuencia de un año en el que la comunidad de R --a través de los RUGs locales y la presencia en redes sociales-- creció significativamente en Sudamérica. Para mediados de noviembre ya estaba todo definido: un nombre, un lugar, una fecha y un comité organizador internacional motivado. La primera edición se realizó en Buenos Aires, Argentina y la segunda en Santiago de Chile, Chile. Este año, la comunidad de R en Latinomérica se junta en Montevideo, Uruguay.
+
+### Chairs LatinR
+
+TO DO
+
+### Comité Científico
+
+TO DO
+
+### Comité Organizador
+
+TO DO
+
+
+:::
+
+:::
