@@ -13,19 +13,23 @@ website:
     title: false
     background: "#ffffff"
     foreground: "#737373"
+    search: true
   page-footer: 
 #    left: "Proudly supported by R Consortium"
     center: "Copyright © 2023, LatinR Team" 
     right: 
       - icon: envelope
+        aria-label: "Email"
         href: mailto:latinr.conf@gmail.com   
       - icon: twitter 
-        href: https://twitter.com/LatinR_Conf        
+        href: https://twitter.com/LatinR_Conf     
+        aria-label: "Twitter"
       - icon: linkedin
         href: https://www.linkedin.com/company/latinrconf/
+        aria-label: "Linkedin"
       - icon: slack
         href: https://latin-r.slack.com/join/shared_invite/enQtNDA3MjM3MTQwOTM1LTg3ZWMyNWU3MGI2MGM5YzU0MGU4NWE5NjYwMjBhMGZmYTQzYTA0ODZlOTE1NDc0YzIwM2NhYTJiNDQyZjMzZjc
-
+        aria-label: "Join the slack channel"
 
       
 profile:
