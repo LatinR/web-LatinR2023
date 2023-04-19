@@ -12,7 +12,7 @@ listing:
 # Apoyo
 :::
 
-::: {#sponsors .g-col-4 .g-col-md-12 .g-col-sm-12}
+::: {#sponsors .g-col-1 .g-col-md-12 .g-col-xs-2}
 :::
 
 ::: {#sponsorship .g-col-12 .text_block}
