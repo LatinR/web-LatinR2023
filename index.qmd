@@ -11,17 +11,17 @@ toc: false
 ## Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo
 
 ### 18 al 20 de octubre de 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+
 </section>
 
-<br><center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Convocatoria a presentar trabajos</button></a></center><br>
+<br>
 
+<center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Convocatoria a presentar trabajos</button></a></center>
 
+<br>
 :::
 :::
-
 :::
-
-
 
 ::: {.content-visible when-profile="en"}
 ::: grid
@@ -31,10 +31,14 @@ toc: false
 ## Latinamerican Conference About the Use of R in R&D
 
 ### October 18-20, 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+
 </section>
 
-<br><center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Call for papers</button></a></center><br>
+<br>
 
+<center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Call for papers</button></a></center>
+
+<br>
 :::
 :::
 :::
@@ -50,7 +54,11 @@ toc: false
 
 </section>
 
-<br><center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Chamada de submissão de trabalhos</button></a></center><br>
+<br>
+
+<center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Chamada de submissão de trabalhos</button></a></center>
+
+<br>
 :::
 :::
 :::

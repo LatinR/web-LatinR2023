@@ -1,5 +1,5 @@
 ---
-pagetitle: "Apoyo"
+title: "Apoyo"
 
 listing:
   - id: sponsors
@@ -8,14 +8,12 @@ listing:
 ---
 
 ::: grid
-::: {#sponsors_banner .g-col-12 .title}
-# Apoyo
-:::
 
 ::: {#sponsors .g-col-1 .g-col-md-12 .g-col-xs-2}
 :::
 
-::: {#sponsorship .g-col-12 .text_block}
+:::
+
 Si quieres ser un sponsor envia un mail a [latinrconf\@gmail.com](mailto:latinrconf@gmail.com).
-:::
-:::
+
+

@@ -1,13 +1,6 @@
 ---
-pagetitle: "Equipo"
+title: "Equipo organizador"
 ---
-
-::: grid
-::: {.g-col-12 .title}
-# Equipo organizador
-:::
-
-::: {.g-col-12 .text_block}
 
 ## Quiénes somos
 
@@ -24,8 +17,3 @@ TO DO
 ### Comité Organizador
 
 TO DO
-
-
-:::
-
-:::
