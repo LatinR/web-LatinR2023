@@ -17,6 +17,7 @@ website:
       - text: Sobre LatinR
         menu:        
           - href: sobre/equipo/index.qmd        
-          - href: sobre/apoyo/index.qmd        
+          - href: sobre/apoyo/index.qmd
+          - href: sobre/cdc.qmd
           
           - href: sobre/ediciones-anteriores.qmd  
