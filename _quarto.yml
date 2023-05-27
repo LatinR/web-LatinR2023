@@ -41,7 +41,6 @@ format:
   html:
     theme: styles.scss
     toc: false
-    page-layout: custom
 
 editor: visual
 

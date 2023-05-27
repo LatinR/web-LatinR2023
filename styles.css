@@ -10,7 +10,7 @@ body {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.7em;
 }
 
 
@@ -24,13 +24,6 @@ p {
 	background: #50a7ff12;
 }
 
-.text_block {
-  padding: 20px;
-  font-size: 0.95rem;
-  background: #fcfcfc;
-  margin-left: 20px;
-  border-radius: 10px;
-}
 
 .img_block {
   margin-right: 20px;
