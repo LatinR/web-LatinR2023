@@ -1,6 +1,53 @@
 ---
 title: "Equipo organizador"
+knitr:
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
 ---
+
+```{r}
+
+extract_people <- function(list_team){
+  list_team |> 
+    purrr::pluck("people") |> 
+  purrr::map(unlist, recursive = TRUE)  |> 
+  purrr::map_dfr(tibble::enframe, .id = "id_") |> 
+  tidyr::pivot_wider() |> 
+  janitor::clean_names() |> 
+  dplyr::mutate(dplyr::across(
+    .cols = tidyselect::any_of(c(
+      "id_2",
+      "name",
+      "surname",
+      "titles1",
+      "titles2",
+      "titles3",
+      "thumbnail_url",
+      "color",
+      "team",
+      "level"
+    )),
+    unlist
+  ))
+}
+
+team_raw <- yaml::read_yaml("team.yml", readLines.warn = FALSE)
+
+chairs_raw <- team_raw[[1]] |> 
+  extract_people()
+
+# scientific_raw <- team_raw[[2]] |> 
+#   extract_people()
+# TODO: fix code for this case
+
+# organizers_raw <- team_raw[[3]] |> 
+#   extract_people()
+# TODO: fix code for this case
+
+```
+
 
 ## Quiénes somos
 
@@ -8,7 +55,14 @@ El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores d
 
 ### Chairs LatinR
 
-TO DO
+```{r}
+chairs_raw |>
+  dplyr::mutate(title = glue::glue("{titles1} |
+                                   {titles2}")) |>
+  bs4cards::cards(title = paste0(name, " ", surname),
+                  text = title)
+```
+
 
 ### Comité Científico
 
