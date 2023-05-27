@@ -25,11 +25,11 @@ Si usan RStudio, pueden ir a Archivo -\> Nuevo Archivo -\> R Markdown -\> Desde 
 
 Van a ver que todos los datos de envío van en el encabezado del archivo. Pueden llenarlos a mano pero más fácil es usar el "wizard" con la funcion `latinr::latinr_wizard()`. Eso les ve a llevar a una interfaz gráfica donde pueden llenar sus datos y que al final les va a mostrar un encabezado yaml válido para copiar y pegar en su archivo.
 
-![latinr wizard](/img/wizard.png)
+![latinr wizard](/img/posts/wizard.png)
 
 Alternativamente pueden usar el wizard y darle al botón "Save" en la esquina superior derecha y eso les va a crear el mismo archivo base pero con los datos completados. En cualquier caso, el archivo R Markdown les va a quedar algo así:
 
-![latinr file skeleton](/img/latinr-skeleton.png)
+![latinr file skeleton](/img/posts/latinr-skeleton.png)
 
 El primer chunk del documento chequea que la metadata esté más o menos correcta cada vez que se renderiza el archivo. Recomendamos no editarlo para que cualquier error salga a la luz lo antes posible. El resto es el documento de R Markdown de prueba. Pueden tratar de "knitear" este archivo de prueba para estar seguro que su instalación de LaTeX está en orden y luego comenzar a preparar su presentación para LatinR!
 

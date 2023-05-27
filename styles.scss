@@ -35,8 +35,8 @@ h1, h2, h3, h4, h5 {
   color: white; 
   padding-left: 40px; 
   padding-right: 40px; 
-  background: linear-gradient($primary, #73737355),url('./images/banner-img.jpg') !important;  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient($primary, #73737355), url('./images/banner-img.jpg') !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient($primary, #73737355),url('./img/banner-img.jpg') !important;  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient($primary, #73737355), url('./img/banner-img.jpg') !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }

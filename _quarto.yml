@@ -8,7 +8,7 @@ website:
   sidebar: false
   navbar:
     pinned: false
-    logo: "images/logo.png"
+    logo: "img/logo.png"
     logo-alt: "Latin-R logo"
     title: false
     background: "#ffffff"
@@ -42,6 +42,3 @@ format:
     theme: styles.scss
     toc: false
     page-layout: full
-
-editor: visual
-

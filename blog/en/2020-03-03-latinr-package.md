@@ -25,11 +25,11 @@ If you use RStudio, you can create an R Markdown template by going to File -\> N
 
 You'll notice that all the submission details are handled by the header. You can complete them there or the function `latinr::latinr_wizard()` to launch a graphical user interface that will guide you through the process and finally show you a valid header that you can copy and paste into your file.
 
-![latinr wizard](/img/wizard.png)
+![latinr wizard](/img/posts/wizard.png)
 
 Alternatively you can use the wizard and click "Save" (on the top-right corner) to create the same base file but pre-populated. In any case, the R Markdown file should look something like this:
 
-![latinr file skeleton](/img/latinr-skeleton.png)
+![latinr file skeleton](/img/posts/latinr-skeleton.png)
 
 The first chunk performs some basic checks on the metadata each time the file is rendered. We recommend to leave it there so that any error comes to light as soon as possible. The rest is the R Markdown demo document. You can "knit" it to test that you've got the proper LaTeX installation and then start writing your presentation for LatinR!
 
