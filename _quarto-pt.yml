@@ -12,7 +12,6 @@ website:
         text: EN  
       - href: ../index.html
         text: ES      
-    right:
       - text: "Página inicial"
         href: /index.html
       - text: "Novidades"

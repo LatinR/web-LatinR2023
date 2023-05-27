@@ -12,8 +12,6 @@ website:
         text: "**EN**"  
       - href: ../index.html
         text: "ES"    
-        
-    right:
       - text: "Home"
         href: /index.html
       - text: "News"
