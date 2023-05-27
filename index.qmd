@@ -16,7 +16,7 @@ toc: false
 
 <br>
 
-<center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Convocatoria a presentar trabajos</button></a></center>
+<center><a href='/blog/es/2023-04-24-presentacion-trabajos-2023.html' target ="_blank"><button type="button" class="btn btn-light btn-lg">Convocatoria a presentar trabajos</button></a></center>
 
 <br>
 :::
@@ -25,7 +25,7 @@ toc: false
 
 ::: {.content-visible when-profile="en"}
 ::: grid
-::: g-col-12
+::: {#banner .g-col-12}
 # LatinR 2023
 
 ## Latinamerican Conference About the Use of R in R&D
@@ -36,7 +36,7 @@ toc: false
 
 <br>
 
-<center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Call for papers</button></a></center>
+<center><a href='/blog/en/2023-04-24-submissions-2023.html' target ="_blank"><button type="button" class="btn btn-light btn-lg">Call for papers</button></a></center>
 
 <br>
 :::
@@ -45,7 +45,7 @@ toc: false
 
 ::: {.content-visible when-profile="pt"}
 ::: grid
-::: g-col-12
+::: {#banner .g-col-12}
 # LatinR 2023
 
 ## Conferência Latino-Americana sobre o Uso de R em Pesquisa e Desenvolvimento
@@ -56,7 +56,7 @@ toc: false
 
 <br>
 
-<center><a href='https://easychair.org/cfp/latinr2023' target ="_blank"><button type="button" class="btn btn-light btn-lg">Chamada de submissão de trabalhos</button></a></center>
+<center><a href='/blog/pt/2023-04-24-submissao-de-trabalhos-2023.html' target ="_blank"><button type="button" class="btn btn-light btn-lg">Chamada de submissão de trabalhos</button></a></center>
 
 <br>
 :::
