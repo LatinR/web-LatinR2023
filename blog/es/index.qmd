@@ -13,8 +13,8 @@ page-layout: full
 title-block-banner: false
 comments: false
 toc: false
+lang: es
 ---
 
 ::: {#posts}
 :::
-
