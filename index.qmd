@@ -26,7 +26,7 @@ page-layout: custom
 
 ::: {.content-visible when-profile="en"}
 ::: grid
-::: g-col-12
+::: {#banner .g-col-12}
 # LatinR 2023
 
 ## Latinamerican Conference About the Use of R in R&D
@@ -46,7 +46,7 @@ page-layout: custom
 
 ::: {.content-visible when-profile="pt"}
 ::: grid
-::: g-col-12
+::: {#banner .g-col-12}
 # LatinR 2023
 
 ## Conferência Latino-Americana sobre o Uso de R em Pesquisa e Desenvolvimento
