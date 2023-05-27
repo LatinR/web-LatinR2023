@@ -1,5 +1,5 @@
 ---
-title: ""
+pagetitle: "LatinR 2023"
 toc: false
 ---
 
@@ -25,7 +25,7 @@ toc: false
 
 ::: {.content-visible when-profile="en"}
 ::: grid
-::: {#banner .g-col-12}
+::: g-col-12
 # LatinR 2023
 
 ## Latinamerican Conference About the Use of R in R&D
@@ -45,7 +45,7 @@ toc: false
 
 ::: {.content-visible when-profile="pt"}
 ::: grid
-::: {#banner .g-col-12}
+::: g-col-12
 # LatinR 2023
 
 ## Conferência Latino-Americana sobre o Uso de R em Pesquisa e Desenvolvimento
