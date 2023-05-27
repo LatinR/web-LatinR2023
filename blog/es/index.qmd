@@ -1,0 +1,20 @@
+---
+title: "Novedades"
+listing:
+  - id: posts
+    contents: "*.md"
+    type: default
+    fields: [date, title]
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+    page-size: 36             
+page-layout: full
+title-block-banner: false
+comments: false
+toc: false
+---
+
+::: {#posts}
+:::
+

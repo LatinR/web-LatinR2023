@@ -21,4 +21,4 @@ website:
           - href: sobre/cdc.qmd
           - href: sobre/ediciones-anteriores.qmd  
       - text: "Novedades"
-        href: blog/index.html          
+        href: blog/es/index.html          

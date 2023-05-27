@@ -15,5 +15,7 @@ website:
     right:
       - text: "Página inicial"
         href: /index.html
+      - text: "Novidades"
+        href: blog/pt/index.html                 
       
         
