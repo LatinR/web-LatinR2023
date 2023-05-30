@@ -74,7 +74,9 @@ discutir avances, ideas, investigaciones en curso, experiencias y
 desafíos relacionados a los ejes temáticos de LatinR. Quienes participen
 de esta modalidad dispondrán de 5 minutos para la presentación. Las
 charlas relámpago se agruparán en sesiones temáticas que incluirán
-espacio al final para una ronda de preguntas. <br> \###### Pósters
+espacio al final para una ronda de preguntas. <br> 
+
+###### Pósters
 
 Al igual que las charlas relámpago, los pósters proporcionan una
 oportunidad para presentar avances y proyectos en curso relacionados a
