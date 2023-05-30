@@ -26,6 +26,15 @@ jobs:
         with:
           packages: |
             any::rmarkdown
+            github::djnavarro/bs4cards
+            any::dplyr
+            any::purrr
+            any::tibble
+            any::tidyr
+            any::janitor
+            any::tidyselect
+            any::yaml
+            any::glue
             
       - name: render
         run: |
