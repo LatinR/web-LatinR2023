@@ -61,7 +61,8 @@ chairs_raw |>
   dplyr::group_by(id, name, surname) |> 
   dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
   bs4cards::cards(title = paste0(name, " ", surname),
-                  text = title)
+                  text = title, 
+                  label_colour = "#FDC086" )
 ```
 
 
@@ -77,5 +78,6 @@ organizers_raw |>
   dplyr::group_by(id, name, surname) |> 
   dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
   bs4cards::cards(title = paste0(name, " ", surname),
-                  text = title)
+                  text = title, 
+                  label_colour = "#BEAED4")
 ```
