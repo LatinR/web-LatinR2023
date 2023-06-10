@@ -20,5 +20,11 @@ website:
           - href: sobre/apoyo/index.qmd
           - href: sobre/cdc.qmd
           - href: sobre/ediciones-anteriores.qmd  
+      - text: Participe
+        menu: 
+          - text: "Llamado a Presentación de Trabajos"
+            href: blog/es/2023-04-24-presentacion-trabajos-2023.html
+          - text: "Inscripción"
+            href: blog/es/2023-06-08-inscripcion.html            
       - text: "Novedades"
         href: blog/es/index.html          
