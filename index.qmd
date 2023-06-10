@@ -17,7 +17,7 @@ page-layout: custom
 
 <br>
 
-<center><a href='/blog/es/2023-04-24-presentacion-trabajos-2023.html' target ="_blank"><button type="button" class="btn btn-light btn-lg">Convocatoria a presentar trabajos</button></a></center>
+<center><a href='/blog/es/2023-04-24-presentacion-trabajos-2023.html'><button type="button" class="btn btn-light btn-lg">Convocatoria a presentar trabajos</button></a></center>
 
 <br>
 :::
@@ -37,7 +37,7 @@ page-layout: custom
 
 <br>
 
-<center><a href='/blog/en/2023-04-24-submissions-2023.html' target ="_blank"><button type="button" class="btn btn-light btn-lg">Call for papers</button></a></center>
+<center><a href='/blog/en/2023-04-24-submissions-2023.html'><button type="button" class="btn btn-light btn-lg">Call for papers</button></a></center>
 
 <br>
 :::
@@ -57,7 +57,7 @@ page-layout: custom
 
 <br>
 
-<center><a href='/blog/pt/2023-04-24-submissao-de-trabalhos-2023.html' target ="_blank"><button type="button" class="btn btn-light btn-lg">Chamada de submissão de trabalhos</button></a></center>
+<center><a href='/blog/pt/2023-04-24-submissao-de-trabalhos-2023.html'><button type="button" class="btn btn-light btn-lg">Chamada de submissão de trabalhos</button></a></center>
 
 <br>
 :::
