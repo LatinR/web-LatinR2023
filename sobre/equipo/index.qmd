@@ -12,25 +12,26 @@ knitr:
 extract_people <- function(list_team){
   list_team |> 
     purrr::pluck("people") |> 
-  purrr::map(unlist, recursive = TRUE)  |> 
-  purrr::map_dfr(tibble::enframe, .id = "id_") |> 
-  tidyr::pivot_wider() |> 
-  janitor::clean_names() |> 
-  dplyr::mutate(dplyr::across(
-    .cols = tidyselect::any_of(c(
-      "id_2",
-      "name",
-      "surname",
-      "titles1",
-      "titles2",
-      "titles3",
-      "thumbnail_url",
-      "color",
-      "team",
-      "level"
-    )),
-    unlist
-  ))
+    purrr::map(\(x) purrr::map_at(x, "social", list)) |> 
+    purrr::map(tibble::as_tibble) |> 
+    purrr::list_rbind(names_to = "id_yaml") |> 
+    tidyr:::nest(
+      titles = titles, 
+      .by = c(id_yaml:surname, social)
+    ) |> 
+    dplyr::mutate(social = purrr::map(social, parse_social))
+}
+
+parse_social <- function(x) {
+  x |> 
+    tibble::enframe() |> 
+    tidyr::unnest(value) |> 
+    tidyr::unnest(value) |> 
+    dplyr::group_by(name) |> 
+    dplyr::summarise(
+      type = value[1],
+      link = value[2]
+    )
 }
 
 team_raw <- yaml::read_yaml("team.yml", readLines.warn = FALSE)
@@ -38,13 +39,12 @@ team_raw <- yaml::read_yaml("team.yml", readLines.warn = FALSE)
 chairs_raw <- team_raw[[1]] |> 
   extract_people()
 
-# scientific_raw <- team_raw[[2]] |> 
+# scientific_raw <- team_raw[[2]] |>
 #   extract_people()
-# TODO: fix code for this case
+# TODO: to be announced
 
-# organizers_raw <- team_raw[[3]] |> 
-#   extract_people()
-# TODO: fix code for this case
+organizers_raw <- team_raw[[3]] |>
+  extract_people()
 
 ```
 
@@ -57,8 +57,9 @@ El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores d
 
 ```{r}
 chairs_raw |>
-  dplyr::mutate(title = glue::glue("{titles1} |
-                                   {titles2}")) |>
+  tidyr::unnest(titles) |> 
+  dplyr::group_by(id, name, surname) |> 
+  dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
   bs4cards::cards(title = paste0(name, " ", surname),
                   text = title)
 ```
@@ -66,8 +67,15 @@ chairs_raw |>
 
 ### Comité Científico
 
-TO DO
+To be announced!
 
 ### Comité Organizador
 
-TO DO
+```{r}
+organizers_raw |>
+  tidyr::unnest(titles) |> 
+  dplyr::group_by(id, name, surname) |> 
+  dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
+  bs4cards::cards(title = paste0(name, " ", surname),
+                  text = title)
+```
