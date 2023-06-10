@@ -58,11 +58,17 @@ El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores d
 ```{r}
 chairs_raw |>
   tidyr::unnest(titles) |> 
-  dplyr::group_by(id, name, surname) |> 
+  tidyr::unnest(social, names_sep = "_") |>
+  dplyr::select(- social_name) |>
+  tidyr::pivot_wider(id_cols = c(id_yaml, id, name, surname, titles), 
+                     names_from = social_type,
+                     values_from = social_link) |>
+  dplyr::mutate(site = stringr::str_trim(site))|>
+  dplyr::group_by(id, name, surname, site) |> 
   dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
   bs4cards::cards(title = paste0(name, " ", surname),
                   text = title, 
-                  label_colour = "#FDC086" )
+                  label_colour = "#FDC086", link = site)
 ```
 
 
@@ -73,11 +79,23 @@ To be announced!
 ### Comité Organizador
 
 ```{r}
-organizers_raw |>
-  tidyr::unnest(titles) |> 
-  dplyr::group_by(id, name, surname) |> 
-  dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
+ organizers_raw |> 
+ tidyr::unnest(titles) |> 
+   tidyr::unnest(social, names_sep = "_") |>
+   dplyr::select(- social_name) |>
+   tidyr::pivot_wider(id_cols = c(id_yaml, id, name, surname, titles), 
+                      names_from = social_type,
+                      values_from = social_link) |>
+   dplyr::mutate(site = ifelse(is.na(site), github, site))|>
+   dplyr::mutate(site = ifelse(is.na(site), github, site))|>
+   dplyr::mutate(site = ifelse(is.na(site), twitter, site))|>
+   dplyr::mutate(site = ifelse(is.na(site), mastodon, site))|>
+   dplyr::mutate(site = ifelse(is.na(site), linkedin, site))|>
+   dplyr::mutate(site = stringr::str_trim(site))|>  
+   dplyr::group_by(id, name, surname, site) |> 
+   dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
   bs4cards::cards(title = paste0(name, " ", surname),
                   text = title, 
-                  label_colour = "#BEAED4")
+                  label_colour = "#BEAED4", 
+                  link = site)
 ```
