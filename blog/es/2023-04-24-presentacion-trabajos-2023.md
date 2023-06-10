@@ -54,7 +54,15 @@ Los temas sugeridos para esta edición son los siguientes:
 -   Uso de R en conjunto con otros lenguajes de programación y
     plataformas
 
-<br><br>
+<br>
+
+<div class="boxBorder">
+Te puedes registrar utilizando eventbrite en este [link](https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb) seleccionando el tipo de ticket correspondiente.
+
+
+</div>
+
+<br><br><br><br>
 
 ##### Modalidades de presentación
 

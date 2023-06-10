@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>LatinR 2023 - ReproHack en LatinR 2020</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/logo.png" alt="Latin-R logo" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../.././pt/index.html">
+ <span class="menu-text">PT</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../.././en/index.html">
+ <span class="menu-text">EN</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text"><strong>ES</strong></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html">
+ <span class="menu-text">Principal</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sobre-latinr" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Sobre LatinR</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-sobre-latinr">    
+        <li>
+    <a class="dropdown-item" href="../../sobre/equipo/index.html">
+ <span class="dropdown-text">Equipo organizador</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sobre/apoyo/index.html">
+ <span class="dropdown-text">Apoyo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sobre/cdc.html">
+ <span class="dropdown-text">Código de Conducta</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../sobre/ediciones-anteriores.html">
+ <span class="dropdown-text">Ediciones anteriores</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog/es/index.html">
+ <span class="menu-text">Novedades</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">ReproHack en LatinR 2020</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Fecha de publicación</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">26 de octubre de 2020</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+
+
+
+
+<p><img src="../..\img/posts/reprolatinr.png" class="img-fluid"></p>
+<p>El jueves 8 de octubre de 2020 se realizó dentro de las actividades de la conferencia una hackatón de reproducibilidad científica. Esta hackatón fue organizada por parte del equipo de LatinR en conjunto con la comunidad <a href="https://twitter.com/ReproHack">ReproHack</a> ♻️.</p>
+<p>Había dos modalidades de participación a la hackatón: (1) como autor: enviando tu artículo para que los participantes traten de reproducirlo el día del evento. (2) asistiendo a la hackatón: Quienes participaron pudieron aprender de la experiencia de tratar de volver a obtener los resultados y dejar comentarios a los autores.</p>
+<p>En un ambiente distendido, nos encontramos personas de Argentina, Chile, Brasil, Ecuador, Uruguay, Perú, México, Nicaragua, Costa Rica, Guatemala, España y Reino Unido para pasar una tarde compartiendo información sobre reproducibilidad y trabajando en los artículos.</p>
+<p>Durante la hackatón contamos con 4 charlas (¡en español!) que quedaron grabadas en una lista de reproducción especial del canal de YouTube de LatinR y puedes acceder a las mismas <a href="http://bit.ly/reprohack_playlist">aquí</a>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../..\img/posts/reprohack_latinr.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Charlas</figcaption><p></p>
+</figure>
+</div>
+<p><a href="https://twitter.com/ma_salmon">Maëlle Salmon</a> y Miguel Alvarez grabaron a su vez dos videos representando a la comunidad <a href="https://ropensci.org/">ROpenSci</a>. Los videos se vieron el día del evento, y contestó preguntas en vivo <a href="https://twitter.com/annakrystalli">Anna Krystalli</a>, quién además de ser promotora de la iniciativa es editora de ROpenSci.</p>
+<p>Participaron en la organización (el orden alfabético): <a href="https://twitter.com/July_Benitezs">Juliana Benitez</a>, <a href="https://twitter.com/cantoflor_87">Florencia D’Andrea</a>, <a href="https://twitter.com/annakrystalli">Anna Krystalli</a>, <a href="https://twitter.com/dgawehns">Daniela Gawehns</a>, <a href="https://twitter.com/pmnatural">Priscila Minotti</a>, <a href="https://twitter.com/DVDGC13">David Pérez-Suárez</a> y <a href="https://twitter.com/data_datum">Roxana Villafañe</a>.</p>
+<section id="quiéres-saber-más-de-reprohack" class="level5">
+<h5 class="anchored" data-anchor-id="quiéres-saber-más-de-reprohack">👩‍💻 ¿Quiéres saber más de ReproHack?</h5>
+<p>Te dejamos aquí alguna información de interés sobre esta comunidad y reproducibilidad computacional (en inglés):</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=KHMW8fV2NXo&amp;ab_channel=RConsortium">Anna Krystalli - UseR 2020</a></li>
+<li><a href="https://www.nature.com/articles/d41586-020-02462-7">Challenge to scientists: does your ten-year-old code still run?</a></li>
+</ul>
+<blockquote class="blockquote">
+<p>👉 ¡Unete al <a href="https://reprohack-autoinvite.herokuapp.com/">Slack de ReproHack</a>!</p>
+</blockquote>
+<p>Equipo de ReproHack (En orden alfabético): <a href="https://twitter.com/cantoflor_87">Florencia D’Andrea</a>, <a href="https://twitter.com/dgawehns">Daniela Gawehns</a>, <a href="https://twitter.com/annakrystalli">Anna Krystalli</a>, <a href="https://twitter.com/lindanab1">Linda Nab</a>, <a href="https://twitter.com/RProppert">Riccarda Propart</a> and <a href="https://twitter.com/palolili23">Paloma Rojas-Saunero</a>.</p>
+<p>Agradecemos al grupo de <a href="https://twitter.com/RSE_Sheffield">RSE de la Universidad de Sheffield</a> y a <a href="https://twitter.com/SoftwareSaved">The Software Sustainability Institute</a> por apoyar ReproHack.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">Copyright © 2023, LatinR Team</div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:latinr.conf@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/LatinR_Conf">
+      <i class="bi bi-twitter" role="img" aria-label="Twitter">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/company/latinrconf/">
+      <i class="bi bi-linkedin" role="img" aria-label="Linkedin">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://latin-r.slack.com/join/shared_invite/enQtNDA3MjM3MTQwOTM1LTg3ZWMyNWU3MGI2MGM5YzU0MGU4NWE5NjYwMjBhMGZmYTQzYTA0ODZlOTE1NDc0YzIwM2NhYTJiNDQyZjMzZjc">
+      <i class="bi bi-slack" role="img" aria-label="Slack">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

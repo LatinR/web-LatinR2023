@@ -51,7 +51,16 @@ Todas as áreas do conhecimento e suas combinações são de interesse.
 -   Usando R em conjunto com outras linguagens e plataformas de
     programação
 
-<br><br>
+<br>
+
+<div class="boxBorder">
+Você pode se registrar usando o Eventbrite neste [link](https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb) selecionando o ingresso correspondente.
+
+
+</div>
+
+<br><br><br><br>
+
 
 ##### Modalidades de apresentação
 
