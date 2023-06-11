@@ -6,33 +6,20 @@ knitr:
     message: false
     warning: false
 ---
+```{css echo=FALSE}
+.card-header-chairs{
+  background-color: #FDC08666;
+  font-weight: bold;
+}
+.card-header-team{
+  background-color: #BEAED47A;
+  font-weight: bold;
+}
+```
+
 
 ```{r}
-
-extract_people <- function(list_team){
-  list_team |> 
-    purrr::pluck("people") |> 
-    purrr::map(\(x) purrr::map_at(x, "social", list)) |> 
-    purrr::map(tibble::as_tibble) |> 
-    purrr::list_rbind(names_to = "id_yaml") |> 
-    tidyr:::nest(
-      titles = titles, 
-      .by = c(id_yaml:surname, social)
-    ) |> 
-    dplyr::mutate(social = purrr::map(social, parse_social))
-}
-
-parse_social <- function(x) {
-  x |> 
-    tibble::enframe() |> 
-    tidyr::unnest(value) |> 
-    tidyr::unnest(value) |> 
-    dplyr::group_by(name) |> 
-    dplyr::summarise(
-      type = value[1],
-      link = value[2]
-    )
-}
+source(here::here("R/functions-team.R"))
 
 team_raw <- yaml::read_yaml("team.yml", readLines.warn = FALSE)
 
@@ -55,20 +42,69 @@ El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores d
 
 ### Chairs LatinR
 
+
+
 ```{r}
-chairs_raw |>
-  tidyr::unnest(titles) |> 
+chairs_tidy <- chairs_raw |>
+  tidyr::unnest(titles) |>
   tidyr::unnest(social, names_sep = "_") |>
-  dplyr::select(- social_name) |>
-  tidyr::pivot_wider(id_cols = c(id_yaml, id, name, surname, titles), 
-                     names_from = social_type,
-                     values_from = social_link) |>
-  dplyr::mutate(site = stringr::str_trim(site))|>
-  dplyr::group_by(id, name, surname, site) |> 
-  dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
-  bs4cards::cards(title = paste0(name, " ", surname),
-                  text = title, 
-                  label_colour = "#FDC086", link = site)
+  dplyr::select(-social_name) |>
+  tidyr::pivot_wider(
+    id_cols = c(id_yaml, id, name, surname, titles),
+    names_from = social_type,
+    values_from = social_link
+  ) |>
+  dplyr::mutate(
+    site = stringr::str_trim(site),
+    icon_github = dplyr::case_when(
+      !is.na(github) ~ glue::glue(
+        '<a href="{github}" target="_blank"><i class="fab fa-github"></i></a>'
+      ),
+      TRUE ~ ""
+    ) ,
+    
+    icon_twitter = dplyr::case_when(
+      !is.na(twitter) ~ glue::glue(
+        '<a href="{twitter}" target="_blank"><i class="fab fa-twitter"></i></a>'
+      ),
+      TRUE ~ ""
+    ) ,
+    
+    icon_mastodon = dplyr::case_when(
+      !is.na(mastodon) ~ glue::glue(
+        '<a href="{mastodon}" target="_blank"><i class="fab fa-mastodon"></i></a>'
+      ),
+      TRUE ~ ""
+    ) ,
+    
+    icon_site = dplyr::case_when(
+      !is.na(site) ~ glue::glue(
+        '<a href="{site}" target="_blank"><i class="fas fa-home"></i></a>'
+      ),
+      TRUE ~ ""
+    ) ,
+    icons = glue::glue(
+      "{icon_site} {icon_github} {icon_mastodon} {icon_twitter}",
+      
+    ),
+    name_complete = glue::glue("{name} {surname}")
+  ) 
+```
+
+
+
+```{r}
+chairs_list <- chairs_tidy |> 
+  dplyr::group_split(name_complete)
+
+bslib::layout_column_wrap(
+  width = 1 / 3,
+  height = 300,
+  generate_card(chairs_list[[1]]),
+  generate_card(chairs_list[[2]]),
+  generate_card(chairs_list[[3]])
+  
+)
 ```
 
 
@@ -82,7 +118,7 @@ To be announced!
  organizers_raw |> 
  tidyr::unnest(titles) |> 
    tidyr::unnest(social, names_sep = "_") |>
-   dplyr::select(- social_name) |>
+   dplyr::select(-social_name) |>
    tidyr::pivot_wider(id_cols = c(id_yaml, id, name, surname, titles), 
                       names_from = social_type,
                       values_from = social_link) |>
@@ -96,6 +132,14 @@ To be announced!
    dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
   bs4cards::cards(title = paste0(name, " ", surname),
                   text = title, 
-                  label_colour = "#BEAED4", 
+                  label_colour = "#BEAED47A", 
                   link = site)
 ```
+
+
+<!-- inicio font awesome -->
+
+```{=html}
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+```
+<!-- final font awesome -->
