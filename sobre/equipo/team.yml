@@ -423,9 +423,9 @@
     color: '#7FC97F'
     name: Macarena
     surname: Quiroga
-    #titles:
-    #- CIIPME-CONICET
-    #- UNaHur
+    titles:
+    - CIIPME-CONICET
+    - UNaHur
     social:
       - {name: "twitter", link: "https://twitter.com/_msquiroga"}
       - {name: "mastodon", link: "https://datasci.social/@macarenaquiroga"}         
