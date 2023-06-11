@@ -26,7 +26,6 @@ jobs:
         with:
           packages: |
             any::rmarkdown
-            github::djnavarro/bs4cards
             any::dplyr
             any::purrr
             any::tibble
@@ -36,6 +35,7 @@ jobs:
             any::yaml
             any::glue
             any::bslib
+            any::here
             
       - name: render
         run: |
