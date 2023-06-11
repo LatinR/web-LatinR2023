@@ -26,15 +26,13 @@ source(here::here("R/functions-team.R"))
 
 team_raw <- yaml::read_yaml("team.yml", readLines.warn = FALSE)
 
-chairs_raw <- team_raw[[1]] |> 
-  extract_people()
+chairs_list <- team_raw[[1]] |> 
+  extract_people()  |> 
+  dplyr::group_split(name_complete)
 
-# scientific_raw <- team_raw[[2]] |>
-#   extract_people()
-# TODO: to be announced
-
-organizers_raw <- team_raw[[3]] |>
-  extract_people()
+organizers_list <- team_raw[[3]] |>
+  extract_people() |> 
+  dplyr::group_split(name_complete)
 
 ```
 
@@ -45,67 +43,14 @@ El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores d
 
 ### Chairs LatinR
 
-
-
 ```{r}
-chairs_tidy <- chairs_raw |>
-  tidyr::unnest(titles) |>
-  tidyr::unnest(social, names_sep = "_") |>
-  dplyr::select(-social_name) |>
-  tidyr::pivot_wider(
-    id_cols = c(id_yaml, id, name, surname, titles),
-    names_from = social_type,
-    values_from = social_link
-  ) |>
-  dplyr::mutate(
-    site = stringr::str_trim(site),
-    icon_github = dplyr::case_when(
-      !is.na(github) ~ glue::glue(
-        '<a href="{github}" target="_blank"><i class="fab fa-github"></i></a>'
-      ),
-      TRUE ~ ""
-    ) ,
-    
-    icon_twitter = dplyr::case_when(
-      !is.na(twitter) ~ glue::glue(
-        '<a href="{twitter}" target="_blank"><i class="fab fa-twitter"></i></a>'
-      ),
-      TRUE ~ ""
-    ) ,
-    
-    icon_mastodon = dplyr::case_when(
-      !is.na(mastodon) ~ glue::glue(
-        '<a href="{mastodon}" target="_blank"><i class="fab fa-mastodon"></i></a>'
-      ),
-      TRUE ~ ""
-    ) ,
-    
-    icon_site = dplyr::case_when(
-      !is.na(site) ~ glue::glue(
-        '<a href="{site}" target="_blank"><i class="fas fa-home"></i></a>'
-      ),
-      TRUE ~ ""
-    ) ,
-    icons = glue::glue(
-      "{icon_site} {icon_github} {icon_mastodon} {icon_twitter}",
-      
-    ),
-    name_complete = glue::glue("{name} {surname}")
-  ) 
-```
-
-
-
-```{r}
-chairs_list <- chairs_tidy |> 
-  dplyr::group_split(name_complete)
-
 bslib::layout_column_wrap(class = "cards-display",
-  width = 1 / 2,gap = "1cm",
-  height = 300,
-  generate_card(chairs_list[[1]]),
-  generate_card(chairs_list[[2]]),
-  generate_card(chairs_list[[3]])
+  width = 1 / 2,
+  gap = "0.5cm",
+  height = 100,
+  generate_card(chairs_list[[1]], class_group =  "card-header-chairs"),
+  generate_card(chairs_list[[2]], class_group =  "card-header-chairs"),
+  generate_card(chairs_list[[3]], class_group =  "card-header-chairs")
   
 )
 ```
@@ -118,31 +63,34 @@ To be announced!
 ### Comité Organizador
 
 ```{r}
- organizers_raw |> 
- tidyr::unnest(titles) |> 
-   tidyr::unnest(social, names_sep = "_") |>
-   dplyr::select(-social_name) |>
-   tidyr::pivot_wider(id_cols = c(id_yaml, id, name, surname, titles), 
-                      names_from = social_type,
-                      values_from = social_link) |>
-   dplyr::mutate(site = ifelse(is.na(site), github, site))|>
-   dplyr::mutate(site = ifelse(is.na(site), github, site))|>
-   dplyr::mutate(site = ifelse(is.na(site), twitter, site))|>
-   dplyr::mutate(site = ifelse(is.na(site), mastodon, site))|>
-   dplyr::mutate(site = ifelse(is.na(site), linkedin, site))|>
-   dplyr::mutate(site = stringr::str_trim(site))|>  
-   dplyr::group_by(id, name, surname, site) |> 
-   dplyr::summarise(title = knitr::combine_words(titles, and = " | ")) |> 
-  bs4cards::cards(title = paste0(name, " ", surname),
-                  text = title, 
-                  label_colour = "#BEAED47A", 
-                  link = site)
+bslib::layout_column_wrap(
+  class = "cards-display",
+  width = 1 / 2,
+  gap = "0.5cm",
+  height = 100,
+  generate_card(organizers_list[[1]]),
+  generate_card(organizers_list[[2]]),
+  generate_card(organizers_list[[3]]),
+  generate_card(organizers_list[[4]]),
+  generate_card(organizers_list[[5]]),
+  generate_card(organizers_list[[6]]),
+  generate_card(organizers_list[[7]]),
+  generate_card(organizers_list[[8]]),
+  generate_card(organizers_list[[9]]),
+  generate_card(organizers_list[[10]]),
+  generate_card(organizers_list[[11]]),
+  generate_card(organizers_list[[12]]),
+  generate_card(organizers_list[[13]]),
+  generate_card(organizers_list[[14]]),
+  generate_card(organizers_list[[15]]),
+  generate_card(organizers_list[[16]])
+)
 ```
 
 
-<!-- inicio font awesome -->
+<!-- font awesome -->
 
 ```{=html}
 <script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
 ```
-<!-- final font awesome -->
+<!-- font awesome -->
