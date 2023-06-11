@@ -35,6 +35,7 @@ jobs:
             any::tidyselect
             any::yaml
             any::glue
+            any::bslib
             
       - name: render
         run: |
