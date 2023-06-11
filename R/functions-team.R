@@ -8,7 +8,8 @@ extract_people <- function(list_team) {
                  .by = c(id_yaml:surname, social)) |>
     dplyr::mutate(social = purrr::map(social, parse_social)) |>
     tidyr::unnest(titles) |>
-    dplyr::mutate(titles = paste0("- ", titles)) |> 
+    dplyr::mutate(titles = paste0("- ", titles),
+                  titles = dplyr::if_else(titles %in% c("- NA", "NA") | is.na(titles), "", titles)) |> 
     tidyr::unnest(social, names_sep = "_") |>
     dplyr::select(-social_name) |>
     tidyr::pivot_wider(
