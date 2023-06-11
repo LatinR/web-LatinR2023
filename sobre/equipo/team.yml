@@ -48,6 +48,7 @@
         - {name: "twitter", link: "https://twitter.com/yabellini"}
         - {name: "site", link: "https://yabellini.netlify.com/"}
         - {name: "mastodon", link: "https://fosstodon.org/@yabellini"}
+        - {name: "linkedin", link: "https://www.linkedin.com/in/yabellini"}
     # - id: 4
     #   name: "Maria Florencia"
     #   surname: "D'Andrea"
