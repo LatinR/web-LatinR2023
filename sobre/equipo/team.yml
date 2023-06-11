@@ -408,6 +408,7 @@
       - {name: "twitter", link: "https://twitter.com/BeaMilz"}
       - {name: "github", link: "https://github.com/beatrizmilz"}
       - {name: "site", link: "https://beamilz.com/"}
+      - {name: "linkedin", link: "https://www.linkedin.com/in/beatrizmilz/"}
   - id: 16
     level: organizer
     thumbnailUrl: default.jpg
