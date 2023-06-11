@@ -33,6 +33,13 @@ extract_people <- function(list_team) {
         TRUE ~ ""
       ) ,
       
+      icon_linkedin = dplyr::case_when(
+        !is.na(linkedin) ~ glue::glue(
+          '<a href="{linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>'
+        ),
+        TRUE ~ ""
+      ) ,
+      
       icon_mastodon = dplyr::case_when(
         !is.na(mastodon) ~ glue::glue(
           '<a href="{mastodon}" target="_blank"><i class="fab fa-mastodon"></i></a>'
@@ -46,7 +53,7 @@ extract_people <- function(list_team) {
         ),
         TRUE ~ ""
       ) ,
-      icons = glue::glue("{icon_site} {icon_github} {icon_mastodon} {icon_twitter}",),
+      icons = glue::glue("{icon_site} {icon_github} {icon_linkedin} {icon_mastodon} {icon_twitter}",),
       name_complete = glue::glue("{name} {surname}")
     )
 }
