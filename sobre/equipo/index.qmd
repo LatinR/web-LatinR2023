@@ -15,6 +15,9 @@ knitr:
   background-color: #BEAED47A;
   font-weight: bold;
 }
+.cards-display{
+  display: grid;
+}
 ```
 
 
@@ -97,8 +100,8 @@ chairs_tidy <- chairs_raw |>
 chairs_list <- chairs_tidy |> 
   dplyr::group_split(name_complete)
 
-bslib::layout_column_wrap(
-  width = 1 / 3,
+bslib::layout_column_wrap(class = "cards-display",
+  width = 1 / 2,gap = "1cm",
   height = 300,
   generate_card(chairs_list[[1]]),
   generate_card(chairs_list[[2]]),
