@@ -513,9 +513,12 @@
     surname: Ruiz Nicolini
     titles:
     - Universidad Torcuato Di Tella
+    - Ministerio de Turismo y Deportes de la Nación, Argentina
     social:
       - {name: "twitter", link: "https://twitter.com/TuQmano"}
       - {name: "github", link: "https://github.com/TuQmano"}
+      - {name: "linkedin", link: "https://www.linkedin.com/in/juanpabloruiznicolini"}
+      - {name: "site", link: "https://tuqmano.ar/"}
   - id: 27
     level: organizer
     thumbnailUrl: default.jpg
