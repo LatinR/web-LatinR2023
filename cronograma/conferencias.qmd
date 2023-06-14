@@ -26,62 +26,11 @@ knitr:
 En esta sexta edición presencial contaremos con la presencia de cuatro oradores referentes en el área de programación con R, con experiencia tanto en el ámbito académico como en la industria, comprometidos con la colaboración y promoción de ciencia, datos y software abiertos. 
 
 ```{r}
-bslib::layout_column_wrap(
-  class = "cards-display",
-  width = 1 / 2,
-  gap = "0.5cm",
-  height = 300,
-  bslib::card(
-    full_screen = FALSE,
-    bslib::card_header("Dra. Hanna Frick", class = "card-header-keynote"),
-    bslib::card_image(
-      file = "../img/posts/hanna.jpg",
-      href = "https://www.frick.ws",
-      border_radius = "all"
-    ),
-    bslib::card_body(
-      "Hanna Frick es co-fundadora de R Ladies Global, trabaja como ingeniera de software en Posit (Ex. RStudio) en el área de modelado estadístico colaborando en el desarrollo del paquete tidymodels (conjunto de paquetes para el modelado y el aprendizaje estadístico usando los principios del paquete tidyverse. Además (https://www.frick.ws)"
-    ),
-  ),
-  bslib::card(
-    full_screen = FALSE,
-    bslib::card_header("Dra. Dianne Cook", class = "card-header-keynote"),
-    bslib::card_image(
-      file = "../img/posts/dianne.jpg",
-      href = "http://www.dicook.org",
-      border_radius = "all"
-    ),
-    bslib::card_body(
-      "Dianne Cook es profesora de Business Analytics en Monash University cuyos temas de interés son la estadística computacional, visualización estadística, problemas en altas dimensiones entre otros. Es miembro del R Foundation y editora del R Journal (http://www.dicook.org)."
-    ),
-  ),
-  bslib::card(
-    full_screen = FALSE,
-    bslib::card_header("Dr. Fabrizio Scrollini", class = "card-header-keynote"),
-    bslib::card_image(
-      file = "../img/posts/Fabrizio.jpg",
-      href = "https://www.linkedin.com/in/fabrizioscrollini/",
-      border_radius = "all"
-    ),
-    bslib::card_body(
-      "Fabrizio Scrollini es el Director para América Latina y el Caribe del Equipo Humanitario de OpenStreetMap. Cofundó la Iniciativa Latinoamericana por los Datos Abiertos (ILDA) y hoy preside su directorio. Ha explorado el uso de datos y el machine learning (IA) para el desarrollo, la transparencia y la innovación en América Latina, con particular foco en el uso de datos para el bien público. En este rol Fabrizio ha colaborado con sociedad, gobierno y academia para desarrollar iniciativas e investigaciones relevantes al contexto latinoamericano. Es uno de los asesores de la Carta Internacional de los Datos Abiertos y activo contribuyente a los temas de gobierno abierto en nuestra región."
-    ),
-  ),
-  bslib::card(
-    full_screen = FALSE,
-    bslib::card_header("Dr. Max Kuhn", class = "card-header-keynote"),
-    bslib::card_image(
-      file = "../img/posts/Max.jpg",
-      href = "https://www.rstudio.com/authors/max-kuhn/",
-      border_radius = "all"
-    ),
-    bslib::card_body(
-      "Max Kuhn trabaja actualmente como ingeniero de software en Posit (Ex. Rstudio) liderando el desarrollo de software en el área del modelado estadístico anteriormente fue Director de área de estadística no clínica de Pfizer Global. Es autor de numerosos paquetes de R con foco en aprendizaje estadístico e investigación reproducible (https://www.rstudio.com/authors/max-kuhn/)."
-    ),
-  )
-  
-  
-)
+#| results: asis
+source(here::here("R/generar-info-keynotes.R"))
+info_keynotes <- generar_info_keynotes()
+
+generar_cards_keynotes(info_keynotes = info_keynotes, col_information = "info_es")
 
 ```
 

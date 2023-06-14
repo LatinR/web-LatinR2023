@@ -4,6 +4,22 @@ toc: false
 page-layout: custom
 ---
 
+```{css echo=FALSE}
+.card-header-keynote{
+  background-color: #FDC08666;
+  font-weight: bold;
+}
+
+.cards-display{
+  display: grid;
+}
+
+.html-fill-container > .html-fill-item {
+  flex: inherit;
+}
+```
+
+
 ::: {.content-visible when-profile="es"}
 ::: grid
 ::: {#banner .g-col-12}
@@ -22,6 +38,20 @@ page-layout: custom
 <br>
 :::
 :::
+
+## Conferencias
+
+```{r}
+#| results: asis
+#| echo: false
+source(here::here("R/generar-info-keynotes.R"))
+info_keynotes <- generar_info_keynotes()
+
+generar_cards_keynotes(info_keynotes, col_info = "", width_col = "20%")
+
+```
+
+
 :::
 
 ::: {.content-visible when-profile="en"}
@@ -42,6 +72,19 @@ page-layout: custom
 <br>
 :::
 :::
+
+## Keynotes
+
+```{r}
+#| results: asis
+#| echo: false
+source(here::here("R/generar-info-keynotes.R"))
+info_keynotes <- generar_info_keynotes()
+
+generar_cards_keynotes(info_keynotes, col_info = "", width_col = "20%")
+
+```
+
 :::
 
 ::: {.content-visible when-profile="pt"}
@@ -62,4 +105,17 @@ page-layout: custom
 <br>
 :::
 :::
+
+## Palestrantes principais
+
+```{r}
+#| results: asis
+#| echo: false
+source(here::here("R/generar-info-keynotes.R"))
+info_keynotes <- generar_info_keynotes()
+
+generar_cards_keynotes(info_keynotes, col_info = "", width_col = "20%")
+
+```
+
 :::
