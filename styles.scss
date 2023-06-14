@@ -146,6 +146,10 @@ h1, h2, h3, h4, h5 {
      padding: 10px;
    }
 
+.card-header{
+  font-weight: bold;
+}
+
 
 .card-header-keynote{
   background-color: #FDC08666;
@@ -166,3 +170,13 @@ h2 {
     text-align: center;
 }
 
+
+
+.card-header-sponsor {
+  background-color: rgb(231, 229, 255);
+  font-weight: bold;
+}
+
+.html-fill-container > .html-fill-item{
+  flex: inherit;
+}
