@@ -127,7 +127,7 @@ público asistente. <br><br>
 
 **Inicio recepción de trabajos**: 2 de mayo de 2023
 
-**Fecha límite para la recepción de propuestas**: 16 de junio de 2023
+**Fecha límite para la recepción de propuestas**: 30 de junio de 2023
 
 **Notificación resultados evaluación**: principios de agosto 2023
 
