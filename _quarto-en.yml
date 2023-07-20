@@ -14,5 +14,11 @@ website:
         text: "ES"    
       - text: "Home"
         href: /index.html
+      - text: About LatinR
+        menu:        
+          - href: sobre/equipo/team.qmd        
+          - href: sobre/apoyo/sponsors.qmd
+          # - href: sobre/cdc.qmd
+          # - href: sobre/ediciones-anteriores.qmd              
       - text: "News"
         href: blog/en/index.html                 

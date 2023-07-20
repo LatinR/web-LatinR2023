@@ -1,0 +1,22 @@
+---
+title: "Sponsors"
+
+listing:
+  - id: sponsors
+    template: sponsors.ejs
+    contents: sponsors.yml
+---
+
+If you want to be a Sponsor, please send an email to [latinrconf\@gmail.com](mailto:latinrconf@gmail.com).
+
+
+::: grid
+
+::: {#sponsors .g-col-1 .g-col-md-12 .g-col-xs-2}
+:::
+
+:::
+
+
+
+

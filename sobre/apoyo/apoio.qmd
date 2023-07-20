@@ -1,0 +1,22 @@
+---
+title: "Apoio"
+
+listing:
+  - id: sponsors
+    template: sponsors.ejs
+    contents: sponsors.yml
+---
+
+Caso queira ser um patrocinador do evento, envie um email para [latinrconf\@gmail.com](mailto:latinrconf@gmail.com).
+
+
+::: grid
+
+::: {#sponsors .g-col-1 .g-col-md-12 .g-col-xs-2}
+:::
+
+:::
+
+
+
+

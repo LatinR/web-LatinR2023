@@ -1,0 +1,96 @@
+---
+title: "Organizing team"
+knitr:
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+```{css echo=FALSE}
+.card-header-chairs{
+  background-color: #FDC08666;
+  font-weight: bold;
+}
+.card-header-team{
+  background-color: #BEAED47A;
+  font-weight: bold;
+}
+.cards-display{
+  display: grid;
+}
+```
+
+
+```{r}
+source(here::here("R/functions-team.R"))
+
+team_raw <- yaml::read_yaml("team.yml", readLines.warn = FALSE)
+
+chairs_list <- team_raw[[1]] |> 
+  extract_people()  |> 
+  dplyr::group_split(name_complete)
+
+organizers_list <- team_raw[[3]] |>
+  extract_people() |> 
+  dplyr::group_split(name_complete)
+
+```
+
+
+## About us
+
+On October 25, 2017, an announcement was made by Heather Turner on the R User Group (RUG) Organizers Slack: the R Foundation Conference Committee was interested in the emergence of academic-focused R events in regions not currently covered by useR! In less than a week, we had organized our first videoconference to start thinking about how to face the challenge. This quick response was not the result of mere luck, but the consequence of a year in which the R community — through its local RUGs and social media presence— grew stronger in South America. By mid November everything was set up: a name, a place, a date, and a motivated international organizing committee. The first edition took place in Buenos Aires, Argentina and the second in Santiago de Chile, Chile. This year, the latinamerican R community will meet up in Montevideo, Uruguay.
+
+### LatinR Chairs
+
+```{r}
+bslib::layout_column_wrap(class = "cards-display",
+  width = 1 / 2,
+  gap = "0.5cm",
+  height = 100,
+  generate_card(chairs_list[[1]], class_group =  "card-header-chairs"),
+  generate_card(chairs_list[[2]], class_group =  "card-header-chairs"),
+  generate_card(chairs_list[[3]], class_group =  "card-header-chairs")
+  
+)
+```
+
+
+### Scientific Committee
+
+To be announced!
+
+### Organizer Committee
+
+```{r}
+bslib::layout_column_wrap(
+  class = "cards-display",
+  width = 1 / 2,
+  gap = "0.5cm",
+  height = 100,
+  generate_card(organizers_list[[1]]),
+  generate_card(organizers_list[[2]]),
+  generate_card(organizers_list[[3]]),
+  generate_card(organizers_list[[4]]),
+  generate_card(organizers_list[[5]]),
+  generate_card(organizers_list[[6]]),
+  generate_card(organizers_list[[7]]),
+  generate_card(organizers_list[[8]]),
+  generate_card(organizers_list[[9]]),
+  generate_card(organizers_list[[10]]),
+  generate_card(organizers_list[[11]]),
+  generate_card(organizers_list[[12]]),
+  generate_card(organizers_list[[13]]),
+  generate_card(organizers_list[[14]]),
+  generate_card(organizers_list[[15]]),
+  generate_card(organizers_list[[16]])
+)
+```
+
+
+<!-- font awesome -->
+
+```{=html}
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+```
+<!-- font awesome -->
