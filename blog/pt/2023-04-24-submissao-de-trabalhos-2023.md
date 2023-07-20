@@ -103,6 +103,6 @@ não atende aos padrões mínimos de acessibilidade.
 
 **Início do recebimento das propostas**: 2 de maio de 2023
 
-**Prazo final para recebimento de propostas**: 31 de maio de 2023
+**Prazo final para recebimento de propostas**: 30 de junho de 2023
 
 **Envio do resultado**: começo de agosto
