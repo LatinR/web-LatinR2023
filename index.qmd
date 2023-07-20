@@ -27,13 +27,12 @@ page-layout: custom
 
 ## Conferencia Latinoamericana sobre Uso de R en Investigación + Desarrollo
 
-### 18 al 20 de octubre de 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+## 18 al 20 de octubre de 2023 - Montevideo, Uruguay 
 
 </section>
 
-<br>
 
-<center><a href='/blog/es/2023-04-24-presentacion-trabajos-2023.html'><button type="button" class="btn btn-light btn-lg">Convocatoria a presentar trabajos</button></a></center>
+<center><a href='https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607' target="_blank"><button type="button" class="btn btn-light btn-lg">Inscripción</button></a></center>
 
 <br>
 :::
@@ -61,13 +60,12 @@ generar_cards_keynotes(info_keynotes, col_info = "", width_col = "20%")
 
 ## Latinamerican Conference About the Use of R in R&D
 
-### October 18-20, 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+## October 18-20, 2023 - Montevideo, Uruguay 
 
 </section>
 
-<br>
 
-<center><a href='/blog/en/2023-04-24-submissions-2023.html'><button type="button" class="btn btn-light btn-lg">Call for papers</button></a></center>
+<center><a href='https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607' target="_blank"><button type="button" class="btn btn-light btn-lg">Get tickets</button></a></center>
 
 <br>
 :::
@@ -94,13 +92,12 @@ generar_cards_keynotes(info_keynotes, col_info = "", width_col = "20%")
 
 ## Conferência Latino-Americana sobre o Uso de R em Pesquisa e Desenvolvimento
 
-### 18 a 20 de outubro de 2023 - Montevideo, Uruguay {style="max-width: fit-content; max-width: -moz-fit-content;"}
+## 18 a 20 de outubro de 2023 - Montevideo, Uruguay
 
 </section>
 
-<br>
 
-<center><a href='/blog/pt/2023-04-24-submissao-de-trabalhos-2023.html'><button type="button" class="btn btn-light btn-lg">Chamada de submissão de trabalhos</button></a></center>
+<center><a href='https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607' target="_blank"><button type="button" class="btn btn-light btn-lg">Inscrição</button></a></center>
 
 <br>
 :::

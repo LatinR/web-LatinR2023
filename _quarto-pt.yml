@@ -20,6 +20,14 @@ website:
           - href: sobre/apoyo/apoio.qmd
           - href: sobre/coc/codigo-de-conduta.qmd
           - href: sobre/ediciones-anteriores/edicoes-anteriores.qmd     
+      - text: Participe
+        menu: 
+          - text: "Chamada para submissão de trabalhos"
+            href: blog/pt/2023-04-24-submissao-de-trabalhos-2023.html
+          - text: "Inscrição"
+            href: https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607
+          - text: "Preços de inscrição"
+            href: blog/pt/2023-06-08-inscriptionpt.html          
       - text: LatinR 2023
         menu: 
           - text: "Palestras convidadas"

@@ -20,6 +20,14 @@ website:
           - href: sobre/apoyo/sponsors.qmd
           - href: sobre/coc/code-of-conduct.qmd
           - href: sobre/ediciones-anteriores/previous-editions.qmd  
+      - text: Attend
+        menu: 
+          - text: "Call for Papers"
+            href: blog/en/2023-04-24-submissions-2023.html
+          - text: "Registration"
+            href: https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607
+          - text: "Ticket prices"
+            href: blog/en/2023-06-08-inscriptionen.html          
       - text: LatinR 2023
         menu: 
           - text: "Keynote Speakers"
