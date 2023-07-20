@@ -18,7 +18,7 @@ website:
         menu:        
           - href: sobre/equipo/team.qmd        
           - href: sobre/apoyo/sponsors.qmd
-          # - href: sobre/cdc.qmd
-          # - href: sobre/ediciones-anteriores.qmd              
+          - href: sobre/coc/code-of-conduct.qmd
+          - href: sobre/ediciones-anteriores/previous-editions.qmd            
       - text: "News"
         href: blog/en/index.html                 

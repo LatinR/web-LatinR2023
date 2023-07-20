@@ -18,8 +18,8 @@ website:
         menu:        
           - href: sobre/equipo/index.qmd        
           - href: sobre/apoyo/index.qmd
-          - href: sobre/cdc.qmd
-          - href: sobre/ediciones-anteriores.qmd  
+          - href: sobre/coc/index.qmd
+          - href: sobre/ediciones-anteriores/index.qmd  
       - text: Participe
         menu: 
           - text: "Llamado a Presentación de Trabajos"
