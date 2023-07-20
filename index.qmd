@@ -12,6 +12,8 @@ page-layout: custom
 
 .cards-display{
   display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .html-fill-container > .html-fill-item {
