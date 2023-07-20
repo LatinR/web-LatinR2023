@@ -31,6 +31,6 @@ website:
       - text: LatinR 2023
         menu: 
           - text: "Conferencias"
-            href: cronograma/conferencias.qmd
+            href: cronograma/conferencias/index.qmd
       - text: "Novedades"
         href: blog/es/index.html          

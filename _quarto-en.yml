@@ -19,6 +19,10 @@ website:
           - href: sobre/equipo/team.qmd        
           - href: sobre/apoyo/sponsors.qmd
           - href: sobre/coc/code-of-conduct.qmd
-          - href: sobre/ediciones-anteriores/previous-editions.qmd            
+          - href: sobre/ediciones-anteriores/previous-editions.qmd  
+      - text: LatinR 2023
+        menu: 
+          - text: "Keynote Speakers"
+            href: cronograma/conferencias/keynotes.qmd               
       - text: "News"
         href: blog/en/index.html                 

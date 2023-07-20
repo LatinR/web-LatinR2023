@@ -1,0 +1,43 @@
+---
+title: "Palestras convidadas - LatinR2023"
+knitr:
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+
+
+```{css echo=FALSE}
+.card-header-keynote{
+  background-color: #FDC08666;
+  font-weight: bold;
+}
+
+.cards-display{
+  display: grid;
+}
+
+.html-fill-container > .html-fill-item {
+  flex: inherit;
+}
+```
+
+Nesta sexta edição presencial, contaremos com a presença de quatro palestrantes proeminentes no campo da programação com R, com experiência tanto na academia quanto na indústria, comprometidos com a colaboração e a promoção da ciência, dados e software abertos. 
+
+```{r}
+#| results: asis
+source(here::here("R/generar-info-keynotes.R"))
+info_keynotes <- generar_info_keynotes()
+
+generar_cards_keynotes(info_keynotes = info_keynotes, col_information = "info_pt")
+
+```
+
+
+<!-- font awesome -->
+
+```{=html}
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+```
+<!-- font awesome -->
