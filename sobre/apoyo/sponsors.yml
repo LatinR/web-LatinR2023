@@ -13,3 +13,9 @@
     - name: Universidad de la República Uruguay
       href: https://udelar.edu.uy/portal/
       thumbnail: ../../img/partners/udelar.png
+    - name: Centro Interdisciplinario en Ciencia de Datos y Aprendizaje Automático 
+      href: https://cicada.uy/
+      thumbnail: ../../img/partners/cicada.png
+    - name: rOpenSci (Community partner)
+      href: https://ropensci.org/
+      thumbnail: ../../img/partners/ropensci.png      
