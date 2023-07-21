@@ -10,7 +10,7 @@ editor_options:
     wrap: 72
 ---
 
-#### LatinR2023 \<- "Conferência Latino-Americana sobre o uso de R em pesquisa & desenvolvimento"
+<h3><center>SUBMISSÕES ENCERRADAS!</center></h3>
 
 <br> <br> A quinta versão da conferência será realizada em Montevidéu,
 Urugai, entre os dias 18 e 20 de outubro. Este ano a chamada de
