@@ -31,6 +31,6 @@ website:
       - text: LatinR 2023
         menu: 
           - text: "Keynote Speakers"
-            href: cronograma/conferencias/keynotes.qmd               
+            href: cronograma/conferencistas/keynotes.qmd               
       - text: "News"
         href: blog/en/index.html                 

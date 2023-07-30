@@ -7,7 +7,7 @@ listing:
     contents: sponsors.yml
 ---
 
-Si quieres ser un sponsor envia un mail a [latinrconf\@gmail.com](mailto:latinrconf@gmail.com).
+Si tienes interés en patrocinar el evento, por favor envía un mensaje a [latinr.conf\@gmail.com](mailto:latinr.conf@gmail.com).
 
 
 ::: grid

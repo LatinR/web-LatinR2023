@@ -47,7 +47,7 @@ page-layout: custom
 :::
 :::
 
-## Conferencias
+## Conferencistas
 
 ```{r}
 #| results: asis

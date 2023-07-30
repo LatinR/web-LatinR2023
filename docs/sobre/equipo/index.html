@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<meta name="generator" content="quarto-1.3.353">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -17,7 +17,7 @@ div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
   width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
 </style>
@@ -58,6 +58,8 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Enviar"
   }
 }</script>
+<script src="../../site_libs/bslib-tag-require-0.4.2/tag-require.js"></script>
+<link href="../../site_libs/htmltools-fill-0.5.5/fill.css" rel="stylesheet">
 
 
 </head>
@@ -73,56 +75,88 @@ ul.task-list li input[type="checkbox"] {
     <img src="../../img/logo.png" alt="Latin-R logo" class="navbar-logo">
     </a>
   </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../.././pt/index.html">
+    <a class="nav-link" href="../.././pt/index.html" rel="" target="">
  <span class="menu-text">PT</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../.././en/index.html">
+    <a class="nav-link" href="../.././en/index.html" rel="" target="">
  <span class="menu-text">EN</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text"><strong>ES</strong></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Principal</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sobre-latinr" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-sobre-latinr" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
  <span class="menu-text">Sobre LatinR</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-sobre-latinr">    
         <li>
-    <a class="dropdown-item" href="../../sobre/equipo/index.html">
+    <a class="dropdown-item" href="../../sobre/equipo/index.html" rel="" target="">
  <span class="dropdown-text">Equipo organizador</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../sobre/apoyo/index.html">
+    <a class="dropdown-item" href="../../sobre/apoyo/index.html" rel="" target="">
  <span class="dropdown-text">Apoyo</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../sobre/cdc.html">
+    <a class="dropdown-item" href="../../sobre/coc/index.html" rel="" target="">
  <span class="dropdown-text">Código de Conducta</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../sobre/ediciones-anteriores.html">
+    <a class="dropdown-item" href="../../sobre/ediciones-anteriores/index.html" rel="" target="">
  <span class="dropdown-text">Ediciones anteriores</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-participa" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Participa</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-participa">    
+        <li>
+    <a class="dropdown-item" href="../../blog/es/2023-04-24-presentacion-trabajos-2023.html" rel="" target="">
+ <span class="dropdown-text">Llamado a presentación de trabajos</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607" rel="" target="">
+ <span class="dropdown-text">Inscripción</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../blog/es/2023-06-08-inscripcion.html" rel="" target="">
+ <span class="dropdown-text">Costo de inscripción</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-latinr-2023" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">LatinR 2023</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-latinr-2023">    
+        <li>
+    <a class="dropdown-item" href="../../cronograma/conferencistas/index.html" rel="" target="">
+ <span class="dropdown-text">Conferencistas</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../blog/es/index.html">
+    <a class="nav-link" href="../../blog/es/index.html" rel="" target="">
  <span class="menu-text">Novedades</span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -153,36 +187,58 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <div class="cell">
-
+<style type="text/css">
+.card-header-chairs{
+  background-color: #FDC08666;
+  font-weight: bold;
+}
+.card-header-team{
+  background-color: #BEAED47A;
+  font-weight: bold;
+}
+.cards-display{
+  display: grid;
+}
+</style>
 </div>
 <section id="quiénes-somos" class="level2">
 <h2 class="anchored" data-anchor-id="quiénes-somos">Quiénes somos</h2>
-<p>El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores de Grupos de Usuarios de R (RUG) que el Comité de Conferencias de la R Foundation estaba interesado en la aparición de eventos sobre R con un enfoque académico en regiones que no se encuentran actualmente cubiertas por useR!. En menos de una semana ya teníamos organizada nuestra primera videoconferencia para pensar cómo enfrentar el desafío. Esta rápida respuesta no fue solo suerte, sino la consecuencia de un año en el que la comunidad de R –a través de los RUGs locales y la presencia en redes sociales– creció significativamente en Sudamérica. Para mediados de noviembre ya estaba todo definido: un nombre, un lugar, una fecha y un comité organizador internacional motivado. La primera edición se realizó en Buenos Aires, Argentina y la segunda en Santiago de Chile, Chile. Este año, la comunidad de R en Latinomérica se junta en Montevideo, Uruguay.</p>
+<p>El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores de Grupos de Usuarios de R (RUG) que el Comité de Conferencias de la R Foundation estaba interesado en la aparición de eventos sobre R con un enfoque académico en regiones que no se encuentran actualmente cubiertas por useR!. En menos de una semana ya teníamos organizada nuestra primera videoconferencia para pensar cómo enfrentar el desafío. Esta rápida respuesta no fue solo suerte, sino la consecuencia de un año en el que la comunidad de R –a través de los RUGs locales y la presencia en redes sociales– creció significativamente en Sudamérica. Para mediados de noviembre ya estaba todo definido: un nombre, un lugar, una fecha y un comité organizador internacional motivado. La primera edición se realizó en Buenos Aires, Argentina y la segunda en Santiago de Chile, Chile. Luego de las ediciones virtuales entre los años 2020 y 2022, este año la comunidad de R en Latinomérica se junta en Montevideo, Uruguay.</p>
 <section id="chairs-latinr" class="level3">
 <h3 class="anchored" data-anchor-id="chairs-latinr">Chairs LatinR</h3>
 <div class="cell">
 <div class="cell-output-display">
-<div>
-<div class="row p-0 row-cols-1 row-cols-md-2 row-cols-lg-3" style="margin-left: -.2rem; margin-right: -.2rem; margin-top: 1rem; margin-bottom: 1rem; ">
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah " style="padding: .2rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: inherits; border-style:solid; border-color:inherits; border-width:1px; border-radius: .6rem .6rem .6rem .6rem ;">
-<h5 class="card-title my-auto px-3 pt-3 pb-1 anchored">Natalia da Silva</h5>
-<p class="card-text my-auto px-3 pb-3 pt-1">Instituto de Estadística, Facultad de Ciencias Económicas y de Administración, Universidad de la República |
-R-Ladies Montevideo, Uruguay</p>
+<div class="bslib-column-wrap html-fill-item cards-display" data-require-bs-caller="layout_column_wrap()" data-require-bs-version="5" style="grid-template-columns:1fr 1fr;grid-auto-rows:1fr;--bslib-column-wrap-height:100px;--bslib-column-wrap-height-mobile:auto;gap:0.5cm;">
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-chairs">
+Natalia da Silva
+<a href="http://natydasilva.com" target="_blank"><i class="fas fa-home"></i></a>   <a href="https://mastodon.social/@pacocuak" target="_blank"><i class="fab fa-mastodon"></i></a> <a href="https://twitter.com/pacocuak" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Instituto de Estadística, Facultad de Ciencias Económicas y de Administración, Universidad de la República<br> - R-Ladies Montevideo, Uruguay</div>
 </div>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah " style="padding: .2rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: inherits; border-style:solid; border-color:inherits; border-width:1px; border-radius: .6rem .6rem .6rem .6rem ;">
-<h5 class="card-title my-auto px-3 pt-3 pb-1 anchored">Riva Quiroga</h5>
-<p class="card-text my-auto px-3 pb-3 pt-1">R-Ladies Santiago / Valparaíso, Chile + Global Team |
-Programming Historian / ProgHist Ltd.</p>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-chairs">
+Riva Quiroga
+<a href="http://rivaquiroga.cl" target="_blank"><i class="fas fa-home"></i></a> <a href="https://github.com/rivaquiroga" target="_blank"><i class="fab fa-github"></i></a>  <a href="https://mastodon.social/@rivaquiroga" target="_blank"><i class="fab fa-mastodon"></i></a> <a href="https://twitter.com/rivaquiroga" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- R-Ladies Santiago / Valparaíso, Chile + Global Team<br> - Programming Historian / ProgHist Ltd.<br> - Facultad de Letras, Universidad Católica de Chile</div>
 </div>
 </div>
-<div class="card bg-transparent m-0 border-0 collapse.show bs4cards-blahblahblah " style="padding: .2rem ; border-width: 0; border-radius: .6rem .6rem .6rem .6rem ;">
-<div class="card-body justify-content-end m-0 p-0" style="visibility: visible; background-color: inherits; border-style:solid; border-color:inherits; border-width:1px; border-radius: .6rem .6rem .6rem .6rem ;">
-<h5 class="card-title my-auto px-3 pt-3 pb-1 anchored">Yanina Bellini Saibene</h5>
-<p class="card-text my-auto px-3 pb-3 pt-1">ROpenSci |
-R-Ladies Santa Rosa, Argentina + Global Team</p>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-chairs">
+Yanina Bellini Saibene
+<a href="https://yabellini.netlify.com/" target="_blank"><i class="fas fa-home"></i></a>  <a href="https://www.linkedin.com/in/yabellini" target="_blank"><i class="fab fa-linkedin"></i></a> <a href="https://fosstodon.org/@yabellini" target="_blank"><i class="fab fa-mastodon"></i></a> <a href="https://twitter.com/yabellini" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- ROpenSci<br> - R-Ladies Santa Rosa, Argentina + Global Team</div>
 </div>
 </div>
 </div>
@@ -192,11 +248,195 @@ R-Ladies Santa Rosa, Argentina + Global Team</p>
 </section>
 <section id="comité-científico" class="level3">
 <h3 class="anchored" data-anchor-id="comité-científico">Comité Científico</h3>
-<p>TO DO</p>
+<p>To be announced!</p>
 </section>
 <section id="comité-organizador" class="level3">
 <h3 class="anchored" data-anchor-id="comité-organizador">Comité Organizador</h3>
-<p>TO DO</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="bslib-column-wrap html-fill-item cards-display" data-require-bs-caller="layout_column_wrap()" data-require-bs-version="5" style="grid-template-columns:1fr 1fr;grid-auto-rows:1fr;--bslib-column-wrap-height:100px;--bslib-column-wrap-height-mobile:auto;gap:0.5cm;">
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Beatriz Milz
+<a href="https://beamilz.com/" target="_blank"><i class="fas fa-home"></i></a> <a href="https://github.com/beatrizmilz" target="_blank"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/beatrizmilz/" target="_blank"><i class="fab fa-linkedin"></i></a>  <a href="https://twitter.com/BeaMilz" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Universidad de São Paulo<br> - Curso-R<br> - R-Ladies São Paulo, Brasil</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Bruna Wundervald
+    <a href="https://twitter.com/bwundervald" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Maynooth University</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Daniela Vázquez Leggiadro
+   <a href="https://mastodonte.tech/@d4tagirl" target="_blank"><i class="fab fa-mastodon"></i></a> <a href="https://twitter.com/d4tagirl" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- R-Ladies Montevideo, Uruguay</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Jesica Formoso
+    <a href="https://twitter.com/JesiFormoso" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- CIIPME-CONICET<br> - R-Ladies Buenos Aires, Argentina<br> - MetaDocencia</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+José Daniel Conejeros Pavez
+<a href="https://jd-conejeros.com/" target="_blank"><i class="fas fa-home"></i></a> <a href="https://github.com/JDConejeros" target="_blank"><i class="fab fa-github"></i></a>  <a href="https://mastodon.social/@d4tagirl" target="_blank"><i class="fab fa-mastodon"></i></a> <a href="https://twitter.com/JDConejeros" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Estadística - Escuela de Gobierno, Pontificia Universidad Católica de Chile</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Juan Pablo Ruiz Nicolini
+<a href="https://tuqmano.ar/" target="_blank"><i class="fas fa-home"></i></a> <a href="https://github.com/TuQmano" target="_blank"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/juanpabloruiznicolini" target="_blank"><i class="fab fa-linkedin"></i></a>  <a href="https://twitter.com/TuQmano" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Universidad Torcuato Di Tella<br> - Ministerio de Turismo y Deportes de la Nación, Argentina</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Julieta Laurino
+    <a href="https://twitter.com/JulietaLaurino" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Facultad de Cs. Exactas y Naturales, Universidad de Buenos Aires</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Luis D. Verde Arregoitia
+    <a href="https://twitter.com/LuisDVerde" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Instituto de Ecología A.C. (INECOL)</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Macarena Quiroga
+   <a href="https://datasci.social/@macarenaquiroga" target="_blank"><i class="fab fa-mastodon"></i></a> <a href="https://twitter.com/_msquiroga" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- CIIPME-CONICET<br> - UNaHur</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+María Nanton
+    <a href="https://twitter.com/bynans1" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Universidad de Buenos Aires, Argentina</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Mauro Loprete
+    <a href="https://twitter.com/mloprete17" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- COGNUS</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Monica Alonso
+    <a href="https://twitter.com/MonicaLA2000" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- R-Ladies Buenos Aires, Argentina</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Natalia Riquelme
+   <a href="https://mastodon.social/@nriquelmes" target="_blank"><i class="fab fa-mastodon"></i></a> <a href="https://twitter.com/NatyRiquelmeS" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- R-Ladies Concepción, Chile</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Patricia Loto
+    <a href="https://twitter.com/patriloto" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Metadocencia<br> - Facultad de Ciencias Agrarias, UNNE</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Roberto Villegas-Diaz
+ <a href="https://github.com/villegar" target="_blank"><i class="fab fa-github"></i></a> <a href="https://www.linkedin.com/in/roberto-villegas-diaz" target="_blank"><i class="fab fa-linkedin"></i></a>  <a href="https://twitter.com/r_villegas_diaz" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+<div class="card-body" style="flex:0 0 auto;">- Universidad de Liverpool</div>
+</div>
+</div>
+</div>
+<div class="html-fill-container">
+<div class="html-fill-item html-fill-container">
+<div class="card bslib-card html-fill-item html-fill-container" data-require-bs-caller="card()" data-require-bs-version="5">
+<div class="card-header card-header-team">
+Tatiana Peixoto
+  <a href="http://linkedin.com/in/tatiana-peixoto-gonçalves-a40a0319" target="_blank"><i class="fab fa-linkedin"></i></a>  
+</div>
+<div class="card-body" style="flex:0 0 auto;">- R-Ladies São Paulo, Brasil</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+<!-- font awesome -->
 
 
 </section>
@@ -230,9 +470,23 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
   const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
     }
   });
   clipboard.on('success', function(e) {
@@ -297,6 +551,92 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return note.innerHTML;
     });
   }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
   const findCites = (el) => {
     const parentEl = el.parentElement;
     if (parentEl) {
@@ -339,7 +679,10 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center">Copyright © 2023, LatinR Team</div>
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">Copyright © 2023, LatinR Team</div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">

@@ -1,18 +1,18 @@
     - name: R Consortium
       href: https://r-consortium.org
       thumbnail: https://www.r-consortium.org/wp-content/uploads/sites/13/2016/09/RConsortium_Horizontal_Pantone.png
-    - name: Appsilon
-      href: https://appsilon.com/
-      thumbnail: ../../img/partners/Appsilon.svg     
+    - name: Instituto de Estadística
+      href: https://iesta.fcea.udelar.edu.uy/
+      thumbnail: ../../img/partners/iesta.jpg 
     - name: Facultad de Ciencias Económicas y de Administración
       href: http://eva.fcea.edu.uy/
       thumbnail: ../../img/partners/FCEA.png
-    - name: Instituto de Estadística
-      href: https://iesta.fcea.udelar.edu.uy/
-      thumbnail: ../../img/partners/iesta.jpg   
     - name: Universidad de la República Uruguay
       href: https://udelar.edu.uy/portal/
       thumbnail: ../../img/partners/udelar.png
+    - name: Appsilon
+      href: https://appsilon.com/
+      thumbnail: ../../img/partners/Appsilon.svg     
     - name: Centro Interdisciplinario en Ciencia de Datos y Aprendizaje Automático 
       href: https://cicada.uy/
       thumbnail: ../../img/partners/cicada.png
