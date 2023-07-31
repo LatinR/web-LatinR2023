@@ -52,5 +52,13 @@
   {
     "listing": "/sobre/apoyo/index.html",
     "items": []
+  },
+  {
+    "listing": "/sobre/apoyo/sponsors.html",
+    "items": []
+  },
+  {
+    "listing": "/sobre/apoyo/apoio.html",
+    "items": []
   }
 ]

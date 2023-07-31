@@ -20,17 +20,17 @@ website:
           - href: sobre/apoyo/index.qmd
           - href: sobre/coc/index.qmd
           - href: sobre/ediciones-anteriores/index.qmd  
-      - text: Participe
+      - text: Participa
         menu: 
-          - text: "Llamado a Presentación de Trabajos"
+          - text: "Llamado a presentación de trabajos"
             href: blog/es/2023-04-24-presentacion-trabajos-2023.html
           - text: "Inscripción"
             href: https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607
-          - text: "Precios de Inscripción"
+          - text: "Costo de inscripción"
             href: blog/es/2023-06-08-inscripcion.html  
       - text: LatinR 2023
         menu: 
-          - text: "Conferencias"
-            href: cronograma/conferencias/index.qmd
+          - text: "Conferencistas"
+            href: cronograma/conferencistas/index.qmd
       - text: "Novedades"
         href: blog/es/index.html          

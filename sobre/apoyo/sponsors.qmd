@@ -7,7 +7,7 @@ listing:
     contents: sponsors.yml
 ---
 
-If you want to be a Sponsor, please send an email to [latinrconf\@gmail.com](mailto:latinrconf@gmail.com).
+If you want to be a Sponsor, please send an email to [latinr.conf\@gmail.com](mailto:latinr.conf@gmail.com).
 
 
 ::: grid

@@ -9,12 +9,12 @@ ref: keynotes-2023
 
 ### Inscripción
 
-<br> ¡No te pierdas la sexta edición de LatinR! Este año nos reunimos de manera presencial en Montevideo, Uruguay para aprender sobre los últimos desarrollos de R en nuestra región. El programa incluye talleres prácticos, charlas y sesiones de diálogo con presentadores.
+<br> ¡No te pierdas la sexta edición de LatinR! Este año nos reunimos de manera presencial en Montevideo, Uruguay, para aprender sobre los últimos desarrollos de R en nuestra región. El programa incluye talleres prácticos, charlas y sesiones de diálogo con presentadores.
 <br>
 
-##### Precios
+##### Costos de inscripción (en dólares)
 
-_Inscripción temprana: Las ventas terminan el 1ro de Agosto, 2023_
+_Inscripción temprana: Las ventas terminan el 1 de septiembre, 2023_
 
 - Industria/Industry $30.00
 
@@ -37,7 +37,7 @@ _Inscripción temprana: Las ventas terminan el 1ro de Agosto, 2023_
 <br>
 
 
-_Inscripciones regulares: Las ventas terminan el 1ro de Oct, 2023_
+_Inscripciones regulares: Las ventas terminan el 1 de Oct, 2023_
 
 - Industria/Industry 
 
@@ -62,4 +62,4 @@ _Inscripciones regulares: Las ventas terminan el 1ro de Oct, 2023_
 
 
 
-Te puedes registrar utilizando [eventbrite en este link](https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb) seleccionando el tipo de ticket correspondiente.
+El registro se realiza a través de [Eventbrite](https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=escb), donde podrás seleccionar el tipo de ticket que corresponda.

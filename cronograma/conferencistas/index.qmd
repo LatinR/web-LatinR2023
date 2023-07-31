@@ -23,7 +23,7 @@ knitr:
 }
 ```
 
-En esta sexta edición presencial contaremos con la presencia de cuatro oradores referentes en el área de programación con R, con experiencia tanto en el ámbito académico como en la industria, comprometidos con la colaboración y promoción de ciencia, datos y software abiertos. 
+En esta sexta edición de la conferencia contaremos con la presencia de cuatro oradores que son referentes en el área de programación con R, con experiencia tanto en el ámbito académico como en la industria y en organizaciones de la sociedad civil. Se destacan por su compromiso con la colaboración y la promoción de ciencia, datos y sofware abiertos. 
 
 ```{r}
 #| results: asis

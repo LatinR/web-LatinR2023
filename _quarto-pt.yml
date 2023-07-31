@@ -31,7 +31,7 @@ website:
       - text: LatinR 2023
         menu: 
           - text: "Palestras convidadas"
-            href: cronograma/conferencias/palestras-convidadas.qmd          
+            href: cronograma/conferencistas/palestras-convidadas.qmd          
       - text: "Novidades"
         href: blog/pt/index.html                 
       
