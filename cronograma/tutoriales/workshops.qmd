@@ -17,11 +17,18 @@ knitr:
 **Language:** English
 
 **Description:** This workshop provides an introduction to machine learning with R using the tidymodels framework, a collection of packages for modeling and machine learning using tidyverse principles. We will build, evaluate, and compare predictive models. Along the way, we’ll learn about key concepts in machine learning including overfitting and resampling. Learners will gain knowledge about good predictive modeling practices, as well as hands-on experience using tidymodels packages like parsnip, rsample, yardstick, and workflows.
-Is this workshop for me?
+
+
+**Is this workshop for me?**
+
 This course assumes intermediate R knowledge. This workshop is for you if:
+
 * You can use the magrittr pipe %>% and/or native pipe |>
+
 * You are familiar with functions from dplyr, tidyr, and ggplot2
+
 * You can read data into R, transform and reshape data, and make a wide variety of graphs
+
 We expect participants to have some exposure to basic statistical concepts, but NOT intermediate or expert familiarity with modeling or machine learning.
 
 ## Using and contributing to the data.table package for efficient big data analysis
@@ -34,16 +41,23 @@ We expect participants to have some exposure to basic statistical concepts, but 
 
 **Description:** data.table is one of the most efficient open-source in-memory data manipulation packages available today. First released to CRAN by Matt Dowle in 2006, it continues to grow in popularity, and now over 1400 other CRAN packages depend on data.table. This three hour tutorial will start with data reading from CSV, discuss basic and advanced data manipulation topics, and finally will end with a discussion about how you can contribute to data.table. In each part of the tutorial, you will be asked to solve a few exercises, to practice each new concept.
 
+
 Outline:
+
 - Efficiently reading CSV files into R: fread
+
 - Introducing general form of a data.table query - DT[i, j, by], or
 for those familiar with SQL: DT[where, select|update, group by]
+
 - Subsets and joins - exploring similarities between subsets and joins
 is key to understanding how data.table works.
+
 - Fast and flexible grouped aggregations and updates
-- quick look at other new and useful features in the recent releases,
-including CSV file writer (fwrite) and rolling/non-equi joins.
+
+- quick look at other new and useful features in the recent releases, including CSV file writer (fwrite) and rolling/non-equi joins.
+
 - Using data.table in your own package that you want to put on CRAN.
+
 - Contributing to data.table via issues, pull requests, translations,
 travel awards, community governance.
 
