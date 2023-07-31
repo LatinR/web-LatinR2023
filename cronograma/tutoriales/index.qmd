@@ -1,0 +1,95 @@
+---
+title: "Tutoriales"
+knitr:
+  opts_chunk:
+    echo: false
+    message: false
+    warning: false
+---
+
+
+## Introduction to Machine Learning with tidymodels
+
+**Instructors:** Dra. Hannah Frick & Dr. Max Kuhn
+
+**Date and time:** 18/10 - 9:00 - 12:30 & 13:30 - 17:00
+
+**Language:** English
+
+**Description:** This workshop provides an introduction to machine learning with R using the tidymodels framework, a collection of packages for modeling and machine learning using tidyverse principles. We will build, evaluate, and compare predictive models. Along the way, we’ll learn about key concepts in machine learning including overfitting and resampling. Learners will gain knowledge about good predictive modeling practices, as well as hands-on experience using tidymodels packages like parsnip, rsample, yardstick, and workflows.
+Is this workshop for me?
+This course assumes intermediate R knowledge. This workshop is for you if:
+* You can use the magrittr pipe %>% and/or native pipe |>
+* You are familiar with functions from dplyr, tidyr, and ggplot2
+* You can read data into R, transform and reshape data, and make a wide variety of graphs
+We expect participants to have some exposure to basic statistical concepts, but NOT intermediate or expert familiarity with modeling or machine learning.
+
+## Using and contributing to the data.table package for efficient big data analysis
+
+**Instructor:** Toby Dylan Hocking
+
+**Date and time:** 18/10 - 9:00-12:30
+
+**Language:** English
+
+**Description:** data.table is one of the most efficient open-source in-memory data manipulation packages available today. First released to CRAN by Matt Dowle in 2006, it continues to grow in popularity, and now over 1400 other CRAN packages depend on data.table. This three hour tutorial will start with data reading from CSV, discuss basic and advanced data manipulation topics, and finally will end with a discussion about how you can contribute to data.table. In each part of the tutorial, you will be asked to solve a few exercises, to practice each new concept.
+
+Outline:
+- Efficiently reading CSV files into R: fread
+- Introducing general form of a data.table query - DT[i, j, by], or
+for those familiar with SQL: DT[where, select|update, group by]
+- Subsets and joins - exploring similarities between subsets and joins
+is key to understanding how data.table works.
+- Fast and flexible grouped aggregations and updates
+- quick look at other new and useful features in the recent releases,
+including CSV file writer (fwrite) and rolling/non-equi joins.
+- Using data.table in your own package that you want to put on CRAN.
+- Contributing to data.table via issues, pull requests, translations,
+travel awards, community governance.
+
+Background knowledge: Familiarity with base R and/or SQL is useful but
+is not absolutely essential.
+
+Requirements: You will need your laptop with the latest version of R
+and latest stable (CRAN) version of data.table already installed.
+
+Instructor biography: Toby Dylan Hocking is a contributor to data.table, professor of computer science at Northern Arizona University, and principal investigator for a National Science Foundation funded project about expanding the open-source ecosystem
+around data.table.
+
+Package Authors: Matt Dowle, Arun Srinivasan, and many other
+contributors, including myself.
+
+Link: http://r-datatable.com
+
+
+## Creating data plots for effective decision-making using statistical inference with R
+
+**Instructor:** Dra. Dianne Cook
+
+**Date and time:** 18/10 - 13:30-17:00
+
+**Language:** English
+
+**Description:** To be annouced
+
+## Creación de reportes reproducibles con Quarto
+
+**Instructor:** Riva Quiroga
+
+**Date and time:** 18/10 - 13:30 - 17:00
+
+**Language:** Español
+
+**Description:** To be annouced
+
+
+## Introducción a Shiny
+
+
+**Instructor:** Federico Rivadeneira
+
+**Date and time:** 18/10 - 9:00 - 12:30
+
+**Language:** Español
+
+**Description:** To be annouced

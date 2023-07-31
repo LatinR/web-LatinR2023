@@ -32,5 +32,7 @@ website:
         menu: 
           - text: "Conferencistas"
             href: cronograma/conferencistas/index.qmd
+          - text: "Tutoriales"
+            href: cronograma/tutoriales/index.qmd            
       - text: "Novedades"
         href: blog/es/index.html          
