@@ -1,5 +1,5 @@
 ---
-title: "Tutoriales"
+title: "Workshops"
 knitr:
   opts_chunk:
     echo: false
@@ -10,13 +10,13 @@ knitr:
 
 ## Introduction to Machine Learning with tidymodels
 
-**Instructores:** Dra. Hannah Frick & Dr. Max Kuhn
+**Instrutores:** Dra. Hannah Frick & Dr. Max Kuhn
 
-**Fecha y hora:** 18/10 - 9:00 - 12:30 & 13:30 - 17:00
+**Data e horário:** 18/10 - 9:00 - 12:30 & 13:30 - 17:00
 
 **Idioma:** English
 
-**Descripción:** This workshop provides an introduction to machine learning with R using the tidymodels framework, a collection of packages for modeling and machine learning using tidyverse principles. We will build, evaluate, and compare predictive models. Along the way, we’ll learn about key concepts in machine learning including overfitting and resampling. Learners will gain knowledge about good predictive modeling practices, as well as hands-on experience using tidymodels packages like parsnip, rsample, yardstick, and workflows.
+**Descrição:** This workshop provides an introduction to machine learning with R using the tidymodels framework, a collection of packages for modeling and machine learning using tidyverse principles. We will build, evaluate, and compare predictive models. Along the way, we’ll learn about key concepts in machine learning including overfitting and resampling. Learners will gain knowledge about good predictive modeling practices, as well as hands-on experience using tidymodels packages like parsnip, rsample, yardstick, and workflows.
 Is this workshop for me?
 This course assumes intermediate R knowledge. This workshop is for you if:
 * You can use the magrittr pipe %>% and/or native pipe |>
@@ -26,13 +26,13 @@ We expect participants to have some exposure to basic statistical concepts, but 
 
 ## Using and contributing to the data.table package for efficient big data analysis
 
-**Instructor:** Toby Dylan Hocking
+**Instrutor:** Toby Dylan Hocking
 
-**Fecha y hora:** 18/10 - 9:00-12:30
+**Data e horário:** 18/10 - 9:00-12:30
 
 **Idioma:** English
 
-**Descripción:** data.table is one of the most efficient open-source in-memory data manipulation packages available today. First released to CRAN by Matt Dowle in 2006, it continues to grow in popularity, and now over 1400 other CRAN packages depend on data.table. This three hour tutorial will start with data reading from CSV, discuss basic and advanced data manipulation topics, and finally will end with a discussion about how you can contribute to data.table. In each part of the tutorial, you will be asked to solve a few exercises, to practice each new concept.
+**Descrição:** data.table is one of the most efficient open-source in-memory data manipulation packages available today. First released to CRAN by Matt Dowle in 2006, it continues to grow in popularity, and now over 1400 other CRAN packages depend on data.table. This three hour tutorial will start with data reading from CSV, discuss basic and advanced data manipulation topics, and finally will end with a discussion about how you can contribute to data.table. In each part of the tutorial, you will be asked to solve a few exercises, to practice each new concept.
 
 Outline:
 - Efficiently reading CSV files into R: fread
@@ -64,32 +64,32 @@ Link: http://r-datatable.com
 
 ## Creating data plots for effective decision-making using statistical inference with R
 
-**Instructora:** Dra. Dianne Cook
+**Instrutora:** Dra. Dianne Cook
 
-**Fecha y hora:** 18/10 - 13:30-17:00
+**Data e horário:** 18/10 - 13:30-17:00
 
-**Idioma:** English
+**Language:** English
 
-**Descripción:** En breve
+**Descrição:** To be annouced
 
 ## Creación de reportes reproducibles con Quarto
 
-**Instructora:** Riva Quiroga
+**Instrutora:** Riva Quiroga
 
-**Fecha y hora:** 18/10 - 13:30 - 17:00
+**Data e horário:** 18/10 - 13:30 - 17:00
 
 **Idioma:** Español
 
-**Descripción:** En breve
+**Descrição:** To be annouced
 
 
 ## Introducción a Shiny
 
 
-**Instructor:** Federico Rivadeneira
+**Instrutor:** Federico Rivadeneira
 
-**Fecha y hora:** 18/10 - 9:00 - 12:30
+**Data e horário:** 18/10 - 9:00 - 12:30
 
 **Idioma:** Español
 
-**Descripción:** En breve
+**Descrição:** To be annouced
