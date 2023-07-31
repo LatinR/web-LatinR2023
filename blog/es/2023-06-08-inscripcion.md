@@ -14,7 +14,7 @@ ref: keynotes-2023
 
 ##### Costos de inscripción (en dólares)
 
-_Inscripción temprana: Las ventas terminan el 1 de septiembre, 2023_
+_Inscripción temprana: Las ventas terminan el 31 de agosto, 2023_
 
 - Industria/Industry $30.00
 

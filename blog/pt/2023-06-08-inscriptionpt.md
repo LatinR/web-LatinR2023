@@ -14,7 +14,7 @@ ref: keynotes-2023
 
 ##### Preços
 
-_Early bird: Sales end on Aug 1, 2023_
+_Early bird: Sales end on Aug 31, 2023_
 
 - Industria/Industry $30.00
 
