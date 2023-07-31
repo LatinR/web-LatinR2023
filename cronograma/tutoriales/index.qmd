@@ -42,7 +42,8 @@ We expect participants to have some exposure to basic statistical concepts, but 
 **Descripción:** data.table is one of the most efficient open-source in-memory data manipulation packages available today. First released to CRAN by Matt Dowle in 2006, it continues to grow in popularity, and now over 1400 other CRAN packages depend on data.table. This three hour tutorial will start with data reading from CSV, discuss basic and advanced data manipulation topics, and finally will end with a discussion about how you can contribute to data.table. In each part of the tutorial, you will be asked to solve a few exercises, to practice each new concept.
 
 
-Outline:
+
+**Outline**:
 
 - Efficiently reading CSV files into R: fread
 
@@ -61,19 +62,19 @@ is key to understanding how data.table works.
 - Contributing to data.table via issues, pull requests, translations,
 travel awards, community governance.
 
-Background knowledge: Familiarity with base R and/or SQL is useful but
+**Background knowledge**: Familiarity with base R and/or SQL is useful but
 is not absolutely essential.
 
-Requirements: You will need your laptop with the latest version of R
+**Requirements**: You will need your laptop with the latest version of R
 and latest stable (CRAN) version of data.table already installed.
 
-Instructor biography: Toby Dylan Hocking is a contributor to data.table, professor of computer science at Northern Arizona University, and principal investigator for a National Science Foundation funded project about expanding the open-source ecosystem
+**Instructor biography**: Toby Dylan Hocking is a contributor to data.table, professor of computer science at Northern Arizona University, and principal investigator for a National Science Foundation funded project about expanding the open-source ecosystem
 around data.table.
 
-Package Authors: Matt Dowle, Arun Srinivasan, and many other
+**Package Authors**: Matt Dowle, Arun Srinivasan, and many other
 contributors, including myself.
 
-Link: http://r-datatable.com
+**Link**: <http://r-datatable.com>
 
 
 ## Creating data plots for effective decision-making using statistical inference with R
