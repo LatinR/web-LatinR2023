@@ -84,7 +84,7 @@ Link: http://r-datatable.com
 
 **Language:** English
 
-**Descrição:** To be annouced
+**Descrição:** Em breve
 
 ## Creación de reportes reproducibles con Quarto
 
@@ -94,7 +94,7 @@ Link: http://r-datatable.com
 
 **Idioma:** Español
 
-**Descrição:** To be annouced
+**Descrição:** Em breve
 
 
 ## Introducción a Shiny
@@ -106,4 +106,4 @@ Link: http://r-datatable.com
 
 **Idioma:** Español
 
-**Descrição:** To be annouced
+**Descrição:** Em breve
