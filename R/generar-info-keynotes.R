@@ -8,12 +8,12 @@ generar_info_keynotes <- function(){
     info_en = "Dianne Cook is a Professor of Business Analytics at Monash University, whose research interests include computational statistics, statistical visualization, high-dimensional problems, among others. She is a member of the R Foundation and serves as an editor for the R Journal (http://www.dicook.org)."
     ) |> 
   tibble::add_row(
-  name = "Dra. Hanna Frick",
+  name = "Dra. Hannah Frick",
   href = "https://www.frick.ws",
-  img = "img/posts/hanna.jpg",
-  info_es = "Hanna Frick es co-fundadora de R Ladies Global, trabaja como ingeniera de software en Posit (ex RStudio) en el área de modelado estadístico. Colabora en el desarrollo de tidymodels, el conjunto de paquetes para modelado y aprendizaje estadístico inspirado en los principios del Tidyverse (https://www.frick.ws).",
-  info_pt = "Hanna Frick é co-fundadora do R Ladies Global e trabalha como engenheira de software na Posit (anteriormente RStudio) na área de modelagem estatística, colaborando no desenvolvimento do pacote tidymodels (um conjunto de pacotes para modelagem e aprendizado estatístico usando os princípios do pacote tidyverse) (https://www.frick.ws). ",
-  info_en = "Hanna Frick is a co-founder of R Ladies Global and works as a software engineer at Posit (formerly RStudio) in the field of statistical modeling, collaborating on the development of the tidymodels package (a set of packages for modeling and statistical learning using the principles of the tidyverse package) (https://www.frick.ws). "
+  img = "img/posts/hannah.jpg",
+  info_es = "Hannah Frick es co-fundadora de R Ladies Global, trabaja como ingeniera de software en Posit (ex RStudio) en el área de modelado estadístico. Colabora en el desarrollo de tidymodels, el conjunto de paquetes para modelado y aprendizaje estadístico inspirado en los principios del Tidyverse (https://www.frick.ws).",
+  info_pt = "Hannah Frick é co-fundadora do R Ladies Global e trabalha como engenheira de software na Posit (anteriormente RStudio) na área de modelagem estatística, colaborando no desenvolvimento do pacote tidymodels (um conjunto de pacotes para modelagem e aprendizado estatístico usando os princípios do pacote tidyverse) (https://www.frick.ws). ",
+  info_en = "Hannah Frick is a co-founder of R Ladies Global and works as a software engineer at Posit (formerly RStudio) in the field of statistical modeling, collaborating on the development of the tidymodels package (a set of packages for modeling and statistical learning using the principles of the tidyverse package) (https://www.frick.ws). "
 ) |> 
   tibble::add_row(
     name = "Dr. Fabrizio Scrollini",
