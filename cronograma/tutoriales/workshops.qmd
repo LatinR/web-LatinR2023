@@ -122,4 +122,4 @@ Para poder seguir sin problema las actividades del tutorial, es necesario tener 
   - Conocimientos básicos de R / Shiny		
   - Para la parte práctica
   - Laptop con RStudio, usando R > 4.2
-  - Clonar https://github.com/Appsilon/latin-r-2023 y seguir las instrucciones del README
+  - Clonar <https://github.com/Appsilon/latin-r-2023> y seguir las instrucciones del README
