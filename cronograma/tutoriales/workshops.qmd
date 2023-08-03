@@ -100,13 +100,26 @@ contributors, including myself.
 Para poder seguir sin problema las actividades del tutorial, es necesario tener algún grado de experiencia  con el operador "pipe" (en cualquiera de sus dos versiones: %>% o |>), con las funciones principales del paquete dplyr (como filter, summarize y group_by) y con el paquete ggplot2 (por ejemplo, tener una idea general de qué hacen las funciones geom_* o saber cómo modificar la escala del eje "y" de un gráfico). Para quienes tengan interés en la publicación de un reporte utilizando el servicio GitHub Pages, es necesario tener al menos un manejo inicial de git (saber cómo hacer commits y enviar cambios a un repositorio personal). 
 
 
-## Introducción a Shiny
+##  Introducción a Shiny - Buenas prácticas en un entorno de producción
 
 
-**Instructor:** Federico Rivadeneira
+**Instructors:** Agustin Perez Santangelo, Oriol Senan y Federico Rivadeneira
 
 **Date and time:** 18/10 - 9:00 - 12:30
 
 **Language:** Español
 
-**Description:** To be annouced
+**Description:**  El tutorial consistirá en la introducción de conceptos básicos haciendo foco en las buenas prácticas de desarrollo. El mismo constará de tres partes:
+
+- Estructura inicial y básica de un proyecto junto a las herramientas que podemos utilizar para asistirnos en esta tarea.
+
+- Modularización y buenas prácticas de desarrollo haciendo hincapié en conceptos de desarrollo con ejemplos.
+
+- Optimización y performance de una aplicación introduciendo paquetes y buenas prácticas.
+
+
+- **PRE-REQUISITOS**:
+  - Conocimientos básicos de R / Shiny		
+  - Para la parte práctica
+  - Laptop con RStudio, usando R > 4.2
+  - Clonar https://github.com/Appsilon/latin-r-2023 y seguir las instrucciones del README
