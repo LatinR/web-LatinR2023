@@ -1,11 +1,11 @@
-## LatinR Website - V.2
+## LatinR Website - Version 2
 
-Under development.
+Made with Quarto and R, by the Latin-R organizing team.
 
-Temporary URL:
 
--   ES: <https://latinr.github.io/latinrweb-v2/>
 
--   PT: <https://latinr.github.io/latinrweb-v2/pt/>
+- Español: <https://latin-r.com/>
 
--   EN: <https://latinr.github.io/latinrweb-v2/en/>
+- Português: <https://latin-r.com/pt/>
+
+- English: <https://latin-r.com/en/>
