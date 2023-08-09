@@ -21,6 +21,8 @@ website:
       - icon: envelope
         aria-label: "Email"
         href: mailto:latinr.conf@gmail.com   
+      - icon: github
+        href: https://github.com/latinr
       - icon: twitter 
         href: https://twitter.com/LatinR_Conf     
         aria-label: "Twitter"
