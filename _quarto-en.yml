@@ -30,6 +30,8 @@ website:
             href: blog/en/2023-06-08-inscriptionen.html          
       - text: LatinR 2023
         menu: 
+          - text: "Location"
+            href: cronograma/lugar/location.qmd            
           - text: "Keynote Speakers"
             href: cronograma/conferencistas/keynotes.qmd    
           - text: "Workshops"
