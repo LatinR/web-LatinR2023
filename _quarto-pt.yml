@@ -35,7 +35,9 @@ website:
           - text: "Palestras convidadas"
             href: cronograma/conferencistas/palestras-convidadas.qmd    
           - text: "Workshops"
-            href: cronograma/tutoriales/workshops-pt.qmd                
+            href: cronograma/tutoriales/workshops-pt.qmd   
+          - text: "Bolsas"
+            href: blog/pt/2023-08-18-bolsas-2023.html               
       - text: "Novidades"
         href: blog/pt/index.html                 
       
