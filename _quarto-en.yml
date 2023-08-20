@@ -35,6 +35,8 @@ website:
           - text: "Keynote Speakers"
             href: cronograma/conferencistas/keynotes.qmd    
           - text: "Workshops"
-            href: cronograma/tutoriales/workshops.qmd                
+            href: cronograma/tutoriales/workshops.qmd       
+          - text: "Scholarships"
+            href: blog/en/2023-08-18-scholarships-2023.html              
       - text: "News"
         href: blog/en/index.html                 
