@@ -1,5 +1,5 @@
 ---
-title: "Equipo organizador"
+# title: "Organizing team"
 knitr:
   opts_chunk: 
     echo: false
@@ -13,6 +13,11 @@ knitr:
 }
 .card-header-team{
   background-color: #BEAED47A;
+  font-weight: bold;
+}
+
+.card-header-comite{
+  background-color: #B5D4EB;
   font-weight: bold;
 }
 .cards-display{
@@ -34,14 +39,52 @@ organizers_list <- team_raw[[3]] |>
   extract_people() |> 
   dplyr::group_split(name_complete)
 
+
+committe_list <- get_info_committe() |> 
+  dplyr::group_split(name_complete)
 ```
+::: {.content-visible when-profile="en"}
+# Organizing team 
+
+## About us
+
+On October 25, 2017, an announcement was made by Heather Turner on the R User Group (RUG) Organizers Slack: the R Foundation Conference Committee was interested in the emergence of academic-focused R events in regions not currently covered by useR! In less than a week, we had organized our first videoconference to start thinking about how to face the challenge. This quick response was not the result of mere luck, but the consequence of a year in which the R community — through its local RUGs and social media presence— grew stronger in South America. By mid November everything was set up: a name, a place, a date, and a motivated international organizing committee. The first edition took place in Buenos Aires, Argentina and the second in Santiago de Chile, Chile. After the virtual editions between 2020 and 2022, this year the latinamerican R community will meet up in Montevideo, Uruguay.
+:::
+
+
+::: {.content-visible when-profile="es"}
+
+# Equipo Organizador
 
 
 ## Quiénes somos
 
 El 25 de octubre de 2017, Heather Turner anunció en el Slack de Organizadores de Grupos de Usuarios de R (RUG) que el Comité de Conferencias de la R Foundation estaba interesado en la aparición de eventos sobre R con un enfoque académico en regiones que no se encuentran actualmente cubiertas por useR!. En menos de una semana ya teníamos organizada nuestra primera videoconferencia para pensar cómo enfrentar el desafío. Esta rápida respuesta no fue solo suerte, sino la consecuencia de un año en el que la comunidad de R --a través de los RUGs locales y la presencia en redes sociales-- creció significativamente en Sudamérica. Para mediados de noviembre ya estaba todo definido: un nombre, un lugar, una fecha y un comité organizador internacional motivado. La primera edición se realizó en Buenos Aires, Argentina y la segunda en Santiago de Chile, Chile. Luego de las ediciones virtuales entre los años 2020 y 2022, este año la comunidad de R en Latinomérica se junta en Montevideo, Uruguay.
 
+:::
+
+
+::: {.content-visible when-profile="pt"}
+
+# Equipe Organizadora
+
+## Sobre nós
+
+Em 25 de outubro de 2017, Heather Turner fez um anúncio no Slack R User Group (RUG) Organizers: o Comitê da Conferência da R Foundation estava interessada na ascensão de eventos sobre R focado na academia nas regiões não cobertas pelo useR! Em menos de uma semana, nós organizamos nossa primeira video conferência para começar a pensar como lidar com este desafio. Esta resposta rápida não foi um resultado de mera sorte, mas a consequência de um ano no qual a comunidada R através de seus RUGs locais e presença em mídias sociais se fortaleceu na América do Sul. Até meados de novembro tudo estava preparado: um nome, um local, uma data e um comitê organizacional internacional motivado. A primeira edição foi em Buenos Aires, Argentina e a segunda em Santiago de Chile, Chile. Após as edições virtuais entre 2020 e 2022, este ano a comunidade R na América Latina se reunirá em Montevideo, Uruguai.
+:::
+
+
+::: {.content-visible when-profile="en"}
+### LatinR Chairs
+:::
+
+::: {.content-visible when-profile="es"}
 ### Chairs LatinR
+:::
+
+::: {.content-visible when-profile="pt"}
+### Presidentes LatinR
+:::
 
 ```{r}
 bslib::layout_column_wrap(class = "cards-display",
@@ -55,12 +98,53 @@ bslib::layout_column_wrap(class = "cards-display",
 )
 ```
 
+::: {.content-visible when-profile="en"}
+### Scientific Committee
+:::
 
+::: {.content-visible when-profile="pt"}
+### Comitê Científico
+:::
+
+
+::: {.content-visible when-profile="es"}
 ### Comité Científico
+:::
 
-To be announced!
 
+
+```{r}
+bslib::layout_column_wrap(class = "cards-display",
+  width = 1 / 2,
+  gap = "0.5cm",
+  height = 100,
+  generate_card(committe_list[[1]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[2]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[3]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[4]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[5]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[6]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[7]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[8]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[9]], class_group =  "card-header-comite")
+  
+)
+```
+
+
+
+::: {.content-visible when-profile="en"}
+### Organizer Committee
+:::
+
+::: {.content-visible when-profile="pt"}
+### Comitê Organizador
+:::
+
+
+::: {.content-visible when-profile="es"}
 ### Comité Organizador
+:::
 
 ```{r}
 bslib::layout_column_wrap(

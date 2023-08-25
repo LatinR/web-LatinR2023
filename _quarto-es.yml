@@ -16,7 +16,8 @@ website:
         href: /index.html
       - text: Sobre LatinR
         menu:        
-          - href: sobre/equipo/index.qmd        
+          - text: "Equipo Organizador"
+            href: sobre/equipo/index.qmd        
           - href: sobre/apoyo/index.qmd
           - href: sobre/coc/index.qmd
           - href: sobre/ediciones-anteriores/index.qmd  

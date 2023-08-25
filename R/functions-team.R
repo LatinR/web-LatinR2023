@@ -16,7 +16,64 @@ extract_people <- function(list_team) {
       id_cols = c(id_yaml, id, name, surname, titles),
       names_from = social_type,
       values_from = social_link
-    ) |>
+    ) |> 
+    dplyr::mutate(name_complete = glue::glue("{name} {surname}")) |> 
+    generate_icons()
+  
+}
+
+parse_social <- function(x) {
+  x |> 
+    tibble::enframe() |> 
+    tidyr::unnest(value) |> 
+    tidyr::unnest(value) |> 
+    dplyr::group_by(name) |> 
+    dplyr::summarise(
+      type = value[1],
+      link = value[2]
+    )
+}
+
+
+generate_card <- function(person, class_group = "card-header-team") {
+  bslib::card(
+    full_screen = FALSE,
+    bslib::card_header(person$name_complete[1], htmltools::HTML(person$icons[1]), class = class_group),
+    bslib::card_body(htmltools::HTML(paste0(person$titles, collapse =  "<br> ")),
+    )
+  )
+}
+
+get_info_committe <- function(){
+  # Run code below when we need to update
+  # url_sheets_comite <- "https://docs.google.com/spreadsheets/d/1XrOVbMh1twUpBCih7JgsSa2lg_1dhU-hNL-4IjhhcCA/"
+  # 
+  # sheets_comite_raw <- 
+  #   googlesheets4::read_sheet(url_sheets_comite, "comite_cientifico")
+  # 
+  # sheets_comite_raw |> 
+  #   readr::write_rds("sobre/equipo/comite.rds")
+  
+  sheets_comite_raw <- readr::read_rds(here::here("sobre/equipo/comite.rds"))
+  
+  sheets_comite <- sheets_comite_raw |> 
+    janitor::clean_names() |> 
+    dplyr::arrange(nombre) |> 
+    dplyr::rename(
+      name_complete = nombre,
+      titles = afiliacion_institucional,
+      site = sitio_web,
+      github = git_hub,
+      linkedin = linked_in
+    ) |> 
+    dplyr::select(-marca_temporal) |> 
+    generate_icons()
+  
+  sheets_comite
+}
+
+generate_icons <- function(tab){
+  tab |>
     dplyr::mutate(
       site = stringr::str_trim(site),
       icon_github = dplyr::case_when(
@@ -53,29 +110,6 @@ extract_people <- function(list_team) {
         ),
         TRUE ~ ""
       ) ,
-      icons = glue::glue("{icon_site} {icon_github} {icon_linkedin} {icon_mastodon} {icon_twitter}",),
-      name_complete = glue::glue("{name} {surname}")
+      icons = glue::glue("{icon_site} {icon_github} {icon_linkedin} {icon_mastodon} {icon_twitter}",)
     )
-}
-
-parse_social <- function(x) {
-  x |> 
-    tibble::enframe() |> 
-    tidyr::unnest(value) |> 
-    tidyr::unnest(value) |> 
-    dplyr::group_by(name) |> 
-    dplyr::summarise(
-      type = value[1],
-      link = value[2]
-    )
-}
-
-
-generate_card <- function(person, class_group = "card-header-team") {
-  bslib::card(
-    full_screen = FALSE,
-    bslib::card_header(person$name_complete[1], htmltools::HTML(person$icons[1]), class = class_group),
-    bslib::card_body(htmltools::HTML(paste0(person$titles, collapse =  "<br> ")),
-    )
-  )
 }

@@ -16,7 +16,8 @@ website:
         href: /index.html
       - text: About LatinR
         menu:        
-          - href: sobre/equipo/team.qmd        
+          - text: "Organizing Team"
+            href: sobre/equipo/index.qmd        
           - href: sobre/apoyo/sponsors.qmd
           - href: sobre/coc/code-of-conduct.qmd
           - href: sobre/ediciones-anteriores/previous-editions.qmd  
