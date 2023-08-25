@@ -36,6 +36,8 @@ jobs:
             any::glue
             any::bslib
             any::here
+            any::readr
+            any::googlesheets4
             
       - name: render
         run: |
