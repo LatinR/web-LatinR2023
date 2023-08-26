@@ -29,20 +29,22 @@ knitr:
 ```{r}
 source(here::here("R/functions-team.R"))
 
-team_raw <- yaml::read_yaml("team.yml", readLines.warn = FALSE)
+team <- get_info_team()
+chairs <- team |> 
+  dplyr::filter(category == "chairs")
+organizers <- team |> 
+  dplyr::filter(category == "organizacion")
 
-chairs_list <- team_raw[[1]] |> 
-  extract_people()  |> 
+chairs_list <- chairs  |> 
   dplyr::group_split(name_complete)
 
-organizers_list <- team_raw[[3]] |>
-  extract_people() |> 
+organizers_list <- organizers |>
   dplyr::group_split(name_complete)
-
 
 committe_list <- get_info_committe() |> 
   dplyr::group_split(name_complete)
 ```
+
 ::: {.content-visible when-profile="en"}
 # Organizing team 
 
@@ -126,7 +128,11 @@ bslib::layout_column_wrap(class = "cards-display",
   generate_card(committe_list[[6]], class_group =  "card-header-comite"),
   generate_card(committe_list[[7]], class_group =  "card-header-comite"),
   generate_card(committe_list[[8]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[9]], class_group =  "card-header-comite")
+  generate_card(committe_list[[9]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[10]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[11]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[12]], class_group =  "card-header-comite"),
+  generate_card(committe_list[[13]], class_group =  "card-header-comite")
   
 )
 ```

@@ -1,39 +1,3 @@
-extract_people <- function(list_team) {
-  list_team |>
-    purrr::pluck("people") |>
-    purrr::map(\(x) purrr::map_at(x, "social", list)) |>
-    purrr::map(tibble::as_tibble) |>
-    purrr::list_rbind(names_to = "id_yaml") |>
-    tidyr:::nest(titles = titles,
-                 .by = c(id_yaml:surname, social)) |>
-    dplyr::mutate(social = purrr::map(social, parse_social)) |>
-    tidyr::unnest(titles) |>
-    dplyr::mutate(titles = paste0("- ", titles),
-                  titles = dplyr::if_else(titles %in% c("- NA", "NA") | is.na(titles), "", titles)) |> 
-    tidyr::unnest(social, names_sep = "_") |>
-    dplyr::select(-social_name) |>
-    tidyr::pivot_wider(
-      id_cols = c(id_yaml, id, name, surname, titles),
-      names_from = social_type,
-      values_from = social_link
-    ) |> 
-    dplyr::mutate(name_complete = glue::glue("{name} {surname}")) |> 
-    generate_icons()
-  
-}
-
-parse_social <- function(x) {
-  x |> 
-    tibble::enframe() |> 
-    tidyr::unnest(value) |> 
-    tidyr::unnest(value) |> 
-    dplyr::group_by(name) |> 
-    dplyr::summarise(
-      type = value[1],
-      link = value[2]
-    )
-}
-
 
 generate_card <- function(person, class_group = "card-header-team") {
   bslib::card(
@@ -48,11 +12,11 @@ get_info_committe <- function(){
   # Run code below when we need to update
   # url_sheets_comite <- "https://docs.google.com/spreadsheets/d/1XrOVbMh1twUpBCih7JgsSa2lg_1dhU-hNL-4IjhhcCA/"
   # 
-  # sheets_comite_raw <- 
+  # sheets_comite_raw <-
   #   googlesheets4::read_sheet(url_sheets_comite, "comite_cientifico")
   # 
-  # sheets_comite_raw |> 
-  #   readr::write_rds("sobre/equipo/comite.rds")
+  # sheets_comite_raw |>
+  #   readr::write_rds(here::here("sobre/equipo/comite.rds"))
   
   sheets_comite_raw <- readr::read_rds(here::here("sobre/equipo/comite.rds"))
   
@@ -71,6 +35,51 @@ get_info_committe <- function(){
   
   sheets_comite
 }
+
+get_info_team <- function(){
+  # Run code below when we need to update
+  # url_sheets_team <- "https://docs.google.com/spreadsheets/d/1rIBZHB4c9SGrFUz-hO2rJxWbnIvJRPKnR8cUNrzbSk4/edit#gid=928900239"
+
+  # sheets_team_raw <-
+  #   googlesheets4::read_sheet(url_sheets_team)
+  # 
+  # sheets_team_raw |>
+  #   readr::write_rds(here::here("sobre/equipo/team.rds"))
+  
+  sheets_team_raw <- readr::read_rds(here::here("sobre/equipo/team.rds"))
+  
+  sheets_team <- sheets_team_raw |> 
+    janitor::clean_names() |> 
+    dplyr::rename(
+      name_complete = 2,
+      titles = 3,
+      site = sitio_web,
+      github = git_hub,
+      linkedin = linked_in
+    ) |> 
+    dplyr::arrange(name_complete) |> 
+    dplyr::select(-marca_temporal, -redes_sociales) |>
+    dplyr::mutate(
+      linkedin = fix_social_url(linkedin, "https://linkedin.com/in/"),
+      github = fix_social_url(github, "https://github.com/"),
+      twitter =  fix_social_url(twitter, "https://twitter.com/")
+    ) |> 
+    tidyr::drop_na(name_complete) |> 
+    generate_icons()
+  
+  sheets_team
+}
+
+
+fix_social_url <- function(var, url_base) {
+  dplyr::case_when(
+    stringr::str_starts(var, "http") ~ var,
+    is.na(var) ~ NA_character_,
+    TRUE ~ paste0(url_base, var)
+  )
+}
+
+
 
 generate_icons <- function(tab){
   tab |>
