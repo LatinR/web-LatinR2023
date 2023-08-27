@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      TOKEN_JSON: ${{ secrets.TOKEN_JSON }}
       
     steps:
       - name: Check out repository
@@ -26,6 +27,8 @@ jobs:
             any::usethis
             any::googlesheets4
             any::readr
+            any::here
+            
       - name: Execute Script
         run: |
           Rscript "data-raw/actions-update-from-google-sheets.R"      

@@ -1,5 +1,13 @@
 # Run code below when we need to update
 
+Sys.getenv("TOKEN_JSON") |> 
+  writeLines(here::here("data-raw/token.json"))
+
+
+googlesheets4::gs4_auth(
+  path = here::here("data-raw/token.json")
+)
+
 usethis::ui_info("Updating team....")
 
 url_sheets_team <-
