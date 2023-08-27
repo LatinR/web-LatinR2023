@@ -23,6 +23,10 @@ knitr:
 .cards-display{
   display: grid;
 }
+
+.bslib-card {
+  margin-bottom: 5px;
+}
 ```
 
 
@@ -90,13 +94,10 @@ Em 25 de outubro de 2017, Heather Turner fez um anúncio no Slack R User Group (
 
 ```{r}
 bslib::layout_column_wrap(class = "cards-display",
-  width = 1 / 2,
+  width = 1,
   gap = "0.5cm",
   height = 100,
-  generate_card(chairs_list[[1]], class_group =  "card-header-chairs"),
-  generate_card(chairs_list[[2]], class_group =  "card-header-chairs"),
-  generate_card(chairs_list[[3]], class_group =  "card-header-chairs")
-  
+  purrr::map(chairs_list, .f = ~generate_card(.x, class_group = "card-header-chairs"))
 )
 ```
 
@@ -117,23 +118,10 @@ bslib::layout_column_wrap(class = "cards-display",
 
 ```{r}
 bslib::layout_column_wrap(class = "cards-display",
-  width = 1 / 2,
+  width = 1,
   gap = "0.5cm",
   height = 100,
-  generate_card(committe_list[[1]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[2]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[3]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[4]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[5]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[6]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[7]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[8]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[9]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[10]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[11]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[12]], class_group =  "card-header-comite"),
-  generate_card(committe_list[[13]], class_group =  "card-header-comite")
-  
+  purrr::map(committe_list, .f = ~generate_card(.x, class_group = "card-header-comite"))
 )
 ```
 
@@ -153,27 +141,11 @@ bslib::layout_column_wrap(class = "cards-display",
 :::
 
 ```{r}
-bslib::layout_column_wrap(
-  class = "cards-display",
-  width = 1 / 2,
+bslib::layout_column_wrap(class = "cards-display",
+  width = 1,
   gap = "0.5cm",
   height = 100,
-  generate_card(organizers_list[[1]]),
-  generate_card(organizers_list[[2]]),
-  generate_card(organizers_list[[3]]),
-  generate_card(organizers_list[[4]]),
-  generate_card(organizers_list[[5]]),
-  generate_card(organizers_list[[6]]),
-  generate_card(organizers_list[[7]]),
-  generate_card(organizers_list[[8]]),
-  generate_card(organizers_list[[9]]),
-  generate_card(organizers_list[[10]]),
-  generate_card(organizers_list[[11]]),
-  generate_card(organizers_list[[12]]),
-  generate_card(organizers_list[[13]]),
-  generate_card(organizers_list[[14]]),
-  generate_card(organizers_list[[15]]),
-  generate_card(organizers_list[[16]])
+  purrr::map(organizers_list, .f = ~generate_card(.x, class_group = "card-header-team"))
 )
 ```
 
