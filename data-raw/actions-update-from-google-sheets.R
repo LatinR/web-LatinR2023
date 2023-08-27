@@ -1,0 +1,25 @@
+# Run code below when we need to update
+
+usethis::ui_info("Updating team....")
+
+url_sheets_team <-
+  "https://docs.google.com/spreadsheets/d/1rIBZHB4c9SGrFUz-hO2rJxWbnIvJRPKnR8cUNrzbSk4/edit#gid=928900239"
+
+sheets_team_raw <-
+  googlesheets4::read_sheet(url_sheets_team)
+
+sheets_team_raw |>
+  readr::write_rds(here::here("sobre/equipo/team.rds"))
+
+
+
+usethis::ui_info("Updating scientific committee....")
+
+url_sheets_comite <-
+  "https://docs.google.com/spreadsheets/d/1XrOVbMh1twUpBCih7JgsSa2lg_1dhU-hNL-4IjhhcCA/"
+
+sheets_comite_raw <-
+  googlesheets4::read_sheet(url_sheets_comite, "comite_cientifico")
+
+sheets_comite_raw |>
+  readr::write_rds(here::here("sobre/equipo/comite.rds"))
