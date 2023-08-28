@@ -16,46 +16,48 @@ ref: keynotes-2023
 
 _Inscripción temprana: Las ventas terminan el 31 de agosto, 2023_
 
-- Industria/Industry $30.00
+- Industria/Industry US$30
 
-- Industria/Industry + 1 tutorial $50.00
+- Industria/Industry + 1 tutorial US$50
 
-- Industria/Industry + 2 tutorial $70.00
+- Industria/Industry + 2 tutorial US$70
 
-- Academia/Academic $20.00
+- Academia/Academic US$20
+
+- Academia/Academic + 1 tutorial US$35
+
+- Academia/Academic + 2 tutorial US$50
 
 - Estudiante/Student $10.00
 
-- Estudiante/Student + 1 Tutorial $20.00
+- Estudiante/Student + 1 Tutorial US$20
 
-- Estudiante/Student + 2 Tutorial $30.00
+- Estudiante/Student + 2 Tutorial US$30
 
-- Academia/Academic + 1 tutorial $35.00
 
-- Academia/Academic + 2 tutorial $50.00
 
 <br>
 
 
 _Inscripciones regulares: Las ventas terminan el 1 de Oct, 2023_
 
-- Industria/Industry 
+- Industria/Industry US$45
 
-- Industria/Industry + 1 tutorial 
+- Industria/Industry + 1 tutorial US$75
 
-- Industria/Industry + 2 tutorial 
+- Industria/Industry + 2 tutorial US$105
 
-- Academia/Academic 
+- Academia/Academic US$30
 
-- Academia/Academic + 1 tutorial $35.00
+- Academia/Academic + 1 tutorial US$52.50
 
-- Academia/Academic + 2 tutorial $50.00
+- Academia/Academic + 2 tutorial US$80
 
-- Estudiante/Student 
+- Estudiante/Student $15.00
 
-- Estudiante/Student + 1 Tutorial $20.00
+- Estudiante/Student + 1 Tutorial US$30
 
-- Estudiante/Student + 2 Tutorial $30.00
+- Estudiante/Student + 2 Tutorial US$45
 
 
 <br>
