@@ -12,6 +12,9 @@ name: Update website
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      TOKEN_JSON: ${{ secrets.TOKEN_JSON }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -41,7 +44,13 @@ jobs:
             any::here
             any::readr
             any::googlesheets4
-            
+            any::usethis          
+
+      - name: Execute Script
+        run: |
+          Rscript "data-raw/actions-update-from-google-sheets.R"      
+          
+
       - name: render
         run: |
           quarto render --profile es        
@@ -57,3 +66,13 @@ jobs:
           path: "docs/"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+
+
+      - name: Commit results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit -m "Update data" || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
+          
