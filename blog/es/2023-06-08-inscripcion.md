@@ -14,30 +14,7 @@ ref: keynotes-2023
 
 ##### Costos de inscripción (en dólares)
 
-_Inscripción temprana: Las ventas terminan el 31 de agosto, 2023_
-
-- Industria/Industry US$30
-
-- Industria/Industry + 1 tutorial US$50
-
-- Industria/Industry + 2 tutorial US$70
-
-- Academia/Academic US$20
-
-- Academia/Academic + 1 tutorial US$35
-
-- Academia/Academic + 2 tutorial US$50
-
-- Estudiante/Student $10.00
-
-- Estudiante/Student + 1 Tutorial US$20
-
-- Estudiante/Student + 2 Tutorial US$30
-
-
-
-<br>
-
+_Inscripción temprana: Las ventas terminaron en el 31 de agosto, 2023_
 
 _Inscripciones regulares: Las ventas terminan el 1 de Oct, 2023_
 

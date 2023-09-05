@@ -14,27 +14,7 @@ ref: keynotes-2023
 
 ##### Fees
 
-_Early bird: Sales end on Aug 31, 2023_
-
-- Industria/Industry US$30
-
-- Industria/Industry + 1 tutorial US$50
-
-- Industria/Industry + 2 tutorial US$70
-
-- Academia/Academic US$20
-
-- Academia/Academic + 1 tutorial US$35
-
-- Academia/Academic + 2 tutorial US$50
-
-- Estudiante/Student $10.00
-
-- Estudiante/Student + 1 Tutorial US$20
-
-- Estudiante/Student + 2 Tutorial US$30
-
-<br>
+_Early bird: Sales ended on Aug 31, 2023_
 
 _Regular registration: Sales end on Oct 1, 2023_
 
