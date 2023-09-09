@@ -1,0 +1,73 @@
+---
+title: "Discover Montevideo"
+subtitle: "Latin-R 2023 Guide to Touristic Resources"
+knitr:
+  opts_chunk:
+    echo: false
+    message: false
+    warning: false
+---
+
+Welcome to Montevideo, the vibrant capital city of Uruguay and the host city for Latin-R 2023! Whether you're a conference participant looking to make the most of your time here or a local keen to rediscover your city alongside our international guests, this guide is for you. We've curated a list of essential places to visit and things to do in various categories: from restaurants and entertainment to cultural landmarks and accommodations. Think of this as your go-to resource for useful links and activities that will enrich your Latin-R 2023 experience in Montevideo. Let's dive into the world of opportunities that await you.
+
+You can also find more in: https://www.descubrimontevideo.uy/
+
+
+## Fin de Semana en el Barrio
+
+- **[La Tira Parrillita de Palermo](https://goo.gl/maps/VBEWR1FpD4pzrB29A)**: A local weekend spot for your barbecue cravings.
+- **Su Bar**: For weekday lunch, consider [Su Bar](https://maps.app.goo.gl/fvFrDkHRinQNj4iW9).
+- **Musical el FunFun**: Enjoy some music and drinks at [Musical el FunFun](https://maps.app.goo.gl/2ZPDQPhSpannDFVp9).
+
+### Local Flavors
+- **El Tacho**: For those brave enough, get the local experience at [El Tacho](https://maps.app.goo.gl/j4LVKLUYB1fn6x9RA).
+- **Chivito Spots**: Enjoy the best chivito at a rather underground setting. [Location](https://maps.app.goo.gl/rjiPCefxeJeAv3kZ8)
+
+### Mercado del Puerto and Surroundings
+- **Mercado del Puerto**: A touristy but fun market. 
+- **Museo del Carnaval**: Learn about the local Carnival traditions.
+- **Local Food Options**: Check [this spot](https://maps.app.goo.gl/8xYxGRUkGd84i4VAA) for local food.
+- **Fine Dining**: If budget isn't a constraint, check out [this famous place](https://maps.app.goo.gl/WNTR8R5hQKSW6aMk8).
+
+---
+
+## Restaurants
+
+- **Arcadia**: Check out the fine dining experience at [Arcadia Restaurant](https://www.radissonvictoriaplaza.com.uy/categoria/Restaurante-Arcadia-9).
+- **La Casa Violeta**: Visit their [Facebook page](https://www.facebook.com/lacasavioleta/?locale=es_LA) for more details.
+- **La Perdiz**: More information can be found at [La Perdiz website](https://laperdiz.com.uy/).
+
+### Special Mentions
+- **Plaza de Chueca**: Spanish cuisine at Maldonado 2051, 11200 Montevideo.
+- **Mercado de Williman**: Known for Mil Milas.
+- **More Options**: Check [this location](https://maps.app.goo.gl/ogr56T14YhrWTxSB6) for another fine dining experience.
+
+---
+
+## Football Attractions
+
+- **Centenario Stadium**: Includes a Football Museum.
+- **Parque Central**: Offers a museum in the Salón de Cristal.
+- **Chorolo al Paso**: Quick bites available at [this location](https://maps.app.goo.gl/KKS2xkcWZgrr85u39).
+
+---
+
+## Artistic Visits
+
+- **Torres Garcia**: Learn more at [Torres Garcia website](https://www.torresgarcia.org.uy/).
+- **MNAV**: Visit the [MNAV website](https://mnav.gub.uy/) for more information.
+- **MAM**: Discover modern art at [MAM](https://www.mam.com.uy/).
+- **El Rincon del Tango**: Join the group on [Facebook](https://www.facebook.com/groups/ELRINCONDELTANGO.2014/).
+
+---
+
+## Hotels
+
+- [**Dazzler by Wyndham Montevideo**](https://www.booking.com/Share-OB9n0Q).
+- [**Ibis Montevideo Rambla**](https://www.booking.com/Share-56zkav).
+
+---
+
+
+We hope this guide enhances your Latin-R 2023 experience and helps you explore the various facets of Montevideo. Have a memorable time!
+
