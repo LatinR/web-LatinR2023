@@ -32,7 +32,9 @@ website:
       - text: LatinR 2023
         menu: 
           - text: "Localização"
-            href: cronograma/lugar/lugar-pt.qmd            
+            href: cronograma/lugar/lugar-pt.qmd    
+          - text: "Recursos turísticos"
+            href: cronograma/recursos-turisticos/index-pt.qmd                         
           - text: "Palestras convidadas"
             href: cronograma/conferencistas/palestras-convidadas.qmd    
           - text: "Workshops"

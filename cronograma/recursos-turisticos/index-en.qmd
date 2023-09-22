@@ -10,54 +10,79 @@ knitr:
 
 Welcome to Montevideo, the vibrant capital city of Uruguay and the host city for Latin-R 2023! Whether you're a conference participant looking to make the most of your time here or a local keen to rediscover your city alongside our international guests, this guide is for you. We've curated a list of essential places to visit and things to do in various categories: from restaurants and entertainment to cultural landmarks and accommodations. Think of this as your go-to resource for useful links and activities that will enrich your Latin-R 2023 experience in Montevideo. Let's dive into the world of opportunities that await you.
 
-You can also find more in: https://www.descubrimontevideo.uy/
+You can also find more in: <https://www.descubrimontevideo.uy/>
+
+## Transportation in Montevideo
+
+### Walking
+
+Walking within Montevideo is safe and highly recommended for short distances. Near FCEA, you'll find the famous and beautiful boardwalk, where you can walk from Palermo to Ciudad Vieja, Centro, or Pocitos!
+
+### Bicycle
+
+You can also get around by bicycle, you can find bike lanes within Montevideo [here](https://montevideo.gub.uy/mapa-montevideo-en-bici).
+
+#### Places to rent bicycles
+
+- [Orange Bike](https://orangebike.com.uy/)
+- [Bike Tours Uruguay](https://biketoursuruguay.com/)
+- [Mejor Uruguay](https://www.mejoruruguay.com/bicis1.php)
+
+### Public Transportation within Montevideo (Bus)
+
+Montevideo has an extensive network of transport services in every corner, the common ticket costs UY `$`52 in cash or you can also get the STM card with your passport and preload it at different locations distributed throughout the city, thus paying an electronic ticket of UY `$`42.
+
+- [Information about STM here](https://montevideo.gub.uy/areas-tematicas/sistema-de-transporte-metropolitano/tarjetas-stm/tarjeta-comun)
+- [STM Customer Service Locations](https://montevideo.gub.uy/locales-stm)
 
 
-## Fin de Semana en el Barrio
+## Weekend in the Neighborhood
 
-- **[La Tira Parrillita de Palermo](https://goo.gl/maps/VBEWR1FpD4pzrB29A)**: A local weekend spot for your barbecue cravings.
+- **[La Tira Parrillita de Palermo](https://goo.gl/maps/VBEWR1FpD4pzrB29A)**: A must-visit for your barbecue cravings.
 - **Su Bar**: For weekday lunch, consider [Su Bar](https://maps.app.goo.gl/fvFrDkHRinQNj4iW9).
-- **Musical el FunFun**: Enjoy some music and drinks at [Musical el FunFun](https://maps.app.goo.gl/2ZPDQPhSpannDFVp9).
+- **Baar el FunFun**: Enjoy the music and drinks at [Baar el FunFun](https://maps.app.goo.gl/2ZPDQPhSpannDFVp9).
 
 ### Local Flavors
-- **El Tacho**: For those brave enough, get the local experience at [El Tacho](https://maps.app.goo.gl/j4LVKLUYB1fn6x9RA).
-- **Chivito Spots**: Enjoy the best chivito at a rather underground setting. [Location](https://maps.app.goo.gl/rjiPCefxeJeAv3kZ8)
+- **El Tacho**: Enjoy good pan pizza at [El Tacho](https://maps.app.goo.gl/j4LVKLUYB1fn6x9RA).
+- **Chivitos**: Enjoy the best chivito in a different place. [Location](https://maps.app.goo.gl/rjiPCefxeJeAv3kZ8)
 
 ### Mercado del Puerto and Surroundings
-- **Mercado del Puerto**: A touristy but fun market. 
-- **Museo del Carnaval**: Learn about the local Carnival traditions.
-- **Local Food Options**: Check [this spot](https://maps.app.goo.gl/8xYxGRUkGd84i4VAA) for local food.
-- **Fine Dining**: If budget isn't a constraint, check out [this famous place](https://maps.app.goo.gl/WNTR8R5hQKSW6aMk8).
+- **Mercado del Puerto**: A touristy but fun market.
+- **Carnival Museum**: Learn about the local traditions of Uruguayan Carnival.
+- **Local gastronomic options**: Visit [this place](https://maps.app.goo.gl/8xYxGRUkGd84i4VAA) to experience local food.
+- **Fine Dining**: If budget is not an issue, visit [this famous place](https://maps.app.goo.gl/WNTR8R5hQKSW6aMk8).
 
 ---
 
 ## Restaurants
 
-- **Arcadia**: Check out the fine dining experience at [Arcadia Restaurant](https://www.radissonvictoriaplaza.com.uy/categoria/Restaurante-Arcadia-9).
+- **Arcadia**: Enjoy the gastronomic experience at [Arcadia Restaurant](https://www.radissonvictoriaplaza.com.uy/categoria/Restaurante-Arcadia-9).
 - **La Casa Violeta**: Visit their [Facebook page](https://www.facebook.com/lacasavioleta/?locale=es_LA) for more details.
-- **La Perdiz**: More information can be found at [La Perdiz website](https://laperdiz.com.uy/).
+- **La Perdiz**: You'll find more information on [La Perdiz's website](https://laperdiz.com.uy/).
 
 ### Special Mentions
-- **Plaza de Chueca**: Spanish cuisine at Maldonado 2051, 11200 Montevideo.
-- **Mercado de Williman**: Known for Mil Milas.
-- **More Options**: Check [this location](https://maps.app.goo.gl/ogr56T14YhrWTxSB6) for another fine dining experience.
+- **Plaza de Chueca**: Spanish cuisine, highly recommend the tortillas and croquettes! [It's located at Maldonado 2051, 11200 Montevideo.](https://maps.app.goo.gl/yjBPrwduf1e7jSEq6)
+- **Williman Market**: Known for the Mil Milas.
+- **More options**: Visit [this location](https://maps.app.goo.gl/ogr56T14YhrWTxSB6) for another culinary experience.
 
 ---
 
 ## Football Attractions
 
-- **Centenario Stadium**: Includes a Football Museum.
-- **Parque Central**: Offers a museum in the Salón de Cristal.
-- **Chorolo al Paso**: Quick bites available at [this location](https://maps.app.goo.gl/KKS2xkcWZgrr85u39).
+- **Estadio Centenario**: Includes a Football Museum.
+- **Central Park**: Offers a museum in the Crystal Hall.
+- **Chorolo al Paso**: Fast food available at [this place](https://maps.app.goo.gl/KKS2xkcWZgrr85u39).
 
 ---
 
 ## Artistic Visits
 
-- **Torres Garcia**: Learn more at [Torres Garcia website](https://www.torresgarcia.org.uy/).
-- **MNAV**: Visit the [MNAV website](https://mnav.gub.uy/) for more information.
-- **MAM**: Discover modern art at [MAM](https://www.mam.com.uy/).
-- **El Rincon del Tango**: Join the group on [Facebook](https://www.facebook.com/groups/ELRINCONDELTANGO.2014/).
+- **Torres García**: More information at [Torres Garcia website](https://www.torresgarcia.org.uy/).
+- **MNAV**: Visit the historic Museum of Visual Arts. [MNAV's
+
+ website](https://mnav.gub.uy/) for more information.
+- **MAM**: Visit the Agricultural Market of Montevideo, where you can currently find different gastronomic offers [MAM](https://www.mam.com.uy/).
+- **El Rincón del Tango**: Join the group on [Facebook](https://www.facebook.com/groups/ELRINCONDELTANGO.2014/).
 
 ---
 
@@ -67,7 +92,6 @@ You can also find more in: https://www.descubrimontevideo.uy/
 - [**Ibis Montevideo Rambla**](https://www.booking.com/Share-56zkav).
 
 ---
-
 
 We hope this guide enhances your Latin-R 2023 experience and helps you explore the various facets of Montevideo. Have a memorable time!
 
