@@ -31,3 +31,15 @@ sheets_comite_raw <-
 
 sheets_comite_raw |>
   readr::write_rds(here::here("sobre/equipo/comite.rds"))
+
+
+usethis::ui_info("Updating program....")
+
+url_sheets_program <-
+  "https://docs.google.com/spreadsheets/d/1Qd9x7VhNkgQFf1FSDei8RFhVlVSjXwhzZx5Mxf_ySeI/edit#gid=781033699"
+
+sheets_program_raw <-
+  googlesheets4::read_sheet(url_sheets_program)
+
+sheets_program_raw |>
+  readr::write_rds(here::here("cronograma/programa/program.rds"))
