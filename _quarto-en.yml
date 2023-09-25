@@ -32,7 +32,13 @@ website:
       - text: LatinR 2023
         menu: 
           - text: "Location"
+<<<<<<< Updated upstream
             href: cronograma/lugar/location.qmd            
+=======
+            href: cronograma/lugar/location.qmd  
+          - text: "Tourist resources"
+            href: cronograma/recursos-turisticos/index-en.qmd                         
+>>>>>>> Stashed changes
           - text: "Keynote Speakers"
             href: cronograma/conferencistas/keynotes.qmd    
           - text: "Workshops"
