@@ -45,6 +45,7 @@ jobs:
             any::readr
             any::googlesheets4
             any::usethis          
+            any::toastui
 
       - name: Execute Script
         run: |

@@ -12,20 +12,12 @@ knitr:
 source(here::here("R/generar-info-program.R"))
 source(here::here("R/generar-info-tutorials.R"))
 program <- import_info_program()
-tutorials_raw <- generar_info_tutorials() 
-tutorials <- tutorials_raw |> 
-  dplyr::transmute(
-    calendarId,
-    title,
-    body,
-    start,
-    end,
-    category = "time",
-    location
-  )
+tutorials <- generar_info_tutorials() 
+
 ```
 
 
+## Tutorials
 
 ```{r}
 #| results: asis
@@ -66,6 +58,24 @@ toastui::calendar(
     color = "white",
     borderColor = "#B5D4EB",
     backgroundColor = "#4c3ceb"
+  )
+```
+
+## Presentaciones
+
+```{r}
+program |> 
+  dplyr::arrange(numero_propuesta_en_open_review) |> 
+  dplyr::select(-numero_propuesta_en_open_review) |> 
+  dplyr::relocate(author, .after = title) |> 
+  reactable::reactable(sortable = TRUE,searchable = TRUE, filterable = TRUE,
+    columns = list(
+    title = reactable::colDef(name = "Título", minWidth = 100),
+    author = reactable::colDef(name = "Authors", html = TRUE),
+    body = reactable::colDef(name = "Descripción", html = TRUE, minWidth = 200),
+    tags = reactable::colDef(name = "Palavras clave")
+  )
+      
   )
 ```
 

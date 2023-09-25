@@ -95,8 +95,38 @@ import_info_program <- function(){
                   author_mastodon_12 = mastodon_87,
                   author_twitter_12 = twitter_88,
                   ) |> 
-    dplyr::select(-tidyselect::starts_with("necesitas_agregar_mas_autores_"))
+    dplyr::select(-tidyselect::starts_with("necesitas_agregar_mas_autores_"),
+                  -marca_temporal)
   
-  data
-
+  data |> 
+    tibble::rowid_to_column() |> 
+    tidyr::pivot_longer(cols = tidyselect::starts_with("author_")) |> 
+    tidyr::drop_na(value) |> 
+    dplyr::mutate(number_author = stringr::str_extract(name, "[0-9]$")) |> 
+    dplyr::mutate(value2 = dplyr::case_when(
+      stringr::str_detect(name, "author_name_") ~ stringr::str_to_title(value),
+      stringr::str_detect(name, "author_github_") ~ glue::glue('<a href="{value}" target="_blank"><i class="fab fa-github"></i></a>'),
+      stringr::str_detect(name, "author_website_") ~ glue::glue('<a href="{value}" target="_blank"><i class="fas fa-home"></i></a>'),
+      stringr::str_detect(name, "author_linkedin_") ~ glue::glue('<a href="{value}" target="_blank"><i class="fab fa-linkedin"></i></a>'),
+      stringr::str_detect(name, "author_twitter_") ~ glue::glue('<a href="{value}" target="_blank"><i class="fab fa-twitter"></i></a>'),
+      stringr::str_detect(name, "author_mastodon_") ~ glue::glue('<a href="{value}" target="_blank"><i class="fab fa-mastodon"></i></a>'),
+    )) |> 
+    dplyr::group_by(
+      rowid, numero_propuesta_en_open_review,
+      title, tags, body, number_author
+    ) |> 
+    dplyr::summarise(
+      author_text = paste0(value2, collapse = " ")
+    ) |> 
+    dplyr::ungroup() |> 
+    dplyr::group_by(
+      rowid, numero_propuesta_en_open_review,
+      title, tags, body
+    ) |> 
+    dplyr::summarise(
+      author = paste0(author_text, collapse = " <br>")
+    ) |> 
+    dplyr::ungroup() |> 
+    dplyr::select(-rowid)
+  
 }
