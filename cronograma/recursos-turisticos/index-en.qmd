@@ -10,7 +10,30 @@ knitr:
 
 Welcome to Montevideo, the vibrant capital city of Uruguay and the host city for Latin-R 2023! Whether you're a conference participant looking to make the most of your time here or a local keen to rediscover your city alongside our international guests, this guide is for you. We've curated a list of essential places to visit and things to do in various categories: from restaurants and entertainment to cultural landmarks and accommodations. Think of this as your go-to resource for useful links and activities that will enrich your Latin-R 2023 experience in Montevideo. Let's dive into the world of opportunities that await you.
 
-You can also find more in: https://www.descubrimontevideo.uy/
+You can also find more in: <https://www.descubrimontevideo.uy/>
+
+## Transportation in Montevideo
+
+### Walking
+
+Walking within Montevideo is safe and highly recommended for short distances. Near FCEA, you'll find the famous and beautiful boardwalk, where you can walk from Palermo to Ciudad Vieja, Centro, or Pocitos!
+
+### Bicycle
+
+You can also get around by bicycle, you can find bike lanes within Montevideo [here](https://montevideo.gub.uy/mapa-montevideo-en-bici).
+
+#### Places to rent bicycles
+
+- [Orange Bike](https://orangebike.com.uy/)
+- [Bike Tours Uruguay](https://biketoursuruguay.com/)
+- [Mejor Uruguay](https://www.mejoruruguay.com/bicis1.php)
+
+### Public Transportation within Montevideo (Bus)
+
+Montevideo has an extensive network of transport services in every corner, the common ticket costs UY `$`52 (1.33 USD) in cash or you can also get the STM card with your passport and preload it at different locations distributed throughout the city, thus paying an electronic ticket of UY `$`42 (1.10 USD).
+
+- [Information about STM here](https://montevideo.gub.uy/areas-tematicas/sistema-de-transporte-metropolitano/tarjetas-stm/tarjeta-comun)
+- [STM Customer Service Locations](https://montevideo.gub.uy/locales-stm)
 
 
 ## Fin de Semana en el Barrio
@@ -54,10 +77,10 @@ You can also find more in: https://www.descubrimontevideo.uy/
 
 ## Artistic Visits
 
-- **Torres Garcia**: Learn more at [Torres Garcia website](https://www.torresgarcia.org.uy/).
-- **MNAV**: Visit the [MNAV website](https://mnav.gub.uy/) for more information.
-- **MAM**: Discover modern art at [MAM](https://www.mam.com.uy/).
-- **El Rincon del Tango**: Join the group on [Facebook](https://www.facebook.com/groups/ELRINCONDELTANGO.2014/).
+- **Torres García**: More information at [Torres Garcia website](https://www.torresgarcia.org.uy/).
+- **MNAV**: Visit the historic Museum of Visual Arts. [MNAV's website](https://mnav.gub.uy/) for more information.
+- **MAM**: Visit the Agricultural Market of Montevideo, where you can currently find different gastronomic offers [MAM](https://www.mam.com.uy/).
+- **El Rincón del Tango**: Join the group on [Facebook](https://www.facebook.com/groups/ELRINCONDELTANGO.2014/).
 
 ---
 
