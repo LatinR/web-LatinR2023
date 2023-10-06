@@ -33,6 +33,10 @@ website:
         menu: 
           - text: "Location"
             href: cronograma/lugar/location.qmd            
+          - text: "Tourist resources"
+            href: cronograma/recursos-turisticos/index-en.qmd
+          - text: "Program"
+            href: cronograma/programa/preliminar.qmd                
           - text: "Keynote Speakers"
             href: cronograma/conferencistas/keynotes.qmd    
           - text: "Workshops"

@@ -6,3 +6,4 @@
 
 /.quarto/
 data-raw/token.json
+docs/*

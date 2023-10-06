@@ -1,0 +1,103 @@
+---
+title: "Descubre Montevideo"
+subtitle: "Guía de recursos turísticos de Latin-R 2023"
+knitr:
+  opts_chunk:
+    echo: false
+    message: false
+    warning: false
+---
+
+Te damos la bienvenida a Montevideo, la vibrante capital de Uruguay y ciudad anfitriona de Latin-R 2023. Esta guía es para usted, ya sea un participante de la conferencia que desea aprovechar al máximo su tiempo aquí o un local con ganas de redescubrir su ciudad junto a nuestros invitados internacionales. Hemos confeccionado una lista de lugares esenciales para visitar y cosas que hacer en varias categorías: desde restaurantes y entretenimiento hasta lugares de interés cultural y alojamiento. Piense en esto como su recurso para encontrar enlaces útiles y actividades que enriquecerán su experiencia Latin-R 2023 en Montevideo. Sumerjámonos en el mundo de oportunidades que le esperan.
+
+También puedes encontrar más información en: <https://www.descubrimontevideo.uy/>
+
+## Transporte en Montevideo
+
+### A pie
+
+Dentro de Montevideo se puede caminar seguro y es muy recomendable tramos cortos realizarlos a pie. Cerca de la FCEA se encuentra la famosa y preciosa rambla donde puede transportarse desde Palermo hasta Ciudad Vieja, Centro o Pocitos ¡a pie!.
+
+### Bicicleta
+
+También puede moverse en bicicleta, puede encontrar las ciclo vías dentro de Montevideo [aquí](https://montevideo.gub.uy/mapa-montevideo-en-bici).
+
+#### Lugares para alquilar bicicletas
+
+- [Orange Bike](https://orangebike.com.uy/)
+- [Bike Tours Uruguay](https://biketoursuruguay.com/)
+- [Mejor Uruguay](https://www.mejoruruguay.com/bicis1.php)
+
+### Transporte público dentro de Montevideo (Autobus)
+
+Montevideo tiene una amplia red de servicios de transporte en cada rincón, el boleto común sale $52 en efectivo o también puede obtener la tarjeta STM con su pasaporte y precargala en diferntes locales distribuidos por toda la ciudad para así abonar un boleto electroníco de $42.
+
+- [Información sobre STM aquí](https://montevideo.gub.uy/areas-tematicas/sistema-de-transporte-metropolitano/tarjetas-stm/tarjeta-comun)
+- [Locales de atención STM](https://montevideo.gub.uy/locales-stm)
+
+### Servicios de Taxi:
+
+- [Taxi de Montevideo](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjR67GdnuCBAxWrrpUCHd4xBZUQFnoECBwQAQ&url=https%3A%2F%2Fwww.voyentaxi.uy%2F&usg=AOvVaw0kwjd0lwOdB5et59J920b4&opi=89978449)
+- [Uber](https://www.uber.com/global/es/cities/montevideo/)
+- [Cabify](https://cabify.com/en)
+
+Las tres opciones se pueden pagar con tarjeta de débito y crédito, en cada aplicación así como también en el vehiculo.
+
+
+## Fin de Semana en el Barrio
+
+- **[La Tira Parrillita de Palermo](https://goo.gl/maps/VBEWR1FpD4pzrB29A)**: Una visita obligatoria para tus antojos de asado.
+- **Su Bar**: Para el almuerzo entre semana, considere [Su Bar](https://maps.app.goo.gl/fvFrDkHRinQNj4iW9).
+- **Baar el FunFun**: Disfrute de la música y las copas en [Baar el FunFun](https://maps.app.goo.gl/2ZPDQPhSpannDFVp9).
+
+### Sabores locales
+- **El Tacho**: Disfrute de una buenza pizza al tacho en [El Tacho](https://maps.app.goo.gl/j4LVKLUYB1fn6x9RA).
+- **Chivitos**: Disfruta del mejor chivito en un lugar diferente. [Ubicación](https://maps.app.goo.gl/rjiPCefxeJeAv3kZ8)
+
+### Mercado del Puerto y Alrededores
+- **Mercado del Puerto**: Un mercado turístico y divertido. 
+- **Museo del Carnaval**: Conozca las tradiciones locales del Carnaval uruguayo.
+- **Opciones gastronómicas locales**: Visite [este lugar](https://maps.app.goo.gl/8xYxGRUkGd84i4VAA) para conocer la comida local.
+- **Buena comida**: Si el presupuesto no es un problema, visite [este famoso lugar](https://maps.app.goo.gl/WNTR8R5hQKSW6aMk8).
+
+---
+
+## Restaurantes
+
+- **Arcadia**: Disfrute de la experiencia gastronómica de [Restaurante Arcadia](https://www.radissonvictoriaplaza.com.uy/categoria/Restaurante-Arcadia-9).
+- **La Casa Violeta**: Visite su [página de Facebook](https://www.facebook.com/lacasavioleta/?locale=es_LA) para más detalles.
+- **La Perdiz**: Encontrará más información en [La página web de La Perdiz](https://laperdiz.com.uy/).
+
+### Menciones especiales
+- **Plaza de Chueca**: Cocina española, super recomendable las tortillas y croquetas! [Se ubica en en Maldonado 2051, 11200 Montevideo.](https://maps.app.goo.gl/yjBPrwduf1e7jSEq6) 
+- **Mercado de Williman**: Conocido por las Mil Milas.
+- **Más opciones**: Visite [esta ubicación](https://maps.app.goo.gl/ogr56T14YhrWTxSB6) para otra experiencia culinaria.
+
+---
+
+## Atracciones futbolísticas
+
+- **Estadio Centenario**: Incluye un Museo del Fútbol.
+- **Parque Central**: Ofrece un museo en el Salón de Cristal.
+- **Chorolo al Paso**: Comida rápida disponible en [este lugar](https://maps.app.goo.gl/KKS2xkcWZgrr85u39).
+
+---
+
+## Visitas Artísticas
+
+- **Torres García**: Más información en [Torres Garcia website](https://www.torresgarcia.org.uy/).
+- **MNAV**: Visite el histórico Museo de Artes Visuales. [sitio web de MNAV](https://mnav.gub.uy/) para obtener más información.
+- **MAM**: Visite el Mercado Agricola de Montevideo, donde actualmente puede encontrar diferentes ofertas gastrónimicas [MAM](https://www.mam.com.uy/).
+- **El Rincón del Tango**: Únase al grupo en [Facebook](https://www.facebook.com/groups/ELRINCONDELTANGO.2014/).
+- **Castillo Pitamiglio**: Los visitantes podrán recorrer y descubir un laberinto de habitaciones y espacios infinitos, torres y un jardín lleno de símbolos y secretos. El centro cuenta con espacios expositivos, galería de arte, área de talleres y tienda temática. [Sitio web](https://universopittamiglio.com/mvd.php
+---
+
+## Hoteles
+
+- [**Dazzler by Wyndham Montevideo**](https://www.booking.com/Share-OB9n0Q).
+- [**Ibis Montevideo Rambla**](https://www.booking.com/Share-56zkav).
+
+---
+
+
+Esperamos que esta guía mejore su experiencia en el Latin-R 2023 y le ayude a explorar las diversas facetas de Montevideo. ¡Que tenga un tiempo memorable!
