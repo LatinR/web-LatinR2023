@@ -61,25 +61,6 @@ toastui::calendar(
   )
 ```
 
-## Presentaciones
-
-```{r}
-program |> 
-  dplyr::arrange(numero_propuesta_en_open_review) |> 
-  dplyr::select(-numero_propuesta_en_open_review) |> 
-  dplyr::relocate(author, .after = title) |> 
-  reactable::reactable(sortable = TRUE,searchable = TRUE, filterable = TRUE,
-    columns = list(
-    title = reactable::colDef(name = "Título", minWidth = 100),
-    author = reactable::colDef(name = "Authors", html = TRUE),
-    body = reactable::colDef(name = "Descripción", html = TRUE, minWidth = 200),
-    tags = reactable::colDef(name = "Palavras clave")
-  )
-      
-  )
-```
-
-
 
 <!-- font awesome -->
 
