@@ -135,8 +135,7 @@ import_info_program <- function(){
     ) |> 
     dplyr::ungroup() |> 
     dplyr::select(-rowid) |> 
-    dplyr::rename(id = numero_propuesta_en_open_review)
-  
+    dplyr::rename(id = numero_propuesta_en_open_review) 
   
  sheets_cronograma <- sheets_cronograma_raw |> 
     tidyr::drop_na(id)
@@ -145,12 +144,34 @@ import_info_program <- function(){
    dplyr::filter(sesion == "charlas") |> 
    dplyr::left_join(data_prepared, by = dplyr::join_by(id)) |> 
    dplyr::select(-title) |> 
-   dplyr::rename(title = titulo)
+   dplyr::rename(title = titulo) |> 
+   dplyr::mutate(
+     date = dplyr::case_when(
+       dia == "jueves" ~ "2023-10-19",
+       dia == "viernes" ~ "2023-10-20"
+     ),
+     hora = lubridate::hour(hora_inicio),
+     minuto = lubridate::minute(hora_inicio)
+   ) |> 
+   dplyr::arrange(hora, minuto) |> 
+   dplyr::mutate(conteudo = glue::glue("
+                                     <b>Titulo:</b>  {title}<br>
+                                     <b>Authors:</b> <br>{author}<br>
+                                     <b>Tema:</b> {tema}<br>
+                                     <b>Lugar:</b> {lugar}<br>
+                                     <b>Hora:</b> {hora}:{minuto}<br>
+                                     <b>Descripción:</b> {body}<br><hr>
+                                     ")) 
  
  posters <- sheets_posters_raw |> 
    dplyr::left_join(data_prepared, by = dplyr::join_by(id)) |> 
    dplyr::select(-title) |> 
-   dplyr::rename(title = titulo)
+   dplyr::rename(title = titulo) |> 
+   dplyr::mutate(conteudo = glue::glue("
+                                     <b>Titulo:</b>  {title}<br>
+                                     <b>Authors:</b> <br>{author}<br>
+                                     <b>Descripción:</b> {body}<br><hr>
+                                     ")) 
  
  
  list(

@@ -67,3 +67,4 @@ source(here::here("R/generar-info-program.R"))
 program_complete <- import_info_program()
 program_complete |>
   readr::write_rds(here::here("cronograma/programa/program_complete.rds"))
+
