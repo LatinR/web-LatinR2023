@@ -31,3 +31,39 @@ sheets_comite_raw <-
 
 sheets_comite_raw |>
   readr::write_rds(here::here("sobre/equipo/comite.rds"))
+
+
+usethis::ui_info("Updating program....")
+
+url_sheets_program <-
+  "https://docs.google.com/spreadsheets/d/1Qd9x7VhNkgQFf1FSDei8RFhVlVSjXwhzZx5Mxf_ySeI/edit#gid=781033699"
+
+sheets_program_raw <-
+  googlesheets4::read_sheet(url_sheets_program)
+
+sheets_program_raw |>
+  readr::write_rds(here::here("cronograma/programa/program.rds"))
+
+# cronograma
+
+url_sheets_cronograma <-
+  "https://docs.google.com/spreadsheets/d/137-RFl2sHI8KGIyiKGgbjTTxkyTquW-C8m8_ZzQNFcw/"
+
+sheets_cronograma_raw <-
+  googlesheets4::read_sheet(url_sheets_cronograma)
+
+sheets_cronograma_raw |>
+  readr::write_rds(here::here("cronograma/programa/cronograma.rds"))
+
+# posters 
+sheets_posters_raw <-
+  googlesheets4::read_sheet(url_sheets_cronograma, "posters")
+
+sheets_posters_raw |>
+  readr::write_rds(here::here("cronograma/programa/posters.rds"))
+
+# prepared program
+
+program_complete <- import_info_program()
+program_complete |>
+  readr::write_rds(here::here("cronograma/programa/program_complete.rds"))

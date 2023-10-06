@@ -45,6 +45,8 @@ jobs:
             any::readr
             any::googlesheets4
             any::usethis          
+            any::toastui
+            any::reactable
 
       - name: Execute Script
         run: |
