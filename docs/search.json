@@ -434,6 +434,7 @@
     "text": "Neste ano, a conferência será realizada na Faculdade de Ciências Econômicas e de Administração da Universidade da República (FCEA-UDELAR), localizada na en Av. Gonzalo Ramírez 1926, Montevidéu, Uruguai.\n\n\n\n\nPara algumas atividades também utilizaremos espaços da Sala de Aulas da Área Social e Artística, localizada em frente à Faculdade."
   },
   {
+<<<<<<< HEAD
     "objectID": "cronograma/lugar/location.html",
     "href": "cronograma/lugar/location.html",
     "title": "Location",
@@ -691,5 +692,12 @@
     "title": "Attributions",
     "section": "",
     "text": "Attribution of the images used in this website:\nPhoto of Buenos Aires’ coast: José María Pérez Nuñez\nSubway photo: Thomas Hobbs\nGraffiti photo: Christian Jiménez\nStar icon: Star from Landan Lloyd from the Noun Project.\nNewsstand photo: Zhu\ninterview by Jesus Puertas from the Noun Project"
+=======
+    "objectID": "cronograma/programa/index.html",
+    "href": "cronograma/programa/index.html",
+    "title": "Programa",
+    "section": "",
+    "text": "Today"
+>>>>>>> e4b7f47 (timetable draft)
   }
 ]
