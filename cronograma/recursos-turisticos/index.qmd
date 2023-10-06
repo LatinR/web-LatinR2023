@@ -8,7 +8,7 @@ knitr:
     warning: false
 ---
 
-Te damos la bienvenida a Montevideo, la vibrante capital de Uruguay y ciudad anfitriona de Latin-R 2023. Esta guía es para usted, ya sea un participante de la conferencia que desea aprovechar al máximo su tiempo aquí o un local con ganas de redescubrir su ciudad junto a nuestros invitados internacionales. Hemos confeccionado una lista de lugares esenciales para visitar y cosas que hacer en varias categorías: desde restaurantes y entretenimiento hasta lugares de interés cultural y alojamiento. Piense en esto como su recurso para encontrar enlaces útiles y actividades que enriquecerán su experiencia Latin-R 2023 en Montevideo. Sumerjámonos en el mundo de oportunidades que le esperan.
+Te damos la bienvenida a Montevideo, la vibrante capital de Uruguay y ciudad anfitriona de Latin-R 2023. Esta guía es para usted, ya sea un participante de la conferencia que desea aprovechar al máximo su tiempo aquí o un local con ganas de re descubrir su ciudad junto a nuestros invitados internacionales. Hemos confeccionado una lista de lugares esenciales para visitar y cosas que hacer en varias categorías: desde restaurantes y entretenimiento hasta lugares de interés cultural y alojamiento. Piense en esto como su recurso para encontrar enlaces útiles y actividades que enriquecerán su experiencia Latin-R 2023 en Montevideo. Sumerjámonos en el mundo de oportunidades que le esperan.
 
 También puedes encontrar más información en: <https://www.descubrimontevideo.uy/>
 
@@ -41,17 +41,17 @@ Montevideo tiene una amplia red de servicios de transporte en cada rincón, el b
 - [Uber](https://www.uber.com/global/es/cities/montevideo/)
 - [Cabify](https://cabify.com/en)
 
-Las tres opciones se pueden pagar con tarjeta de débito y crédito, en cada aplicación así como también en el vehiculo.
+Las tres opciones se pueden pagar con tarjeta de débito y crédito, en cada aplicación así como también en el vehículo.
 
 
 ## Fin de Semana en el Barrio
 
 - **[La Tira Parrillita de Palermo](https://goo.gl/maps/VBEWR1FpD4pzrB29A)**: Una visita obligatoria para tus antojos de asado.
 - **Su Bar**: Para el almuerzo entre semana, considere [Su Bar](https://maps.app.goo.gl/fvFrDkHRinQNj4iW9).
-- **Baar el FunFun**: Disfrute de la música y las copas en [Baar el FunFun](https://maps.app.goo.gl/2ZPDQPhSpannDFVp9).
+- **Bar el FunFun**: Disfrute de la música y las copas en [Bar el FunFun](https://maps.app.goo.gl/2ZPDQPhSpannDFVp9).
 
 ### Sabores locales
-- **El Tacho**: Disfrute de una buenza pizza al tacho en [El Tacho](https://maps.app.goo.gl/j4LVKLUYB1fn6x9RA).
+- **Bar Tasende**: Disfrute de una buenaza pizza al tacho en [Bar Tasende](https://maps.app.goo.gl/j4LVKLUYB1fn6x9RA).
 - **Chivitos**: Disfruta del mejor chivito en un lugar diferente. [Ubicación](https://maps.app.goo.gl/rjiPCefxeJeAv3kZ8)
 
 ### Mercado del Puerto y Alrededores
@@ -87,9 +87,9 @@ Las tres opciones se pueden pagar con tarjeta de débito y crédito, en cada apl
 
 - **Torres García**: Más información en [Torres Garcia website](https://www.torresgarcia.org.uy/).
 - **MNAV**: Visite el histórico Museo de Artes Visuales. [sitio web de MNAV](https://mnav.gub.uy/) para obtener más información.
-- **MAM**: Visite el Mercado Agricola de Montevideo, donde actualmente puede encontrar diferentes ofertas gastrónimicas [MAM](https://www.mam.com.uy/).
+- **MAM**: Visite el Mercado Agrícola de Montevideo, donde actualmente puede encontrar diferentes ofertas gastronómicas [MAM](https://www.mam.com.uy/).
 - **El Rincón del Tango**: Únase al grupo en [Facebook](https://www.facebook.com/groups/ELRINCONDELTANGO.2014/).
-- **Castillo Pitamiglio**: Los visitantes podrán recorrer y descubir un laberinto de habitaciones y espacios infinitos, torres y un jardín lleno de símbolos y secretos. El centro cuenta con espacios expositivos, galería de arte, área de talleres y tienda temática. [Sitio web](https://universopittamiglio.com/mvd.php
+- **Castillo Pitamiglio**: Los visitantes podrán recorrer y descubrir un laberinto de habitaciones y espacios infinitos, torres y un jardín lleno de símbolos y secretos. El centro cuenta con espacios expositivos, galería de arte, área de talleres y tienda temática. [Sitio web](https://universopittamiglio.com/mvd.php
 ---
 
 ## Hoteles
