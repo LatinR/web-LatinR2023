@@ -34,7 +34,9 @@ website:
           - text: "Localização"
             href: cronograma/lugar/lugar-pt.qmd    
           - text: "Recursos turísticos"
-            href: cronograma/recursos-turisticos/index-pt.qmd                         
+            href: cronograma/recursos-turisticos/index-pt.qmd  
+          - text: "Programa"
+            href: cronograma/programa/preliminar.qmd       
           - text: "Palestras convidadas"
             href: cronograma/conferencistas/palestras-convidadas.qmd    
           - text: "Workshops"
