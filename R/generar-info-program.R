@@ -155,7 +155,7 @@ import_info_program <- function(){
    ) |> 
    dplyr::arrange(hora, minuto) |> 
    dplyr::mutate(conteudo = glue::glue("
-                                     <b>Titulo:</b>  {title}<br>
+                                     <b>Titulo:</b>  <span style='color:#002495;'><b>{title}</b></span><br><br>
                                      <b>Authors:</b> <br>{author}<br>
                                      <b>Tema:</b> {tema}<br>
                                      <b>Lugar:</b> {lugar}<br>
@@ -168,7 +168,7 @@ import_info_program <- function(){
    dplyr::select(-title) |> 
    dplyr::rename(title = titulo) |> 
    dplyr::mutate(conteudo = glue::glue("
-                                     <b>Titulo:</b>  {title}<br>
+                                     <b>Titulo:</b>  <span style='color:#002495;'><b>{title}</b></span><br>
                                      <b>Authors:</b> <br>{author}<br>
                                      <b>Descripción:</b> {body}<br><hr>
                                      ")) 
