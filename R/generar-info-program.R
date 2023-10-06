@@ -2,6 +2,13 @@ import_info_program <- function(){
   
   sheets_program_raw <- readr::read_rds(here::here("cronograma/programa/program.rds"))
   
+  sheets_cronograma_raw <- readr::read_rds(here::here("cronograma/programa/cronograma.rds"))
+  
+  sheets_posters_raw <- readr::read_rds(here::here("cronograma/programa/posters.rds"))
+  
+  
+  
+  
   data <- sheets_program_raw |>
     janitor::clean_names()  |>
     dplyr::rename(title = titulo_presentacion,
@@ -98,7 +105,7 @@ import_info_program <- function(){
     dplyr::select(-tidyselect::starts_with("necesitas_agregar_mas_autores_"),
                   -marca_temporal)
   
-  data |> 
+  data_prepared <- data |> 
     tibble::rowid_to_column() |> 
     tidyr::pivot_longer(cols = tidyselect::starts_with("author_")) |> 
     tidyr::drop_na(value) |> 
@@ -127,6 +134,28 @@ import_info_program <- function(){
       author = paste0(author_text, collapse = " <br>")
     ) |> 
     dplyr::ungroup() |> 
-    dplyr::select(-rowid)
+    dplyr::select(-rowid) |> 
+    dplyr::rename(id = numero_propuesta_en_open_review)
   
+  
+ sheets_cronograma <- sheets_cronograma_raw |> 
+    tidyr::drop_na(id)
+ 
+ charlas <- sheets_cronograma |> 
+   dplyr::filter(sesion == "charlas") |> 
+   dplyr::left_join(data_prepared, by = dplyr::join_by(id)) |> 
+   dplyr::select(-title) |> 
+   dplyr::rename(title = titulo)
+ 
+ posters <- sheets_posters_raw |> 
+   dplyr::left_join(data_prepared, by = dplyr::join_by(id)) |> 
+   dplyr::select(-title) |> 
+   dplyr::rename(title = titulo)
+ 
+ 
+ list(
+   charlas = charlas,
+   posters = posters
+ )
+ 
 }

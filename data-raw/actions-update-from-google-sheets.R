@@ -43,3 +43,27 @@ sheets_program_raw <-
 
 sheets_program_raw |>
   readr::write_rds(here::here("cronograma/programa/program.rds"))
+
+# cronograma
+
+url_sheets_cronograma <-
+  "https://docs.google.com/spreadsheets/d/137-RFl2sHI8KGIyiKGgbjTTxkyTquW-C8m8_ZzQNFcw/"
+
+sheets_cronograma_raw <-
+  googlesheets4::read_sheet(url_sheets_cronograma)
+
+sheets_cronograma_raw |>
+  readr::write_rds(here::here("cronograma/programa/cronograma.rds"))
+
+# posters 
+sheets_posters_raw <-
+  googlesheets4::read_sheet(url_sheets_cronograma, "posters")
+
+sheets_posters_raw |>
+  readr::write_rds(here::here("cronograma/programa/posters.rds"))
+
+# prepared program
+
+program_complete <- import_info_program()
+program_complete |>
+  readr::write_rds(here::here("cronograma/programa/program_complete.rds"))
