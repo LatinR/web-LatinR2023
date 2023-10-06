@@ -10,6 +10,14 @@ knitr:
 ```{r}
 #| echo: false
 program <- readr::read_rds("program_complete.rds")
+
+# charlas that the author did not fill the form 
+# program$charlas |> 
+#   dplyr::filter(is.na(author)) |> 
+#   dplyr::pull(id) |> 
+#   sort() |> 
+#   cat(sep = ", ")
+
 ```
 
 ## Charlas / Talks / Palestras
