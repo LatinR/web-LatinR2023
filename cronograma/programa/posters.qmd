@@ -1,0 +1,50 @@
+---
+title: "Posters"
+knitr:
+  opts_chunk: 
+    echo: false
+    message: false
+    warning: false
+---
+
+```{r}
+#| echo: false
+program <- readr::read_rds("program_complete.rds")
+
+# charlas that the author did not fill the form 
+# program$charlas |> 
+#   dplyr::filter(is.na(author)) |> 
+#   dplyr::pull(id) |> 
+#   sort() |> 
+#   cat(sep = ", ")
+
+```
+
+```{r results='asis'}
+program$posters |> 
+  dplyr::pull(conteudo) |> 
+  cat(sep = "\n")
+```
+
+```{r}
+# program$posters |> 
+#   dplyr::arrange(id) |> 
+#   dplyr::select(-id) |> 
+#   reactable::reactable(sortable = TRUE,searchable = TRUE, filterable = TRUE,
+#     columns = list(
+#     title = reactable::colDef(name = "Título", minWidth = 100),
+#     author = reactable::colDef(name = "Authors", html = TRUE),
+#     body = reactable::colDef(name = "Descripción", html = TRUE, minWidth = 200),
+#     tags = reactable::colDef(name = "Palavras clave")
+#   )
+#       
+#   )
+```
+
+
+<!-- font awesome -->
+
+```{=html}
+<script src="https://kit.fontawesome.com/1f72d6921a.js" crossorigin="anonymous"></script>
+```
+<!-- font awesome -->
