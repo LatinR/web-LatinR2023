@@ -2,7 +2,9 @@ import_info_program <- function(){
   
   sheets_program_raw <- readr::read_rds(here::here("cronograma/programa/program.rds"))
   
-  sheets_cronograma_raw <- readr::read_rds(here::here("cronograma/programa/cronograma.rds"))
+  sheets_cronograma_raw <- readr::read_rds(here::here("cronograma/programa/cronograma.rds")) |> 
+    janitor::clean_names() |> 
+    dplyr::rename(dia = x1)
   
   sheets_posters_raw <- readr::read_rds(here::here("cronograma/programa/posters.rds"))
   
