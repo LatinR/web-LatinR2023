@@ -1,5 +1,5 @@
 ---
-title: "Programa"
+title: "Calendar / Calendário"
 knitr:
   opts_chunk: 
     echo: false
@@ -13,11 +13,19 @@ source(here::here("R/generar-info-program.R"))
 source(here::here("R/generar-info-tutorials.R"))
 program <- import_info_program()
 tutorials <- generar_info_tutorials() 
+charlas <- program$charlas
+charlas_prepared <- charlas |> 
+  dplyr::transmute(
+    title = title,
+    tags = tags,
+    body = body,
+    start = lubridate::as_datetime(glue::glue("{date} {hora}:{minuto}:00")) ,
+    end = start + lubridate::minutes(10),
+    calendarId = janitor::make_clean_names( paste0(sesion, lugar), allow_dupes = TRUE),
+    location = lugar
+  )
 
 ```
-
-
-## Tutorials
 
 ```{r}
 #| results: asis
@@ -52,12 +60,27 @@ toastui::calendar(
     hourEnd = 18
   ) |>
   toastui::cal_schedules(tutorials) |>
+  toastui::cal_schedules(charlas_prepared) |>
   toastui::cal_props(
     id = 'tutorial',
     name = "TUTORIAL",
     color = "white",
     borderColor = "#B5D4EB",
     backgroundColor = "#4c3ceb"
+  ) |> 
+    toastui::cal_props(
+    id = 'charlassalon_6',
+    name = "Charlas",
+    color = "white",
+    borderColor = "#B5D4EB",
+    backgroundColor = "#327ff7"
+  ) |> 
+    toastui::cal_props(
+    id = 'charlassalon_7',
+    name = "Charlas",
+    color = "white",
+    borderColor = "#B5D4EB",
+    backgroundColor = "#9f3fff"
   )
 ```
 
