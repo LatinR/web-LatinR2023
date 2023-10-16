@@ -41,6 +41,8 @@ website:
         menu: 
           - text: "Summarised program"
             href: cronograma/programa/preliminar.qmd 
+          - text: "Calendar"
+            href: cronograma/programa/index.qmd
           - text: "Keynote Speakers"
             href: cronograma/conferencistas/keynotes.qmd    
           - text: "Workshops"
