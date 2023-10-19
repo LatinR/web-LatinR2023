@@ -1,22 +1,7 @@
 [
   {
-    "listing": "/blog/en/index.html",
-    "items": [
-      "/blog/en/2023-08-18-scholarships-2023.html",
-      "/blog/en/2023-06-08-inscriptionen.html",
-      "/blog/en/2023-06-08-keynotesen-2023.html",
-      "/blog/en/2023-04-24-submissions-2023.html",
-      "/blog/en/2020-10-26-reprohack-en.html",
-      "/blog/en/2020-07-08-communities.html",
-      "/blog/en/2020-05-14-virtual-en.html",
-      "/blog/en/2020-03-03-latinr-package.html",
-      "/blog/en/2020-02-29-birds-of-a-feather.html",
-      "/blog/en/2020-02-28-other-confs.html",
-      "/blog/en/2019-12-16-call-for-papers.html",
-      "/blog/en/2018-07-27-coc-slack.html",
-      "/blog/en/2018-01-15-coc.html",
-      "/blog/en/2018-01-18-attibutions.html"
-    ]
+    "listing": "/sobre/apoyo/apoio.html",
+    "items": []
   },
   {
     "listing": "/blog/es/index.html",
@@ -40,6 +25,25 @@
     ]
   },
   {
+    "listing": "/blog/en/index.html",
+    "items": [
+      "/blog/en/2023-08-18-scholarships-2023.html",
+      "/blog/en/2023-06-08-inscriptionen.html",
+      "/blog/en/2023-06-08-keynotesen-2023.html",
+      "/blog/en/2023-04-24-submissions-2023.html",
+      "/blog/en/2020-10-26-reprohack-en.html",
+      "/blog/en/2020-07-08-communities.html",
+      "/blog/en/2020-05-14-virtual-en.html",
+      "/blog/en/2020-03-03-latinr-package.html",
+      "/blog/en/2020-02-29-birds-of-a-feather.html",
+      "/blog/en/2020-02-28-other-confs.html",
+      "/blog/en/2019-12-16-call-for-papers.html",
+      "/blog/en/2018-07-27-coc-slack.html",
+      "/blog/en/2018-01-15-coc.html",
+      "/blog/en/2018-01-18-attibutions.html"
+    ]
+  },
+  {
     "listing": "/blog/pt/index.html",
     "items": [
       "/blog/pt/2023-08-18-bolsas-2023.html",
@@ -51,10 +55,6 @@
       "/blog/pt/2020-01-13-chamada-trabalhos.html",
       "/blog/pt/2018-01-15-cdc-pt.html"
     ]
-  },
-  {
-    "listing": "/sobre/apoyo/apoio.html",
-    "items": []
   },
   {
     "listing": "/sobre/apoyo/sponsors.html",
