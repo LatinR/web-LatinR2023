@@ -86,6 +86,8 @@ contributors, including myself.
 
 **Idioma:** English
 
+**Materiais:** <https://dicook.github.io/LatinR/>
+
 **Descrição:** 
 
 - Review of making effective plots using ggplot2's grammar of graphics:
