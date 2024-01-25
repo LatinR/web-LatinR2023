@@ -18,4 +18,10 @@
       thumbnail: ../../img/partners/cicada.png
     - name: rOpenSci (Community partner)
       href: https://ropensci.org/
-      thumbnail: ../../img/partners/ropensci.png      
+      thumbnail: ../../img/partners/ropensci.png
+    - name: Agencia Nacional de Investigación e Innovación
+      href: https://www.anii.org.uy/
+      thumbnail: ../../img/partners/proyecto-anii.jpg
+    - name: Fundación Ceibal
+      href: https://fundacionceibal.edu.uy
+      thumbnail: ../../img/partners/fundacion-ceibal.jpg
