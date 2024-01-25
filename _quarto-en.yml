@@ -35,13 +35,21 @@ website:
             href: cronograma/lugar/location.qmd            
           - text: "Tourist resources"
             href: cronograma/recursos-turisticos/index-en.qmd
-          - text: "Program"
-            href: cronograma/programa/preliminar.qmd                
+          - text: "Scholarships"
+            href: blog/en/2023-08-18-scholarships-2023.html        
+      - text: Program
+        menu: 
+          - text: "Summarised program"
+            href: cronograma/programa/preliminar.qmd 
+          - text: "Calendar"
+            href: cronograma/programa/index.qmd
           - text: "Keynote Speakers"
             href: cronograma/conferencistas/keynotes.qmd    
           - text: "Workshops"
-            href: cronograma/tutoriales/workshops.qmd       
-          - text: "Scholarships"
-            href: blog/en/2023-08-18-scholarships-2023.html              
+            href: cronograma/tutoriales/workshops.qmd                 
+          - text: "Regular Talks"
+            href: cronograma/programa/presentaciones.qmd 
+          - text: "Posters"
+            href: cronograma/programa/posters.qmd             
       - text: "News"
         href: blog/en/index.html                 

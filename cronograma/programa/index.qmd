@@ -1,5 +1,5 @@
 ---
-title: "Programa"
+title: "Calendar / Calendário"
 knitr:
   opts_chunk: 
     echo: false
@@ -13,11 +13,122 @@ source(here::here("R/generar-info-program.R"))
 source(here::here("R/generar-info-tutorials.R"))
 program <- import_info_program()
 tutorials <- generar_info_tutorials() 
+charlas <- program$charlas
+charlas_prepared <- charlas |> 
+  dplyr::transmute(
+    title = title,
+    tags = tags,
+    body = body,
+    start = lubridate::as_datetime(glue::glue("{date} {hora}:{minuto}:00")) ,
+    end = start + lubridate::minutes(10),
+    calendarId = janitor::make_clean_names( paste0(sesion, lugar), allow_dupes = TRUE),
+    location = lugar
+  ) |> 
+  dplyr::mutate(start =  
+  lubridate::force_tz(start, "America/Montevideo"),
+  end = lubridate::force_tz(end, "America/Montevideo"),
+)
+
+mas_actividades <- tibble::tibble(
+  title = "Registro de participantes / Registration",
+  tags = "general",
+  body = " ...",
+  start = lubridate::as_datetime("2023-10-19 08:30:00"),
+  end = lubridate::as_datetime("2023-10-19 09:00:00"),
+  calendarId = "general",
+  location = "..."
+
+) |>
+  tibble::add_row(
+    title = "Registro de participantes / Registration",
+  tags = "general",
+  body = " ...",
+  start = lubridate::as_datetime("2023-10-20 08:30:00"),
+  end = lubridate::as_datetime("2023-10-20 09:00:00"),
+  calendarId = "general",
+  location = "..."
+  ) |>
+  tibble::add_row(
+    title = "Aula Magna: Inauguración y Charla plenaria/Keynote: Di Cook",
+    start = lubridate::as_datetime("2023-10-19 09:00:00"),
+    end = lubridate::as_datetime("2023-10-19 10:10:00"),
+    calendarId = "keynotes",
+    tags = "keynotes",
+  body = " ..."
+  ) |> 
+  tibble::add_row(
+    title = "Aula Magna: Inauguración y Charla plenaria/Keynote: Hannah Frick",
+    start = lubridate::as_datetime("2023-10-19 18:00:00"),
+    end = lubridate::as_datetime("2023-10-19 19:00:00"),
+    calendarId = "keynotes",
+    tags = "keynotes",
+  body = " ..."
+  ) |> 
+  
+  tibble::add_row(
+    title = "Aula Magna/Charla plenaria/Keynote: Fabrizio Scrollini",
+    start = lubridate::as_datetime("2023-10-20 09:00:00"),
+    end = lubridate::as_datetime("2023-10-20 10:00:00"),
+    calendarId = "keynotes",
+    tags = "keynotes",
+  body = " ..."
+  ) |> 
+  
+   tibble::add_row(
+    title = "Aula Magna/Charla plenaria/Keynote: Max Kuhn, cierre y sorteos",
+    start = lubridate::as_datetime("2023-10-20 16:40:00"),
+    end = lubridate::as_datetime("2023-10-20 17:50:00"),
+    calendarId = "keynotes",
+    tags = "keynotes",
+  body = " ..."
+  ) |> 
+  
+
+
+  
+   tibble::add_row(
+    title = "Café/Coffee break",
+    start = lubridate::as_datetime("2023-10-19 17:35:00"),
+    end = lubridate::as_datetime("2023-10-19 18:00:00"),
+    calendarId = "general",
+    tags = "general",
+  body = " ..."
+  ) |> 
+  
+  
+  
+   tibble::add_row(
+    title = "Café/Coffee break",
+    start = lubridate::as_datetime("2023-10-19 10:10:00"),
+    end = lubridate::as_datetime("2023-10-19 10:40:00"),
+    calendarId = "general",
+    tags = "general",
+  body = " ..."
+  ) |> 
+  
+   tibble::add_row(
+    title = "Café/Coffee break",
+    start = lubridate::as_datetime("2023-10-20 10:00:00"),
+    end = lubridate::as_datetime("2023-10-20 10:30:00"),
+    calendarId = "general",
+    tags = "general",
+  body = " ..."
+  ) |> 
+   tibble::add_row(
+    title = "Café/Coffee break y posters",
+    start = lubridate::as_datetime("2023-10-20 15:40:00"),
+    end = lubridate::as_datetime("2023-10-20 16:40:00"),
+    calendarId = "general",
+    tags = "general",
+  body = " ..."
+  ) |> 
+  
+  dplyr::mutate(start =  
+  lubridate::force_tz(start, "America/Montevideo"),
+  end = lubridate::force_tz(end, "America/Montevideo"),
+)
 
 ```
-
-
-## Tutorials
 
 ```{r}
 #| results: asis
@@ -25,7 +136,7 @@ tutorials <- generar_info_tutorials()
 #| echo: false
 #| message: false
 
-start_day <-  lubridate::as_datetime('2023-10-18 09:00:00')  |> 
+start_day <-  lubridate::as_datetime('2023-10-18 08:30:00')  |> 
   lubridate::force_tz("America/Montevideo")
 
 toastui::calendar(
@@ -48,16 +159,46 @@ toastui::calendar(
   toastui::cal_week_options(
     daynames = c("Dom", "Lun", "Mar",
                  "Mier", "Jue", "Vie", "Sab"),
-    hourStart = 10,
-    hourEnd = 18
+    hourStart = 8,
+    hourEnd = 19
   ) |>
-  toastui::cal_schedules(tutorials) |>
+   toastui::cal_schedules(tutorials) |>
+   toastui::cal_schedules(charlas_prepared) |>
+   toastui::cal_schedules(mas_actividades)  |>
   toastui::cal_props(
     id = 'tutorial',
     name = "TUTORIAL",
     color = "white",
     borderColor = "#B5D4EB",
     backgroundColor = "#4c3ceb"
+  ) |> 
+    toastui::cal_props(
+    id = 'charlassalon_6',
+    name = "Charlas",
+    color = "white",
+    borderColor = "#B5D4EB",
+    backgroundColor = "#327ff7"
+  ) |> 
+    toastui::cal_props(
+    id = 'charlassalon_7',
+    name = "Charlas",
+    color = "white",
+    borderColor = "#B5D4EB",
+    backgroundColor = "#9f3fff"
+  )|> 
+    toastui::cal_props(
+    id = 'general',
+    name = "General",
+    color = "white",
+    borderColor = "#B5D4EB",
+    backgroundColor = "#9670ff"
+  )|> 
+    toastui::cal_props(
+    id = 'keynotes',
+    name = "Keynotes",
+    color = "black",
+    borderColor = "#B5D4EB",
+    backgroundColor = "#aff"
   )
 ```
 

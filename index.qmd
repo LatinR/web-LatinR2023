@@ -43,7 +43,7 @@ page-layout: custom
 </section>
 
 
-<center><a href='https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607' target="_blank"><button type="button" class="btn btn-light btn-lg">Inscripción</button></a></center>
+<center><a href='cronograma/programa/preliminar.qmd'><button type="button" class="btn btn-light btn-lg">Programa</button></a></center>
 
 <br>
 :::
@@ -83,8 +83,7 @@ generar_cards_keynotes(info_keynotes, col_info = "", width_col = "20%")
 </section>
 
 
-<center><a href='https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607' target="_blank"><button type="button" class="btn btn-light btn-lg">Get tickets</button></a></center>
-
+<center><a href='cronograma/programa/preliminar.qmd'><button type="button" class="btn btn-light btn-lg">Program</button></a></center>
 <br>
 :::
 :::
@@ -117,8 +116,7 @@ generar_cards_keynotes(info_keynotes, col_info = "", width_col = "20%")
 </section>
 
 
-<center><a href='https://www.eventbrite.cl/e/latinr-2023-conferencia-latinoamericana-sobre-uso-de-r-en-id-tickets-637517701607' target="_blank"><button type="button" class="btn btn-light btn-lg">Inscrição</button></a></center>
-
+<center><a href='cronograma/programa/preliminar.qmd'><button type="button" class="btn btn-light btn-lg">Programação</button></a></center>
 <br>
 :::
 :::
