@@ -1,26 +1,5 @@
 [
   {
-    "listing": "/sobre/apoyo/sponsors.html",
-    "items": []
-  },
-  {
-    "listing": "/sobre/apoyo/apoio.html",
-    "items": []
-  },
-  {
-    "listing": "/blog/pt/index.html",
-    "items": [
-      "/blog/pt/2023-08-18-bolsas-2023.html",
-      "/blog/pt/2023-06-08-inscriptionpt.html",
-      "/blog/pt/2023-06-08-keynotespt-2023.html",
-      "/blog/pt/2023-04-24-submissao-de-trabalhos-2023.html",
-      "/blog/pt/2022-06-15-submissao-de-trabalhos-2022.html",
-      "/blog/pt/2020-02-28-otras-conferencias-pt.html",
-      "/blog/pt/2020-01-13-chamada-trabalhos.html",
-      "/blog/pt/2018-01-15-cdc-pt.html"
-    ]
-  },
-  {
     "listing": "/blog/en/index.html",
     "items": [
       "/blog/en/2023-08-18-scholarships-2023.html",
@@ -61,7 +40,28 @@
     ]
   },
   {
+    "listing": "/blog/pt/index.html",
+    "items": [
+      "/blog/pt/2023-08-18-bolsas-2023.html",
+      "/blog/pt/2023-06-08-inscriptionpt.html",
+      "/blog/pt/2023-06-08-keynotespt-2023.html",
+      "/blog/pt/2023-04-24-submissao-de-trabalhos-2023.html",
+      "/blog/pt/2022-06-15-submissao-de-trabalhos-2022.html",
+      "/blog/pt/2020-02-28-otras-conferencias-pt.html",
+      "/blog/pt/2020-01-13-chamada-trabalhos.html",
+      "/blog/pt/2018-01-15-cdc-pt.html"
+    ]
+  },
+  {
     "listing": "/sobre/apoyo/index.html",
+    "items": []
+  },
+  {
+    "listing": "/sobre/apoyo/sponsors.html",
+    "items": []
+  },
+  {
+    "listing": "/sobre/apoyo/apoio.html",
     "items": []
   }
 ]
