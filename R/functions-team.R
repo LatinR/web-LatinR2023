@@ -119,6 +119,6 @@ generate_icons <- function(tab){
         ),
         TRUE ~ ""
       ) ,
-      icons = glue::glue("{icon_site} {icon_github} {icon_linkedin} {icon_mastodon} {icon_twitter}",)
+      icons = glue::glue("{icon_site} {icon_github} {icon_linkedin} {icon_mastodon} {icon_twitter}")
     )
 }
