@@ -10,6 +10,7 @@ website:
     pinned: false
     logo: "img/logo.png"
     logo-alt: "Latin-R logo"
+    logo-href: "https://latin-r.com/"
     title: false
     background: "#ffffff"
     foreground: "#737373"
